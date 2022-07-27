@@ -64,3 +64,95 @@
 // let fruits = ['banana', 'orange', 'lemon'];
 // let filt = fruits.filter(el => el === 'lemon');
 // console.log(filt)
+
+let students =[
+    {
+        name: "Bob",
+        age: 22,
+        isMarried: true,
+        scores: 85,
+    },
+    {
+        name: "Alex",
+        age: 21,
+        isMarried: true,
+        scores: 89
+    },
+    {
+        name: "Nick",
+        age: 20,
+        isMarried: false,
+        scores: 120
+    },
+    {
+        name: "John",
+        age: 19,
+        isMarried: false,
+        scores: 100
+    }
+];
+
+// const getNames = (array) => {
+    // const result = []
+//     const getValue = el => el.name
+//     for(let i = 0; i < array.length; i++) {
+//         const newValue = getValue(array[i])
+//         return[i] = newValue
+//     }
+//     return result
+// }
+
+// const getScores =(array)=>{
+//     const result = []
+//     const getValueScores = el => el.scores
+//     for(let i = 0; i < array.length; i++) {
+//         const newValue = getValueScores(array[i])
+//         return[i] = newValue
+//     }
+//     return result
+// }
+// console.log(getScores(students))
+
+// const addScores = (array) => {
+//     const result = []
+//     const getValueScores = el => ({...el, scores: el.scores + 10})
+//     for(let i = 0; i < array.length; i++) {
+//          const newValue = getValueScores(array[i])
+//          result[i] = newValue
+//    }
+//     return result
+// }
+// console.log(addScores(students))
+//
+// const anyFunction = (array, callBack) => {
+//     const result = []
+//     for (let i = 0; i < array.length; i++) {
+//         const newValue = callBack(array[i])
+//         result[i] = newValue
+//     }
+//     return result
+// }
+// console.log(anyFunction(students, el => el.name))
+// console.log(anyFunction(students, el => el.scores))
+// console.log(anyFunction(students, el => el.id))
+
+const filterFunction = (array, callback) => {
+    const result = new Array()
+    for (let i = 0; i < array.length; i++) {
+        if(callback(array[i]) === true){
+            return array[i]
+        }
+    }
+    return result
+}
+
+console.log(filterFunction(students, el => el.name === 'Nick'))
+console.log(filterFunction(students, el => el.scores >= 100))
+console.log(students.filter(el => el.name ==='Bob'))
+console.log(filterFunction(students, el => el.name === 'Alex'))
+
+console.log(students.map(st => {
+    return `Student ${st.name}: ${st.age}, ${st.isMarried ? 'Married' : "Not Merried" }`
+    }))
+
+console.log(students.map(st => st.name === 'Nick'? {...st, isMarried: true} : st))
