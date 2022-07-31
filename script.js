@@ -65,35 +65,35 @@
 // let filt = fruits.filter(el => el === 'lemon');
 // console.log(filt)
 
-let students =[
-    {
-        name: "Bob",
-        age: 22,
-        isMarried: true,
-        scores: 85,
-    },
-    {
-        name: "Alex",
-        age: 21,
-        isMarried: true,
-        scores: 89
-    },
-    {
-        name: "Nick",
-        age: 20,
-        isMarried: false,
-        scores: 120
-    },
-    {
-        name: "John",
-        age: 19,
-        isMarried: false,
-        scores: 100
-    }
-];
+// let students =[
+//     {
+//         name: "Bob",
+//         age: 22,
+//         isMarried: true,
+//         scores: 85,
+//     },
+//     {
+//         name: "Alex",
+//         age: 21,
+//         isMarried: true,
+//         scores: 89
+//     },
+//     {
+//         name: "Nick",
+//         age: 20,
+//         isMarried: false,
+//         scores: 120
+//     },
+//     {
+//         name: "John",
+//         age: 19,
+//         isMarried: false,
+//         scores: 100
+//     }
+// ];
 
 // const getNames = (array) => {
-    // const result = []
+// const result = []
 //     const getValue = el => el.name
 //     for(let i = 0; i < array.length; i++) {
 //         const newValue = getValue(array[i])
@@ -136,23 +136,56 @@ let students =[
 // console.log(anyFunction(students, el => el.scores))
 // console.log(anyFunction(students, el => el.id))
 
-const filterFunction = (array, callback) => {
-    const result = new Array()
-    for (let i = 0; i < array.length; i++) {
-        if(callback(array[i]) === true){
-            return array[i]
-        }
-    }
-    return result
-}
+// const filterFunction = (array, callback) => {
+//     const result = new Array()
+//     for (let i = 0; i < array.length; i++) {
+//         if(callback(array[i]) === true){
+//             return array[i]
+//         }
+//     }
+//     return result
+// }
+//
+// console.log(filterFunction(students, el => el.name === 'Nick'))
+// console.log(filterFunction(students, el => el.scores >= 100))
+// console.log(students.filter(el => el.name ==='Bob'))
+// console.log(filterFunction(students, el => el.name === 'Alex'))
+//
+// console.log(students.map(st => {
+//     return `Student ${st.name}: ${st.age}, ${st.isMarried ? 'Married' : "Not Merried" }`
+//     }))
+//
+// console.log(students.map(st => st.name === 'Nick'? {...st, isMarried: true} : st))
+// function areYouPlayingBanjo(name) {
+//     if (name.charAt(0) === 'R') {
+//         return name + " plays banjo";
+//     } if (name.charAt(0) === 'r'){
+//         return name + " plays banjo";
+//
+//     } else {
+//         return name + " does not play banjo"
+//     }
+// }
 
-console.log(filterFunction(students, el => el.name === 'Nick'))
-console.log(filterFunction(students, el => el.scores >= 100))
-console.log(students.filter(el => el.name ==='Bob'))
-console.log(filterFunction(students, el => el.name === 'Alex'))
+// function areYouPlayingBanjo(name) {
+//     if (name[0] == 'R' || name[0] == 'r')
+//         return name + " plays banjo";
+//     else
+//         return name + " does not play banjo";
+// }
+//
+// console.log(areYouPlayingBanjo('Bas'))
 
-console.log(students.map(st => {
-    return `Student ${st.name}: ${st.age}, ${st.isMarried ? 'Married' : "Not Merried" }`
-    }))
+// function DNAtoRNA(dna) {
+//     return dna.split('T').join('U')
+// }
+//
+// console.log(DNAtoRNA('GCAT'))
 
-console.log(students.map(st => st.name === 'Nick'? {...st, isMarried: true} : st))
+// let DNAtoRNA =(dna) => dna.split('T') ? dna.join('U') : undefined
+// console.log(DNAtoRNA('GCAT'))
+
+// const DNAtoRNA = dna => dna.replace(/T/g, 'U');
+//
+// let dnca = d => d.replace(/E/g, 'Y')
+// console.log(dnca('GLAg'))
