@@ -189,3 +189,9 @@
 //
 // let dnca = d => d.replace(/E/g, 'Y')
 // console.log(dnca('GLAg'))
+
+// let arr = {
+//     city: [{title: 'Stits'}, {title: 'Trits'}]
+// }
+// let s = arr.city[0]
+// console.log(s)
