@@ -195,3 +195,38 @@
 // }
 // let s = arr.city[0]
 // console.log(s)
+// function countBy(x, n) {
+//     let z = [];
+//     let arr = n
+//     for(let i = x; arr > 0; i+=x){
+//         z.push(i)
+//         arr--
+//     }
+//     return z;
+// }
+//
+// console.log(countBy(2,5
+// ))
+
+const s = document.getElementById('small')
+const m = document.getElementById('medium')
+const b = document.getElementById('big')
+
+
+// const click = () => alert('yo')
+// s.onclick = click
+// s.addEventListener('click', click)
+
+// m.addEventListener('click', (e)=>{
+//     alert('medium')
+// })
+//
+// b.addEventListener('click', ()=>{
+//     alert('big')
+// })
+
+const getElementById = (e) => {
+    alert(e.currentTarget.id)
+}
+
+b.addEventListener('click', getElementById)
