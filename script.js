@@ -208,9 +208,9 @@
 // console.log(countBy(2,5
 // ))
 
-const s = document.getElementById('small')
-const m = document.getElementById('medium')
-const b = document.getElementById('big')
+// const s = document.getElementById('small')
+// const m = document.getElementById('medium')
+// const b = document.getElementById('big')
 
 
 // const click = () => alert('yo')
@@ -224,9 +224,38 @@ const b = document.getElementById('big')
 // b.addEventListener('click', ()=>{
 //     alert('big')
 // })
+//
+// const getElementById = (e) => {
+//     alert(e.currentTarget.id)
+// }
+//
+// b.addEventListener('click', getElementById)
 
-const getElementById = (e) => {
-    alert(e.currentTarget.id)
-}
 
-b.addEventListener('click', getElementById)
+// let str = '600'
+// let num = Number(str)
+// console.log(num)
+//
+// const stringToNumber = function(str) {
+//     let x = Number(str)
+//     if(str) {
+//         str = x
+//     } return str
+//
+// }
+// console.log(stringToNumber('500'))
+// console.log(typeof )
+
+// function lovefunc(flower1, flower2){
+//     if(flower1 % 2 == 0 && flower2 % 2 == 1){
+//         return true;
+//     }
+//     if(flower1 % 2 == 1 && flower2 % 2 == 0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+//
+// console.log(lovefunc(0,0))
