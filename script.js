@@ -263,29 +263,112 @@
 //1. Реализуйте функцию, которая принимает в качестве параметра массив чисел и возвращает самое большое значение из массива (максимум массива)
 // [1,22,3,4,5] => 22
 
-function minmax(list) {
-    let result = [list[0]];
-    for (let i = 0; i < list.length; i++) {
-        if (list[i] > result[0])
-            result[0] = list[i];
-    }
-    return result;
-}
-
-console.log(minmax([11,25,167, 2162]))
+// function minmax(list) {
+//     let result = [list[0]];
+//     for (let i = 0; i < list.length; i++) {
+//         if (list[i] > result[0])
+//             result[0] = list[i];
+//     }
+//     return result;
+// }
+//
+// console.log(minmax([11,25,167, 2162]))
 
 // Реализуйте функцию, которая принимае в качестве параметра массив с вложенными в него массивами из чисел и возвращает массив, состоящий из максимальных значений каждого вложенного массива.
 //     [[1,2,3], [4,5,6]] => [3,6]
 
-const maxArrNumsFor = (arr) => {
-    let maxArr = []
-    for (let i = 0; i < arr.length; i++) {
-        let maxNumArrI = arr[i][0]
-        for(let j = 0; j < arr[i].length; j++) {
-            if (arr[i][j] > maxNumArrI) maxNumArrI = arr[i][j]
-        }
-        maxArr[i] = maxNumArrI
-    }
-    return maxArr
+// const maxArrNumsFor = (arr) => {
+//     let maxArr = []
+//     for (let i = 0; i < arr.length; i++) {
+//         let maxNumArrI = arr[i][0]
+//         for(let j = 0; j < arr[i].length; j++) {
+//             if (arr[i][j] > maxNumArrI) maxNumArrI = arr[i][j]
+//         }
+//         maxArr[i] = maxNumArrI
+//     }
+//     return maxArr
+// }
+// console.log(maxArrNumsFor([[21,-5,-32], [4,-5,12]]))
+
+// let person = {
+//     name: 'Oleg',
+//     age: 20,
+//     live: {
+//         city: 'Kiev',
+//         street: {
+//             name: 'Nezalejna'
+//         }
+//     }
+// }
+// console.log(person.live.city)
+// console.log(person["live"]["city"])
+//
+// let city = {}
+// city["name"] = 'Petya'
+// console.log(city)
+//
+// city['привет как дела'] = 'ОКЕЙ'
+// console.log(city)
+//
+// console.log(city["привет как дела"])
+
+// let a = {
+//     '1': 'Oleg',
+//     '2': 'Vasia',
+//     '3': 'Grisha',
+//     '4': 'Andrey'
+// }
+// console.log(a["2"])
+// console.log(Object.keys(a))
+
+// a[null] = 'null'
+// console.log(a)
+// for(let i = 0; i < 100; i++) {
+//     a[i] = 'ky'
+// }
+// // console.log(a)
+// for (let x = 0; x < a['1']; x++) {
+//     a["1"][x] = 'Grisha'
+// }
+// console.log(a['1'])
+//
+// let arr = [
+//     {id: 1, name: 'Vasya'},
+//     {id: 2, name: 'Valera'},
+//     {id: 5, name: 'Sveta'},
+// ]
+// console.log(arr.find(v => v.id ===2))
+//
+// arr.name = 'sorname'
+// console.log(arr)
+// delete arr.name
+// console.log(arr)
+//
+// delete arr[0]
+// console.log(arr)
+//
+// arr[1].name = 'Petka'
+// console.log(arr)
+// delete arr[1]
+// console.log(arr)
+
+let arr = {
+    'value': 'Oleg',
+    'id': 16,
+    'sourname': 'Moish'
 }
-console.log(maxArrNumsFor([[21,-5,-32], [4,-5,12]]))
+console.log(arr)
+arr.id = 'ID'
+console.log(arr)
+
+delete arr.id
+console.log(arr)
+
+arr['id'] = 2
+console.log(arr)
+
+arr.id = 'Petya'
+
+console.log(arr)
+
+console.log(Object.keys(arr.value))
