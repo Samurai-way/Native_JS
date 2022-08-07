@@ -274,6 +274,18 @@ function minmax(list) {
 
 console.log(minmax([11,25,167, 2162]))
 
+// Реализуйте функцию, которая принимае в качестве параметра массив с вложенными в него массивами из чисел и возвращает массив, состоящий из максимальных значений каждого вложенного массива.
+//     [[1,2,3], [4,5,6]] => [3,6]
 
-
-
+const maxArrNumsFor = (arr) => {
+    let maxArr = []
+    for (let i = 0; i < arr.length; i++) {
+        let maxNumArrI = arr[i][0]
+        for(let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] > maxNumArrI) maxNumArrI = arr[i][j]
+        }
+        maxArr[i] = maxNumArrI
+    }
+    return maxArr
+}
+console.log(maxArrNumsFor([[21,-5,-32], [4,-5,12]]))
