@@ -352,23 +352,31 @@
 // delete arr[1]
 // console.log(arr)
 
-let arr = {
-    'value': 'Oleg',
-    'id': 16,
-    'sourname': 'Moish'
-}
-console.log(arr)
-arr.id = 'ID'
-console.log(arr)
+// let arr = {
+//     'value': 'Oleg',
+//     'id': 16,
+//     'sourname': 'Moish'
+// }
+// console.log(arr)
+// arr.id = 'ID'
+// console.log(arr)
+//
+// delete arr.id
+// console.log(arr)
+//
+// arr['id'] = 2
+// console.log(arr)
+//
+// arr.id = 'Petya'
+//
+// console.log(arr)
+//
+// console.log(Object.keys(arr.value))
 
-delete arr.id
-console.log(arr)
-
-arr['id'] = 2
-console.log(arr)
-
-arr.id = 'Petya'
-
-console.log(arr)
-
-console.log(Object.keys(arr.value))
+// let RemoveExclamationMarks = s => s.replace(/\!/g,'')
+//
+// function removeExclamationMarks(s) {
+//     return s.replace(/!/g,'');
+// }
+//
+// console.log(RemoveExclamationMarks('Hello world!!!'));
