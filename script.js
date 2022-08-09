@@ -380,3 +380,9 @@
 // }
 //
 // console.log(RemoveExclamationMarks('Hello world!!!'));
+
+function summNumb (n) {
+    return n.reduce((sum, n) => sum+n, 0);
+}
+
+console.log(summNumb([14,15]))
