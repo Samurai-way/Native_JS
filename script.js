@@ -381,8 +381,45 @@
 //
 // console.log(RemoveExclamationMarks('Hello world!!!'));
 
-function summNumb (n) {
-    return n.reduce((sum, n) => sum+n, 0);
+// function summNumb (n) {
+//     return n.reduce((sum, n) => sum+n, 0);
+// }
+//
+// console.log(summNumb([14,15]))
+
+const tasksTitle = [
+    {id: 1,
+        title: 'hello my dear friend',
+        filter: 'all',
+    },
+    {
+        id: 2,
+        title: 'hello my dear friend',
+        filter: 'all',
+    }
+]
+
+let tasks = {
+    1: [
+        {id: 11, titles: 'JS', isDone: false},
+        {id: 13, titles: 'CSS', isDone: false},
+        {id: 15, titles: 'Ract', isDone: false},
+    ],
+    2: [
+        {id: 20, titles: 'Cola', isDone: false},
+        {id: 21, titles: 'Water', isDone: false},
+        {id: 30, titles: 'Sprite', isDone: false},
+    ]
 }
 
-console.log(summNumb([14,15]))
+// console.log(tasks[1].find(t => t.id === 13))
+// console.log([...tasks[1], {id: 17, title: 'KY'}])
+// console.log(tasks[1].map(t => t.id ===13 ? {...t, isDone: true} : t ))
+// console.log([...tasksTitle,  {id: 2, title: 'GUUU',filter: 'all',}])
+// console.log({...tasks, 3: []})
+
+const user = {
+    user: 'Bob',
+    'user age': 13
+}
+console.log(user["user age"])
