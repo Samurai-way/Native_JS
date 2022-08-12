@@ -388,7 +388,8 @@
 // console.log(summNumb([14,15]))
 
 const tasksTitle = [
-    {id: 1,
+    {
+        id: 1,
         title: 'hello my dear friend',
         filter: 'all',
     },
@@ -577,27 +578,43 @@ let tasks = {
 // }
 // console.log(updatedStudents)
 
-    // [[1,2,3], [4,5,6]] => [3,6]
-
-function doubleInteger(i) {
-    return i*2
-}
-
-console.log(doubleInteger(2))
-
-function setAlarm(employed, vacation){
-    if(employed && vacation) return false
-    if(employed) {
-        return true
-    } else {
-        return false
-    }
-    if(vacation) return true
-
-}
-
-console.log(setAlarm(false, true))
+// [[1,2,3], [4,5,6]] => [3,6]
+//
+// function doubleInteger(i) {
+//     return i*2
+// }
+//
+// console.log(doubleInteger(2))
+//
+// function setAlarm(employed, vacation){
+//     if(employed && vacation) return false
+//     if(employed) {
+//         return true
+//     } else {
+//         return false
+//     }
+//     if(vacation) return true
+//
+// }
+//
+// console.log(setAlarm(false, true))
 //
 // assert.strictEqual(setAlarm(true, true),  false,"Should be false.");
 // assert.strictEqual(setAlarm(false,true),  false, "Should be false.");
 // assert.strictEqual(setAlarm(true, false), true,"Should be true.");
+
+
+function basicOp(operation, value1, value2) {
+    if (operation == '+') return value1 + value2
+    if (operation == '-') return value1 - value2
+    if (operation == '*') return value1 * value2
+    if (operation == '/') return value1 / value2
+}
+
+console.log(basicOp('+', 12, 15))
+
+
+// Test.assertSimilar(basicOp('+', 4, 7), 11);
+// Test.assertSimilar(basicOp('-', 15, 18), -3);
+// Test.assertSimilar(basicOp('*', 5, 5), 25);
+// Test.assertSimilar(basicOp('/', 49, 7), 7);
