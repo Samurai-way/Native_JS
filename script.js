@@ -604,17 +604,34 @@ let tasks = {
 // assert.strictEqual(setAlarm(true, false), true,"Should be true.");
 
 
-function basicOp(operation, value1, value2) {
-    if (operation == '+') return value1 + value2
-    if (operation == '-') return value1 - value2
-    if (operation == '*') return value1 * value2
-    if (operation == '/') return value1 / value2
-}
-
-console.log(basicOp('+', 12, 15))
+// function basicOp(operation, value1, value2) {
+//     if (operation == '+') return value1 + value2
+//     if (operation == '-') return value1 - value2
+//     if (operation == '*') return value1 * value2
+//     if (operation == '/') return value1 / value2
+// }
+//
+// console.log(basicOp('+', 12, 15))
 
 
 // Test.assertSimilar(basicOp('+', 4, 7), 11);
 // Test.assertSimilar(basicOp('-', 15, 18), -3);
 // Test.assertSimilar(basicOp('*', 5, 5), 25);
 // Test.assertSimilar(basicOp('/', 49, 7), 7);
+
+
+
+
+function isIsogram (str) {
+   return new Set(str.toLowerCase()).size === str.length
+}
+
+console.log(isIsogram('isIsogram'))
+
+
+assert.strictEqual( isIsogram("Dermatoglyphics"), true );
+assert.strictEqual( isIsogram("isogram"), true );
+assert.strictEqual( isIsogram("aba"), false, "same chars may not be adjacent" );
+assert.strictEqual( isIsogram("moOse"), false, "same chars may not be same case" );
+assert.strictEqual( isIsogram("isIsogram"), false );
+assert.strictEqual( isIsogram(""), true, "an empty string is a valid isogram" );
