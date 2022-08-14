@@ -631,22 +631,55 @@ let tasks = {
 // assert.strictEqual( isIsogram(""), true, "an empty string is a valid isogram" );
 
 
-let countSheep = function (num){
-    let result = ''
-    for(let i = 1; i <=num; i++) {
-        result += i + ' sheep...'
-    }
-    return result
-}
-
-console.log(countSheep(6))
-
-
-describe("Fixed tests", () => {
-    it("Testing for fixed tests", () => {
-        assert.strictEqual(countSheep(0), "");
-        assert.strictEqual(countSheep(1), "1 sheep...");
-        assert.strictEqual(countSheep(2), "1 sheep...2 sheep...");
-        assert.strictEqual(countSheep(3), "1 sheep...2 sheep...3 sheep...");
-    });
-});
+// let countSheep = function (num){
+//     let result = ''
+//     for(let i = 1; i <=num; i++) {
+//         result += i + ' sheep...'
+//     }
+//     return result
+// }
+//
+// console.log(countSheep(6))
+//
+//
+// describe("Fixed tests", () => {
+//     it("Testing for fixed tests", () => {
+//         assert.strictEqual(countSheep(0), "");
+//         assert.strictEqual(countSheep(1), "1 sheep...");
+//         assert.strictEqual(countSheep(2), "1 sheep...2 sheep...");
+//         assert.strictEqual(countSheep(3), "1 sheep...2 sheep...3 sheep...");
+//     });
+// });
+//
+// function howMuchILoveYou(nbPetals) {
+//     const title = [
+//         'I love you',
+//         'a little',
+//         'a lot',
+//         'passionately',
+//         'madly',
+//         'not at all'
+//     ]
+//     return title[(howMuchILoveYou) -1] % title.length
+// }
+// console.log(howMuchILoveYou())
+//
+//
+//
+// assert.strictEqual(howMuchILoveYou(7),"I love you")
+// assert.strictEqual(howMuchILoveYou(3),"a lot")
+// assert.strictEqual(howMuchILoveYou(6),"not at all")
+//
+// function litres(time) {
+//     return Math.floor(time * 0.5)
+// }
+//
+// console.log(litres(12.3))
+//
+// assert.strictEqual(litres(2), 1, 'should return 1 litre');
+// assert.strictEqual(litres(1.4), 0, 'should return 0 litres');
+// assert.strictEqual(litres(12.3), 6, 'should return 6 litres');
+// assert.strictEqual(litres(0.82), 0, 'should return 0 litres');
+// assert.strictEqual(litres(11.8), 5, 'should return 5 litres');
+// assert.strictEqual(litres(1787), 893, 'should return 893 litres');
+// assert.strictEqual(litres(0), 0, 'should return 0 litres');
