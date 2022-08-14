@@ -683,3 +683,24 @@ let tasks = {
 // assert.strictEqual(litres(11.8), 5, 'should return 5 litres');
 // assert.strictEqual(litres(1787), 893, 'should return 893 litres');
 // assert.strictEqual(litres(0), 0, 'should return 0 litres');
+
+// function makeNegative(num) {
+//   if(num < 0){
+//       return num
+//   } else return -num
+// }
+//
+// console.log(makeNegative(5))
+// Test.assertEquals(makeNegative(42), -42);
+
+// function check(a,x){
+//     return a.includes(x);
+// };
+//
+// console.log(check([101, 45, 75, 105, 99, 107], 107))
+//
+//
+// assert.strictEqual(check([66, 101], 66), true);
+// assert.strictEqual(check([101, 45, 75, 105, 99, 107], 107), true);
+// assert.strictEqual(check(['t', 'e', 's', 't'], 'e'), true);
+// assert.strictEqual(check(['what', 'a', 'great', 'kata'], 'kat'), false);
