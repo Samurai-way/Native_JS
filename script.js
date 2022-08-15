@@ -723,12 +723,14 @@ let tasks = {
 // });
 // it("0 is even", () => {
 //     assert.strictEqual(even_or_odd(0), "Even");
-
 // function distinct(a){
 //     return [...new Set(a)];
 // }
 //
 // console.log(distinct([1,1,1,1,2,2,2,3,3,4,4,4,5,5,5,5,5,6]))
-
 // let a = [1,1,1,2,2,3,4,5]
 // console.log([...new Set(a)]);
+
+// const avg = a => a.reduce((a, b) => a * b) / a.length
+//
+// console.log(avg([0,1,2,3,4]))
