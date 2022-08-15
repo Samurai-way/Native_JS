@@ -704,3 +704,31 @@ let tasks = {
 // assert.strictEqual(check([101, 45, 75, 105, 99, 107], 107), true);
 // assert.strictEqual(check(['t', 'e', 's', 't'], 'e'), true);
 // assert.strictEqual(check(['what', 'a', 'great', 'kata'], 'kat'), false);
+
+// const even_or_odd = (number) => (number % 2) ? "Odd" : "Even";
+//
+// console.log(even(2))
+
+// it("2 is even", () => {
+//     assert.strictEqual(even_or_odd(2), "Even");
+// });
+// it("7 is odd", () => {
+//     assert.strictEqual(even_or_odd(7), "Odd");
+// });
+// it("-42 is even", () => {
+//     assert.strictEqual(even_or_odd(-42), "Even");
+// });
+// it("-7 is odd", () => {
+//     assert.strictEqual(even_or_odd(-7), "Odd");
+// });
+// it("0 is even", () => {
+//     assert.strictEqual(even_or_odd(0), "Even");
+
+// function distinct(a){
+//     return [...new Set(a)];
+// }
+//
+// console.log(distinct([1,1,1,1,2,2,2,3,3,4,4,4,5,5,5,5,5,6]))
+
+// let a = [1,1,1,2,2,3,4,5]
+// console.log([...new Set(a)]);
