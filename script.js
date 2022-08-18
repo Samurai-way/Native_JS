@@ -829,3 +829,13 @@ let tasks = {
 // marina = students.find(m=>m.title === 'Petya')
 // marina.title = 'Marina'
 // console.log(marina)
+
+// const students = [
+//     {id: 'id140', title: 'Grisha'},//0
+//     {id: 'id150', title: 'Dima'},//1
+//     {id: 'id170', title: 'Sasha'},//2
+// ];
+//
+// const sasha = students.find(s=>s.id ==='id170')
+// console.log(sasha)
+
