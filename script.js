@@ -735,59 +735,76 @@ let tasks = {
 //
 // console.log(avg([0,1,2,3,4]))
 
-const names = ['Bob', 'Alex', 'Dima', 'John']
-const yo = names.sort()
+// const names = ['Bob', 'Alex', 'Dima', 'John']
+// const yo = names.sort()
 // console.log(yo === names)
 
-const numbers = [1, 2, 66, 101, 51, 22];
-let n = numbers.sort()
+// const numbers = [1, 2, 66, 101, 51, 22];
+// let n = numbers.sort()
 // console.log(n)
 
-let compareFunc = (a, b) => a - b;
-    // if(a < b) {
-    //     return -1
-    // } else {
-    //     return 1
-    // }
+// let compareFunc = (a, b) => a - b;
+// if(a < b) {
+//     return -1
+// } else {
+//     return 1
+// }
 // }
 
 // console.log(numbers.sort(compareFunc))
 
-const students = [
-    {
-        name: "Bob",
-        age: 22,
-        isMarried: true,
-        scores: 95
-    },
-    {
-        name: "Alex",
-        age: 23,
-        isMarried: true,
-        scores: 89
-    },
-    {
-        name: "Helge",
-        age: 21,
-        isMarried: true,
-        scores: 89
-    },
-    {
-        name: "Nick",
-        age: 20,
-        isMarried: false,
-        scores: 120
-    },
-    {
-        name: "John",
-        age: 19,
-        isMarried: false,
-        scores: 121
-    },
-    {
-        name: "alex",
-        age: 23,
-        isMarried: true,
-        scores: 89
-    },
-];
+// const students = [
+//     {
+//         name: "Bob",
+//         age: 22,
+//         isMarried: true,
+//         scores: 95
+//     },
+//     {
+//         name: "Alex",
+//         age: 23,
+//         isMarried: true,
+//         scores: 89
+//     },
+//     {
+//         name: "Helge",
+//         age: 21,
+//         isMarried: true,
+//         scores: 89
+//     },
+//     {
+//         name: "Nick",
+//         age: 20,
+//         isMarried: false,
+//         scores: 120
+//     },
+//     {
+//         name: "John",
+//         age: 19,
+//         isMarried: false,
+//         scores: 121
+//     },
+//     {
+//         name: "alex",
+//         age: 23,
+//         isMarried: true,
+//         scores: 89
+//     },
+// ];
+
+// console.log(students.sort((a, b) => a.scores - b.scores));
+// console.log(students.sort((a, b) => a.name.localeCompare(b.name)));
+
+const numbers = [1, 11, 14, 15, 25, 55]
+for (let j = 0; j <numbers.length; j++) {
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > numbers[i + 1]){
+            let temp = numbers[i];
+            numbers[i] = numbers[i + 1]
+            numbers[i + 1] = temp
+        }
+    }
+}
+
+
+console.log(numbers)
