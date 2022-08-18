@@ -807,12 +807,25 @@ let tasks = {
 //
 // console.log(numbers)
 
-const mentors = [
-    {id: 'id100', title: 'Oleg', salary: 10}, //0
-    {id: 'id250', title: 'Petya', salary: 50}, //1
-    {id: 'id501', title: 'Grisha', salary: 15}, //2
-];
-
-const mentorsID = 'id100';
-const mentor = mentors.find(m=>m.id === mentorsID);
-console.log(mentor)
+// const mentors = [
+//     {id: 'id100', title: 'Oleg', salary: 10}, //0
+//     {id: 'id250', title: 'Petya', salary: 50}, //1
+//     {id: 'id501', title: 'Grisha', salary: 15}, //2
+// ];
+//
+// const mentorsID = 'id100';
+// const mentor = mentors.find(m=>m.id === mentorsID);
+// console.log(mentor)
+//
+// const mentoR = mentors[2]
+// console.log(mentoR)
+//
+// const students = [
+//     {id: 'id150', title: 'Andrey'},//0
+//     {id: 'id160', title: 'Sergey'},//1
+//     {id: 'id165', title: 'Petya'},//2
+// ]
+//
+// marina = students.find(m=>m.title === 'Petya')
+// marina.title = 'Marina'
+// console.log(marina)
