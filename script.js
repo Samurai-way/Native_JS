@@ -794,15 +794,25 @@ let tasks = {
 
 // console.log(students.sort((a, b) => a.scores - b.scores));
 // console.log(students.sort((a, b) => a.name.localeCompare(b.name)));
+//
+// const numbers = [1, 11, 14, 15, 25, 55]
+// for (let j = 0; j <numbers.length; j++) {
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] > numbers[i + 1]){
+//             [numbers[i+1], numbers[i]] = [numbers[i], numbers[i+1]]
+//         }
+//     }
+// }
+//
+//
+// console.log(numbers)
 
-const numbers = [1, 11, 14, 15, 25, 55]
-for (let j = 0; j <numbers.length; j++) {
-    for (let i = 0; i < numbers.length; i++) {
-        if (numbers[i] > numbers[i + 1]){
-            [numbers[i+1], numbers[i]] = [numbers[i], numbers[i+1]]
-        }
-    }
-}
+const mentors = [
+    {id: 'id100', title: 'Oleg', salary: 10}, //0
+    {id: 'id250', title: 'Petya', salary: 50}, //1
+    {id: 'id501', title: 'Grisha', salary: 15}, //2
+];
 
-
-console.log(numbers)
+const mentorsID = 'id100';
+const mentor = mentors.find(m=>m.id === mentorsID);
+console.log(mentor)
