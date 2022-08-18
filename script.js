@@ -743,8 +743,51 @@ const numbers = [1, 2, 66, 101, 51, 22];
 let n = numbers.sort()
 // console.log(n)
 
-let compareFunc = (a, b) => {
-    if(a < b) {
-        return 10
-    } else {}
-}
+let compareFunc = (a, b) => a - b;
+    // if(a < b) {
+    //     return -1
+    // } else {
+    //     return 1
+    // }
+// }
+
+// console.log(numbers.sort(compareFunc))
+
+const students = [
+    {
+        name: "Bob",
+        age: 22,
+        isMarried: true,
+        scores: 95
+    },
+    {
+        name: "Alex",
+        age: 23,
+        isMarried: true,
+        scores: 89
+    },
+    {
+        name: "Helge",
+        age: 21,
+        isMarried: true,
+        scores: 89
+    },
+    {
+        name: "Nick",
+        age: 20,
+        isMarried: false,
+        scores: 120
+    },
+    {
+        name: "John",
+        age: 19,
+        isMarried: false,
+        scores: 121
+    },
+    {
+        name: "alex",
+        age: 23,
+        isMarried: true,
+        scores: 89
+    },
+];
