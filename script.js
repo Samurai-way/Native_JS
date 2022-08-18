@@ -799,9 +799,7 @@ const numbers = [1, 11, 14, 15, 25, 55]
 for (let j = 0; j <numbers.length; j++) {
     for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] > numbers[i + 1]){
-            let temp = numbers[i];
-            numbers[i] = numbers[i + 1]
-            numbers[i + 1] = temp
+            [numbers[i+1], numbers[i]] = [numbers[i], numbers[i+1]]
         }
     }
 }
