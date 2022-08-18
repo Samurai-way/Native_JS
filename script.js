@@ -734,3 +734,17 @@ let tasks = {
 // const avg = a => a.reduce((a, b) => a * b) / a.length
 //
 // console.log(avg([0,1,2,3,4]))
+
+const names = ['Bob', 'Alex', 'Dima', 'John']
+const yo = names.sort()
+// console.log(yo === names)
+
+const numbers = [1, 2, 66, 101, 51, 22];
+let n = numbers.sort()
+// console.log(n)
+
+let compareFunc = (a, b) => {
+    if(a < b) {
+        return 10
+    } else {}
+}
