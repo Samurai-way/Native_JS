@@ -857,4 +857,10 @@ let tasks = {
 //
 // console.log(studentsObj)
 
+// console.log(typeof NaN)
 
+// function smash (words) {
+//     return words.join(' ')
+// };
+// console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+// ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
