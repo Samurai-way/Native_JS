@@ -864,3 +864,26 @@ let tasks = {
 // };
 // console.log(smash(['hello', 'world', 'this', 'is', 'great']))
 // ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+
+
+// let doubleChar = (str) => str.replace(/(\w)/g, '$1$1')
+
+// let arr = []
+// for (let i = 0; i < str.length; i++) {
+//     arr = str[i].split()
+//     for (let j = 0; j < arr.length; j++) {
+//         return arr[i**2]
+//     }
+// }
+
+function doubleChar(str) {
+    return str.split('').map(el => el + el).join('')
+}
+
+
+console.log(doubleChar('Hello World'))
+
+
+// * "String"      -> "SSttrriinngg"
+// * "Hello World" -> "HHeelllloo  WWoorrlldd"
+// * "1234!_ "     -> "11223344!!__  "
