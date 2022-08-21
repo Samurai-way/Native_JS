@@ -887,14 +887,24 @@ let tasks = {
 // * "1234!_ "     -> "11223344!!__  "
 
 
-function findMultiples(integer, limit) {
-    return Array.from({length: parseInt(limit / integer)}, (_,index)=> (index+1)*integer)
-}
-
-console.log(findMultiples(5, 25))
+// function findMultiples(integer, limit) {
+//     return Array.from({length: parseInt(limit / integer)}, (_,index)=> (index+1)*integer)
+// }
+//
+// console.log(findMultiples(5, 25))
 
 // Test.assertSimilar(findMultiples(5, 25), [5, 10, 15, 20, 25])
 // Test.assertSimilar(findMultiples(1, 2), [1, 2])
 // Test.assertSimilar(findMultiples(5, 7), [5])
 // Test.assertSimilar(findMultiples(4, 27), [4, 8, 12, 16, 20, 24])
 // Test.assertSimilar(findMultiples(11, 54), [11, 22, 33, 44])
+
+// function spongMame(str){
+//     let res = '';
+//     for (let i = 0; i < str.length;i++) {
+//         res += (i % 2) ? str[i].toLowerCase() : str[i].toUpperCase()
+//     }
+//     return res
+// }
+//
+// console.log(spongMame('Hello my friends'))
