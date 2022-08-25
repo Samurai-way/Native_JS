@@ -996,7 +996,7 @@ let topStudents = students.slice(0,3);
 
 //6b Объедините массивы deepCopyStudents и topStudents так,
 // //чтоб сохранился порядок сортировки (spread-оператор || concat)
-let newDeepCopyStudents = [...deepCopyStudents.reverse(),...topStudents]
+let newDeepCopyStudents = [...topStudents,...deepCopyStudents]
 console.log(newDeepCopyStudents)
 
 //7. Сформируйте массив холостых студентов (filter)
@@ -1010,11 +1010,11 @@ let studentsNames = students.map(s => s.name);
 //8a. Сформируйте строку из имён студентов, разделённых
 // - пробелом (join)
 // - запятой (join)
-let namesWithSpace = students.join(' ')
-// console.log(namesWithSpace)      *****
+let namesWithSpace = studentsNames.join(' ')
+console.log(namesWithSpace)
 
-let namesWithComma = students.join(',');
-// console.log(namesWithComma)       *****
+let namesWithComma = studentsNames.join(',');
+console.log(namesWithComma)
 
 //9. Добавьте всем студентам свойство "isStudent" со значением true (map)
 let trueStudents = students.map((e) => {return {isStudent: true}});
