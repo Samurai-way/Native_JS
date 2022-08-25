@@ -973,15 +973,15 @@ let copyStudents = [...students];
 // console.log(copyStudents[1].name === students[1].name)
 
 //4*. Полная (глубокая) копия массива students (map)
-let deepCopyStudents = students.map(el => {...el})
+let deepCopyStudents = students.map(el => ({...el}))
 // console.log(deepCopyStudents === students)
 
 
 
 
 //5. Отсортируйте копию массива deepCopyStudents по алфавиту (sort)
-let sortedByName = deepCopyStudents.sort()
-// console.log(sortedByName);
+let sortedByName = deepCopyStudents.sort((a,b) => a.name > b.name ? 1 : -1)
+console.log(sortedByName);
 
 //6. Сформируйте массив студентов, у которых 100 и более баллов (filter)
 let  bestStudents = students.filter(t => t.scores >=100);
@@ -990,9 +990,14 @@ let  bestStudents = students.filter(t => t.scores >=100);
 //6a. Получите массив ("вырежьте") трёх лучших студентов из массива deepCopyStudents (splice)
 //https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
-let topStudents = students.slice(0,2);
+let topStudents = students.slice(0,3);
 // console.log(topStudents)
 // console.log(deepCopyStudents)
+
+//6b Объедините массивы deepCopyStudents и topStudents так,
+// //чтоб сохранился порядок сортировки (spread-оператор || concat)
+let newDeepCopyStudents = [...deepCopyStudents.reverse(),...topStudents]
+console.log(newDeepCopyStudents)
 
 //7. Сформируйте массив холостых студентов (filter)
 let notMarriedStudents = students.filter(s => s.isMarried === false);
