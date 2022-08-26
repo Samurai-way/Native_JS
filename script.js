@@ -1130,7 +1130,12 @@ let man2 = {
     friends: ["Peter", "Steven", "William"]
 };
 
-let man2FullCopy  // your code
+let man2FullCopy = {...man2}
+man2FullCopy.friends = [...man2.friends]
+// console.log(man2)
+man2FullCopy.friends[0] = 'Dima'
+// console.log(man2)
+// console.log(man2FullCopy)
 
 
 // 5 Array of objects
