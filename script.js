@@ -1212,7 +1212,13 @@ let man5 = {
     }
 };
 
-let man5FullCopy //  your code
+let man5FullCopy = {...man5,
+    mother: {...man5.mother},
+    work: {...man5.mother.work},
+    parents:
+        {...man5.mother.parents.map(el => ({...el}))}
+}
+console.log(man5FullCopy)
 
 
 // 9 Object inside an object -> array -> object ->  object
