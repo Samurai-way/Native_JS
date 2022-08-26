@@ -1251,7 +1251,9 @@ let man6 = {
     }
 };
 
-let man6FullCopy  //  your code
+let man6FullCopy  = {...man6, mother: {...man6.mother}, parents: {...man6.mother.parents.map(el => ({...el}))}}
+
+console.log(man6FullCopy)
 
 
 //10 Array of objects inside an object -> object -> array -> object ->  object
