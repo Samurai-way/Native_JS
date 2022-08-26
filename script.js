@@ -1253,7 +1253,7 @@ let man6 = {
 
 let man6FullCopy  = {...man6, mother: {...man6.mother}, parents: {...man6.mother.parents.map(el => ({...el}))}}
 
-console.log(man6FullCopy)
+// console.log(man6FullCopy)
 
 
 //10 Array of objects inside an object -> object -> array -> object ->  object
@@ -1295,4 +1295,8 @@ let man7 = {
     }
 };
 
-let man7FullCopy  //  your code
+let man7FullCopy  = {...man7, mother: {...man7.mother}, parents: {...man7.mother.parents.map(el => ({...el}))}}
+
+man7FullCopy.parents[0].name = 'Dima'
+// console.log(man7FullCopy)
+// console.log(man7)
