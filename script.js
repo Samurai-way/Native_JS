@@ -1164,7 +1164,11 @@ let man3 = {
     ]
 };
 
-let man3FullCopy //  your code
+let man3FullCopy = {...man3, friends: {...man3.friends.map(el => ({...el}))}}
+
+man3FullCopy.friends[0].name = 'Dima'
+// console.log(man3)
+// console.log(man3FullCopy)
 
 
 // 7 Object inside an object, inside an object
