@@ -1051,3 +1051,35 @@ let tasks = {
 //
 // b[0].name = 'Grisha'
 // console.log(a)
+
+// let a = {
+//     name: 'Dima',
+//     age: 30,
+//     title: {
+//         name: 'USA'
+//     }
+// }
+//
+// let b = {
+//     ...a, title:{
+//         ...a.title
+//     }
+// }
+// console.log(b)
+
+let q = {
+    name: 'Name',
+    age: 20,
+    street: {
+        name: 'Grogobuch',
+        person: {
+            name: 'Oles',
+            age: 15
+        }
+    }
+}
+
+let w = {
+    ...q, street: {...q.street}, person: {...q.street.person}
+}
+console.log(w)
