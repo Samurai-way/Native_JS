@@ -1130,8 +1130,8 @@ let man2 = {
     friends: ["Peter", "Steven", "William"]
 };
 
-let man2FullCopy = {...man2}
-man2FullCopy.friends = [...man2.friends]
+let man2FullCopy = {...man2, friends: {...man2.friends}}
+// man2FullCopy.friends = [...man2.friends]
 // console.log(man2)
 man2FullCopy.friends[0] = 'Dima'
 // console.log(man2)
@@ -1146,7 +1146,11 @@ let people = [
 ];
 
 
-let peopleFullCopy  // your code
+let peopleFullCopy  = people.map(n => ({...n}))
+
+peopleFullCopy[0].name = 'Dima';
+// console.log(peopleFullCopy)
+// console.log(people)
 
 
 // 6 Array of objects inside object
