@@ -1039,14 +1039,15 @@ let tasks = {
 // let sum = students.reduce((acc, el) => +el.scores, 0)
 // // console.log(sum)
 
-let a = [
-    {name: 'Katya'}
-]
-
-let b = a.map(el => {
-    return {...el}
-})
-
-console.log(b)
-
-
+// let a = [
+//     {name: 'Katya'}
+// ]
+//
+// let b = a.map(el => {
+//     return {...el}
+// })
+//
+// // console.log(b)
+//
+// b[0].name = 'Grisha'
+// console.log(a)
