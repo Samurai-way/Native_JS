@@ -1185,7 +1185,14 @@ let man4 = {
     }
 };
 
-let man4FullCopy //  your code
+let man4FullCopy = {...man4, mother:
+        {...man4.mother},
+    work: {...man4.mother.work}
+}
+
+man4FullCopy.mother.name = 'Dima'
+// console.log(man4)
+// console.log(man4FullCopy)
 
 // 8 Array of objects inside object -> object
 let man5 = {
