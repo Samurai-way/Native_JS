@@ -1301,8 +1301,17 @@ let tasks = {
 // // console.log(man7FullCopy)
 // // console.log(man7)
 
-function inc(x,y,c){
-    return (x%y ==0 && x%c ==0) ? true : false
-}
+// function inc(x,y,c){
+//     return (x%y ==0 && x%c ==0) ? true : false
+// }
+//
+// console.log(inc(10, 2, 2))
 
-console.log(inc(10, 2, 2))
+// function between(a, b) {
+//     return Array.from(new Array(b - a + 1), x => a++ )
+// }
+//
+// console.log(between(-2, 2))
+//
+// it("between(1, 4)", () => assert.deepStrictEqual(between(1, 4), [1, 2, 3, 4]));
+// it("between(-2, 2)", () => assert.deepStrictEqual(between(-2, 2), [-2, -1, 0, 1, 2]));
