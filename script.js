@@ -1317,15 +1317,70 @@ let tasks = {
 // it("between(-2, 2)", () => assert.deepStrictEqual(between(-2, 2), [-2, -1, 0, 1, 2]));
 
 
-function getGrade (s1, s2, s3) {
-    return {
-        10: 'A',
-        9: 'A',
-        8: 'B',
-        7: 'C',
-        6: 'D'
-    }[Math.floor((s1 + s2 + s3) / 30)] || 'F'
+// function getGrade (s1, s2, s3) {
+//     return {
+//         10: 'A',
+//         9: 'A',
+//         8: 'B',
+//         7: 'C',
+//         6: 'D'
+//     }[Math.floor((s1 + s2 + s3) / 30)] || 'F'
+//
+// }
+//
+// console.log(getGrade(80, 85, 82))
 
+//
+// const rps = (p1, p2) => {
+//
+//     if (p1 === p2) return 'Draw!'
+//
+//     if (p1 === 'rock' && p2 === 'scissors') return 'Player 1 won!'
+//     if (p1 === 'paper' && p2 === 'rock') return 'Player 1 won!'
+//     if (p1 === 'scissors' && p2 === 'paper') return 'Player 1 won!'
+//     else {
+//         return 'Player 2 won!'
+//     }
+// };
+//
+// console.log(rps('scissors','rock' ))
+
+//
+// Test.assertEquals(rps('rock', 'scissors'), getMsg(1));
+// Test.assertEquals(rps('scissors', 'paper'), getMsg(1));
+// Test.assertEquals(rps('paper', 'rock'), getMsg(1));
+// });
+// function updateLight(current) {
+//     switch (current) {
+//         case current = 'green': return 'yellow';
+//             break
+//         case current = 'yellow': return 'red';
+//             break
+//         case current = 'red': return 'green'
+//         break
+//         default: alert('ky')
+//     }
+//
+// }
+//
+// console.log(updateLight('red'))
+
+// assert.strictEqual(updateLight("green"), "yellow");
+// assert.strictEqual(updateLight("yellow"), "red");
+// assert.strictEqual(updateLight("red"), "green");
+
+function points(games) {
+    let sum=0;
+    for (let i=0; i<games.length; ++i)
+    {
+        console.log(games[i][2])
+        if (games[i][0]>games[i][2])
+            sum+=3;
+        if (games[i][0]==games[i][2])
+            sum+=1;
+    }
+    return sum;
 }
 
-console.log(getGrade(80, 85, 82))
+points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
+
