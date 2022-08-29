@@ -1384,12 +1384,26 @@ let tasks = {
 //
 // points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
 
-function sum(a, b){
-    return a*b;
-}
-
-console.log(sum(0, 188))
+// function sum(a, b){
+//     return a*b;
+// }
+//
+// console.log(sum(0, 188))
 
 // multiply(2, 3) = 6
 // multiply(0, 188) = 0
 // multiply(85, 144) = 12240
+
+
+function descendingOrder(n){
+    return parseInt((n+'').split('').sort().reverse().join(''))
+}
+
+
+
+// assert.strictEqual(descendingOrder(0), 0)
+// assert.strictEqual(descendingOrder(1), 1)
+// assert.strictEqual(descendingOrder(111), 111)
+// assert.strictEqual(descendingOrder(15), 51)
+// assert.strictEqual(descendingOrder(1021), 2110)
+// assert.strictEqual(descendingOrder(123456789), 987654321)
