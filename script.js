@@ -1369,18 +1369,27 @@ let tasks = {
 // assert.strictEqual(updateLight("yellow"), "red");
 // assert.strictEqual(updateLight("red"), "green");
 
-function points(games) {
-    let sum=0;
-    for (let i=0; i<games.length; ++i)
-    {
-        console.log(games[i][2])
-        if (games[i][0]>games[i][2])
-            sum+=3;
-        if (games[i][0]==games[i][2])
-            sum+=1;
-    }
-    return sum;
+// function points(games) {
+//     let sum=0;
+//     for (let i=0; i<games.length; ++i)
+//     {
+//         console.log(games[i][2])
+//         if (games[i][0]>games[i][2])
+//             sum+=3;
+//         if (games[i][0]==games[i][2])
+//             sum+=1;
+//     }
+//     return sum;
+// }
+//
+// points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
+
+function sum(a, b){
+    return a*b;
 }
 
-points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
+console.log(sum(0, 188))
 
+// multiply(2, 3) = 6
+// multiply(0, 188) = 0
+// multiply(85, 144) = 12240
