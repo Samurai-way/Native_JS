@@ -1394,12 +1394,9 @@ let tasks = {
 // multiply(0, 188) = 0
 // multiply(85, 144) = 12240
 
-
-function descendingOrder(n){
-    return parseInt((n+'').split('').sort().reverse().join(''))
-}
-
-
+// function descendingOrder(n){
+//     return parseInt((n+'').split('').sort().reverse().join(''))
+// }
 
 // assert.strictEqual(descendingOrder(0), 0)
 // assert.strictEqual(descendingOrder(1), 1)
@@ -1407,3 +1404,38 @@ function descendingOrder(n){
 // assert.strictEqual(descendingOrder(15), 51)
 // assert.strictEqual(descendingOrder(1021), 2110)
 // assert.strictEqual(descendingOrder(123456789), 987654321)
+
+
+// function stray(numbers) {
+//     let arr = numbers[0];
+//
+//     for(let i = 1; i < numbers.length; i++){
+//         if(arr !== numbers[i]){
+//             return arr = numbers[i];
+//         }
+//     }
+//     return 0;
+// }
+//
+// console.log(stray([5,5,1]))
+//
+//
+function stray(numbers) {
+    return numbers.find((e) => numbers.filter((v) => v===e).length === 1);
+}
+//
+// console.log(stray([1,1,5]))
+
+// let str = (num) => num.find((e) => num.filter((f) => f === e).length === 1)
+
+let str = (num) =>
+    num.find((e) =>
+        num.filter((f) =>
+            f === e).length === 1)
+console.log(str([1, 1, 5]))
+
+// describe("Tests", () => {
+//     it("test", () => {
+//         Test.assertEquals(stray([1, 1, 2]), 2);
+//     });
+// });
