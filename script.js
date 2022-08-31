@@ -1442,15 +1442,32 @@ let tasks = {
 // });
 
 
-Kata = (function() {
-    function Kata() {}
+// Kata = (function() {
+//     function Kata() {}
+//
+//     Kata.getVolumeOfCuboid = function(length, width, height) {
+//         return length * width * height;
+//     };
+//
+//     return Kata;
+//
+// })();
+//
+// console.log(Kata.getVolumeOfCuboid(15,2,6))
 
-    Kata.getVolumeOfCuboid = function(length, width, height) {
-        return length * width * height;
-    };
 
-    return Kata;
+function invert(array) {
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] === '0') {
+            array[i] = array[i] * (1)
+        }
+        array[i] = array[i] * (-1)
+    }
+    return array
+}
 
-})();
+console.log(invert([1,2,3]))
 
-console.log(Kata.getVolumeOfCuboid(15,2,6))
+// invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+// invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+// invert([]) == []
