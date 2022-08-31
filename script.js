@@ -1456,18 +1456,33 @@ let tasks = {
 // console.log(Kata.getVolumeOfCuboid(15,2,6))
 
 
-function invert(array) {
-    for (let i = 0; i < array.length; i++) {
-        if(array[i] === '0') {
-            array[i] = array[i] * (1)
-        }
-        array[i] = array[i] * (-1)
-    }
-    return array
-}
-
-console.log(invert([1,2,3]))
+// function invert(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         if(array[i] === '0') {
+//             array[i] = array[i] * (1)
+//         }
+//         array[i] = array[i] * (-1)
+//     }
+//     return array
+// }
+//
+// console.log(invert([1,2,3]))
 
 // invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
 // invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
 // invert([]) == []
+
+
+
+function countSheeps(arrayOfSheep) {
+    return arrayOfSheep.filter(Boolean).length
+}
+
+console.log(countSheeps([true,true, false, true]))
+
+    // [true,  true,  true,  false,
+    // true,  true,  true,  true ,
+    // true,  false, true,  false,
+    // true,  false, false, true ,
+    // true,  true,  true,  true ,
+    // false, false, true,  true ];
