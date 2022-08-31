@@ -1420,22 +1420,37 @@ let tasks = {
 // console.log(stray([5,5,1]))
 //
 //
-function stray(numbers) {
-    return numbers.find((e) => numbers.filter((v) => v===e).length === 1);
-}
+// function stray(numbers) {
+//     return numbers.find((e) => numbers.filter((v) => v===e).length === 1);
+// }
+// //
+// // console.log(stray([1,1,5]))
 //
-// console.log(stray([1,1,5]))
-
-// let str = (num) => num.find((e) => num.filter((f) => f === e).length === 1)
-
-let str = (num) =>
-    num.find((e) =>
-        num.filter((f) =>
-            f === e).length === 1)
-console.log(str([1, 1, 5]))
+// // let str = (num) => num.find((e) => num.filter((f) => f === e).length === 1)
+//
+// let str = (num) =>
+//     num.find((e) =>
+//         num.filter((f) =>
+//             f === e).length === 1)
+//
+// console.log(str([1, 1, 5]))
 
 // describe("Tests", () => {
 //     it("test", () => {
 //         Test.assertEquals(stray([1, 1, 2]), 2);
 //     });
 // });
+
+
+Kata = (function() {
+    function Kata() {}
+
+    Kata.getVolumeOfCuboid = function(length, width, height) {
+        return length * width * height;
+    };
+
+    return Kata;
+
+})();
+
+console.log(Kata.getVolumeOfCuboid(15,2,6))
