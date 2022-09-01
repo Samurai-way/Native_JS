@@ -1554,11 +1554,22 @@ let tasks = {
 // repeatString("yo", 3, ",") => "yo,yo,yo"
 // for или str.repeat()
 
-let func = (str, number, strDEF) => {
-    return JSON.stringify(str.repeat(number).split(strDEF))
+// let func = (str, number, strDEF) => {
+//     return JSON.stringify(str.repeat(number).split(strDEF))
+// }
+
+function rep(a, count, x){
+    let string = '';
+    for(let i = 0; i <=count; i++){
+        string += a;
+        if(i < count) {
+            string += x
+        }
+    }
+    return string
 }
 
-// console.log(func('yo', 4, ' '))
+// console.log(rep('yo', 4, ' '))
 
 //2. Реализуйте функцию, которая принимает параметром
 // сторку и подстроку, а возвращает true,
@@ -1570,7 +1581,8 @@ let func = (str, number, strDEF) => {
 // str.startWith() slice indexOF
 
 let task2 = function(value, set){
-    return value.startsWith(set)
+    value = value.toLowerCase()
+    return set.split('').reduce((a,b) => value.includes(b) ? a : a + 1, 0) < 1
 }
 // console.log(task2("Incubator", "tor"))
 
@@ -1582,17 +1594,10 @@ let task2 = function(value, set){
 
 //truncateString("Всем студентам инкубатора желаю удачи!", 10) => "Всем студе..."
 
-function kitcut( text, limit) {
-    text = text.trim();
-    if( text.length <= limit) return text;
-    text = text.slice( 0, limit); // тупо отрезать по лимиту
-    lastSpace = text.lastIndexOf(" ");
-    if( lastSpace > 0) { // нашлась граница слов, ещё укорачиваем
-        text = text.substr(0, lastSpace);
-    }
-    return text + "...";
+function rizen( text, limit) {
+    return text.slice(0, limit) + '...'
 }
-// console.log(kitcut("Всем студентам инкубатора желаю удачи!", 5))
+// console.log(rizen("Всем студентам инкубатора желаю удачи!", 7))
 
 //4. Реализуйте функцию, которая принимает параметром сторку (предложение)
 // и возвращает самое короткое слово в предложении, если в параметрах пустая
@@ -1601,11 +1606,8 @@ function kitcut( text, limit) {
 // getMinLengthWord("") => null
 // split()
 
-function findLongestWord(str) {
-    return str.split(' ').reduce((a, b) => (b.length < a.length) ? b : a);
-};
-
-// console.log(findLongestWord("Всем студентам инкубатора желаю у"))
+let findLongestWord = (str) => str.split(' ').reduce((a, b) => (b.length < a.length) ? b : a);
+console.log(findLongestWord('Всем студентам инкубатора желаю удачи'))
 
 //5. Реализуйте функцию, которая принимает параметром сторку (предложение)
 // и возвращает то же предложение, где все слова написаны строчными, но начинаются с заглавных букв.
@@ -1623,7 +1625,10 @@ function capitalize(str) {
     return x;
 }
 
-// console.log(capitalize("всем стУдентам инкуБатора Желаю удачИ!"))
+console.log(capitalize("всем стУдентам инкуБатора Желаю удачИ!"))
+
+// return str.toLowerCase().split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
+
 
 //6. Реализуйте функцию, котрая принимает параметрами строку и подстроку. Если все
 // символы подстроки содержаться в стороке - возвращает true, если нет -
@@ -1652,4 +1657,4 @@ function inc(str1, str2){
     return true
 }
 
-// console.log(inc("Incubator", "Cut"))
+console.log(inc("Incubator", "Incubatorrr"))
