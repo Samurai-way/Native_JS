@@ -1472,17 +1472,77 @@ let tasks = {
 // invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
 // invert([]) == []
 
+// function countSheeps(arrayOfSheep) {
+//     return arrayOfSheep.filter(Boolean).length
+// }
+//
+// console.log(countSheeps([true,true, false, true]))
 
+// [true,  true,  true,  false,
+// true,  true,  true,  true ,
+// true,  false, true,  false,
+// true,  false, false, true ,
+// true,  true,  true,  true ,
+// false, false, true,  true ];
 
-function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.filter(Boolean).length
-}
+// function greet(name, owner){
+//     if (name === owner) {
+//         return 'Hello boss'
+//     } else {
+//         return 'Hello guest'
+//     }
+// }
+//
+// console.log(greet('Daniel', 'Daniel'))
 
-console.log(countSheeps([true,true, false, true]))
+// Test.assertEquals(greet('Daniel', 'Daniel'), 'Hello boss')
+// Test.assertEquals(greet('Greg', 'Daniel'), 'Hello guest')
 
-    // [true,  true,  true,  false,
-    // true,  true,  true,  true ,
-    // true,  false, true,  false,
-    // true,  false, false, true ,
-    // true,  true,  true,  true ,
-    // false, false, true,  true ];
+// function switchItUp(number){
+//     switch (number){
+//         case 0:
+//             return 'zero'
+//         case 1:
+//             return 'one'
+//         case 2:
+//             return 'two'
+//         case 3:
+//             return 'three'
+//         case 4:
+//             return 'four'
+//         case 5:
+//             return 'five'
+//         case 6:
+//             return 'six'
+//         case 7:
+//             return 'seven'
+//         case 8:
+//             return 'eight'
+//         case 9:
+//             return 'nine'
+//         break
+//         default:
+//             console.log('ky')
+//     }
+// }
+//
+// console.log(switchItUp(5))
+
+// function solution(str){
+//     return str.split('').reverse().join('')
+// }
+// console.log(solution('world'))
+
+// function bmi(weight, height) {
+//     let sum = weight / (height*height)
+//     if(sum <= 18.5) return "Underweight"
+//     if(sum <= 25.0) return "Normal"
+//     if(sum <= 30.0) return "Overweight"
+//     if(sum > 30) return "Obese"
+// }
+//
+// console.log(bmi(80, 1.80))
+
+// let abbrevName =(name) => name.split(" ").map(el => el[0].toUpperCase()).join(".")
+//
+// console.log(abbrevName('Petia Vasia'))
