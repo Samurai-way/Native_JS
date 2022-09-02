@@ -1642,19 +1642,36 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // isIncludes("Incubator", "inba") => true
 // isIncludes("Incubator", "Incubatorrr")=> true
 
-function inc(str1, str2){
-    let a = str1.toLowerCase().split('')
-    let b = str2.toLowerCase().split('')
+// function inc(str1, str2){
+//     let a = str1.toLowerCase().split('')
+//     let b = str2.toLowerCase().split('')
+//
+//     while(b.length) {
+//         if(a.includes(b[0])){
+//             a.splice(a.indexOf(b[0], 1))
+//             b.splice(0,1)
+//         } else {
+//             return false
+//         }
+//     }
+//     return true
+// }
+//
+// console.log(inc("Incubator", "Incubatorrr"))
 
-    while(b.length) {
-        if(a.includes(b[0])){
-            a.splice(a.indexOf(b[0], 1))
-            b.splice(0,1)
-        } else {
-            return false
-        }
-    }
-    return true
+// function enough(cap, on, wait) {
+//     return Math.max(wait + on - cap, 0)
+//
+// }
+//
+// console.log(enough(100, 60, 50))
+
+// assert.strictEqual(enough(10, 5, 5), 0);
+// assert.strictEqual(enough(100, 60, 50), 10);
+// assert.strictEqual(enough(20, 5, 5), 0);
+
+function century(year) {
+    return Math.floor((year-1)/100) +1;
 }
 
-console.log(inc("Incubator", "Incubatorrr"))
+console.log(century(1900))
