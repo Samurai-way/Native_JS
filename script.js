@@ -1670,8 +1670,31 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // assert.strictEqual(enough(100, 60, 50), 10);
 // assert.strictEqual(enough(20, 5, 5), 0);
 
-function century(year) {
-    return Math.floor((year-1)/100) +1;
+// function century(year) {
+//     return Math.floor((year-1)/100) +1;
+// }
+//
+// console.log(century(1900))
+
+
+function likes (names) {
+    if (names.length === 0) {
+        return 'no one likes this';
+    } else if (names.length === 1) {
+        return `${names[0]} likes this`;
+    } else if (names.length === 2) {
+        return `${names[0]} and ${names[1]} like this`;
+    } else if (names.length === 3) {
+        return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    } else if (names.length > 3) {
+        return `${names[0]}, ${names[1]} and ${names.length - 2} other like this`;
+    }
 }
 
-console.log(century(1900))
+console.log(likes(['Grisha', 'Vasia', 'Vasya']))
+
+// assert.strictEqual(likes([]), 'no one likes this');
+// assert.strictEqual(likes(['Peter']), 'Peter likes this');
+// assert.strictEqual(likes(['Jacob', 'Alex']), 'Jacob and Alex like this');
+// assert.strictEqual(likes(['Max', 'John', 'Mark']), 'Max, John and Mark like this');
+// assert.strictEqual(likes(['Alex', 'Jacob', 'Mark', 'Max']), 'Alex, Jacob and 2 others like this');
