@@ -1699,13 +1699,25 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // assert.strictEqual(likes(['Max', 'John', 'Mark']), 'Max, John and Mark like this');
 // assert.strictEqual(likes(['Alex', 'Jacob', 'Mark', 'Max']), 'Alex, Jacob and 2 others like this');
 
-function divisibleBy(numbers, divisor){
-    return numbers.filter(i => numbers.includes(i / divisor))
-}
-
-console.log(divisibleBy([1,2,3,4,5,6], 2))
+// function divisibleBy(numbers, divisor){
+//     return numbers.filter(i => numbers.includes(i / divisor))
+// }
+//
+// console.log(divisibleBy([1,2,3,4,5,6], 2))
 // Test.assertDeepEquals(divisibleBy([1,2,3,4,5,6], 2), [2,4,6]);
 // Test.assertDeepEquals(divisibleBy([1,2,3,4,5,6], 3), [3,6]);
 // Test.assertDeepEquals(divisibleBy([0,1,2,3,4,5,6], 4), [0,4]);
 // Test.assertDeepEquals(divisibleBy([0], 4), [0]);
 // Test.assertDeepEquals(divisibleBy([1,3,5], 2), []);
+// function typeValidation(variable, type) {
+//     if(typeof (variable) !== type){
+//         return false
+//     } else {
+//         return true
+//     }
+// }
+//
+// console.log(typeValidation(1, 'number'))
+// Test.assertEquals(typeValidation(42, "number"), true);
+// Test.assertEquals(typeValidation("42", "number"), false);
+
