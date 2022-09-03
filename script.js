@@ -1743,6 +1743,29 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //     }
 //     return result;
 // }
-
 // assert.deepEqual(sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4]);
 // assert.deepEqual(sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0]);
+
+
+// let filter_list = (l) =>
+//     JSON.stringify(l.filter(item => typeof item === "number"))
+//
+//
+// console.log(filter_list([1,'a','b',0,15]))
+//
+// function filter(l){
+//     let arr = []
+//     for (let i = 0; i < l.length; i++) {
+//         if(Number.isInteger(l[i])){
+//             arr.push(l[i])
+//         }
+//     }
+//     return arr
+// }
+//
+//
+// console.log(filter([1,2,'a','b']))
+
+// filter_list([1,2,'a','b']) == [1,2]
+// filter_list([1,'a','b',0,15]) == [1,0,15]
+// filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
