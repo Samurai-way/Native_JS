@@ -1764,15 +1764,32 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //
 //
 // console.log(filter([1,2,'a','b']))
-
 // filter_list([1,2,'a','b']) == [1,2]
 // filter_list([1,'a','b',0,15]) == [1,0,15]
 // filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
-
-let checkForFactor = (base, factor) => base % factor === 0 ? true : false
-console.log(checkForFactor(63,7))
-
+// let checkForFactor = (base, factor) => base % factor === 0 ? true : false
+// console.log(checkForFactor(63,7))
 // Test.assertEquals(checkForFactor(10,2), true)
 // Test.assertEquals(checkForFactor(63,7), true)
 // Test.assertEquals(checkForFactor(2450,5), true)
 // Test.assertEquals(checkForFactor(24612,3), true)
+
+function htmlspecialchars(formData) {
+    let arr = []
+    for (let i = 0; i < formData.length; i++) {
+        if(formData[i] == '<') {
+            arr.push('&lt;')
+        } else if(formData[i] == '>') {
+            arr.push('&gt;')
+        } else if(formData[i] == '"') {
+            arr.push('&quot;')
+        } else if(formData[i] == '&') {
+            arr.push('&amp;')
+        } else {
+            arr.push(formData[i])
+        }
+    }
+    return arr.join('')
+}
+
+console.log(htmlspecialchars('Hello, how would you & I fare?'))
