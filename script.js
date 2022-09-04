@@ -1746,7 +1746,6 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // assert.deepEqual(sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4]);
 // assert.deepEqual(sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0]);
 
-
 // let filter_list = (l) =>
 //     JSON.stringify(l.filter(item => typeof item === "number"))
 //
@@ -1769,3 +1768,11 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // filter_list([1,2,'a','b']) == [1,2]
 // filter_list([1,'a','b',0,15]) == [1,0,15]
 // filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+let checkForFactor = (base, factor) => base % factor === 0 ? true : false
+console.log(checkForFactor(63,7))
+
+// Test.assertEquals(checkForFactor(10,2), true)
+// Test.assertEquals(checkForFactor(63,7), true)
+// Test.assertEquals(checkForFactor(2450,5), true)
+// Test.assertEquals(checkForFactor(24612,3), true)
