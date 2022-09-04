@@ -1774,22 +1774,32 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // Test.assertEquals(checkForFactor(2450,5), true)
 // Test.assertEquals(checkForFactor(24612,3), true)
 
-function htmlspecialchars(formData) {
-    let arr = []
-    for (let i = 0; i < formData.length; i++) {
-        if(formData[i] == '<') {
-            arr.push('&lt;')
-        } else if(formData[i] == '>') {
-            arr.push('&gt;')
-        } else if(formData[i] == '"') {
-            arr.push('&quot;')
-        } else if(formData[i] == '&') {
-            arr.push('&amp;')
-        } else {
-            arr.push(formData[i])
-        }
-    }
-    return arr.join('')
+// function htmlspecialchars(formData) {
+//     let arr = []
+//     for (let i = 0; i < formData.length; i++) {
+//         if(formData[i] == '<') {
+//             arr.push('&lt;')
+//         } else if(formData[i] == '>') {
+//             arr.push('&gt;')
+//         } else if(formData[i] == '"') {
+//             arr.push('&quot;')
+//         } else if(formData[i] == '&') {
+//             arr.push('&amp;')
+//         } else {
+//             arr.push(formData[i])
+//         }
+//     }
+//     return arr.join('')
+// }
+//
+// console.log(htmlspecialchars('Hello, how would you & I fare?'))
+
+function factorial(n){
+    return n ? n * factorial(n - 1) : 1;
 }
 
-console.log(htmlspecialchars('Hello, how would you & I fare?'))
+// Test.assertEquals(factorial(0), 1);
+// Test.assertEquals(factorial(1), 1);
+// Test.assertEquals(factorial(4), 24);
+// Test.assertEquals(factorial(7), 5040);
+// Test.assertEquals(factorial(17), 355687428096000);
