@@ -1793,13 +1793,21 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // }
 //
 // console.log(htmlspecialchars('Hello, how would you & I fare?'))
-
-function factorial(n){
-    return n ? n * factorial(n - 1) : 1;
-}
-
+// function factorial(n){
+//     return n ? n * factorial(n - 1) : 1;
+// }
 // Test.assertEquals(factorial(0), 1);
 // Test.assertEquals(factorial(1), 1);
 // Test.assertEquals(factorial(4), 24);
 // Test.assertEquals(factorial(7), 5040);
 // Test.assertEquals(factorial(17), 355687428096000);
+
+function grow(x){
+    return x.reduce((a,b) => a*b)
+}
+
+console.log(grow([1,2,3,4]))
+
+// assert.strictEqual(grow([1, 2, 3]), 6);
+// assert.strictEqual(grow([4, 1, 1, 1, 4]), 16);
+// assert.strictEqual(grow([2, 2, 2, 2, 2, 2]), 64);
