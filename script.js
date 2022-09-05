@@ -1801,13 +1801,17 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // Test.assertEquals(factorial(4), 24);
 // Test.assertEquals(factorial(7), 5040);
 // Test.assertEquals(factorial(17), 355687428096000);
-
-function grow(x){
-    return x.reduce((a,b) => a*b)
-}
-
-console.log(grow([1,2,3,4]))
-
+// function grow(x){
+//     return x.reduce((a,b) => a*b)
+// }
+//
+// console.log(grow([1,2,3,4]))
 // assert.strictEqual(grow([1, 2, 3]), 6);
 // assert.strictEqual(grow([4, 1, 1, 1, 4]), 16);
 // assert.strictEqual(grow([2, 2, 2, 2, 2, 2]), 64);
+
+function decoration(n){
+    return n **3
+}
+
+console.log(decoration(10))
