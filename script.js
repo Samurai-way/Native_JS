@@ -1810,8 +1810,16 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // assert.strictEqual(grow([4, 1, 1, 1, 4]), 16);
 // assert.strictEqual(grow([2, 2, 2, 2, 2, 2]), 64);
 
-function decoration(n){
-    return n **3
-}
+// function decoration(n){
+//     return n **3
+// }
+//
+// console.log(decoration(10))
 
-console.log(decoration(10))
+let solution = (str, ending) => str.endsWith(ending) ? true : false
+
+
+console.log(solution('abcde', 'cde'))
+
+// Test.assertEquals(solution('abcde', 'cde'), true)
+// Test.assertEquals(solution('abcde', 'abc'), false)
