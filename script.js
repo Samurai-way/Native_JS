@@ -1840,6 +1840,22 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // console.log(twiceAsOld(55,30))
 
 // assert.strictEqual(twiceAsOld(36,7) , 22);
-let opposite = (number) => number > 0 ? -(number) : - (number)
+// let opposite = (number) => number > 0 ? -(number) : - (number)
+//
+// console.log(opposite(1))
 
-console.log(opposite(1))
+function removeUrlAnchor(url){
+    let result = url.split('#')[0]
+    return result
+}
+console.log(removeUrlAnchor('www.codewars.com#about'))
+
+function create(num){
+    let a = ''
+    for (let i = 0; i < num.length; i++) {
+        if(num[i] === '#') {break}
+        a = a + num[i]
+    }
+    return a
+}
+console.log(create('www.codewars.com#about'))
