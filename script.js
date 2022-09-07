@@ -1815,11 +1815,23 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // }
 //
 // console.log(decoration(10))
-
-let solution = (str, ending) => str.endsWith(ending) ? true : false
-
-
-console.log(solution('abcde', 'cde'))
-
+// let solution = (str, ending) => str.endsWith(ending) ? true : false
+// console.log(solution('abcde', 'cde'))
 // Test.assertEquals(solution('abcde', 'cde'), true)
-// Test.assertEquals(solution('abcde', 'abc'), false)
+// Test.assertEquals(solution('abcde', 'abc'), false)le
+// function generateShape(integer){
+//     return ('+'.repeat(integer) + '\n').repeat(integer).trim()
+//     return (  )
+// }
+//
+// console.log(generateShape(4))
+
+
+function sumnum(num){
+    return num * (num+1) / 2
+}
+
+console.log(sumnum(8))
+
+// Test.assertEquals(summation(1), 1)
+// Test.assertEquals(summation(8), 36)
