@@ -1825,13 +1825,18 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // }
 //
 // console.log(generateShape(4))
-
-
-function sumnum(num){
-    return num * (num+1) / 2
-}
-
-console.log(sumnum(8))
-
+//
+// function sumnum(num){
+//     return num * (num+1) / 2
+// }
+//
+// console.log(sumnum(8))
 // Test.assertEquals(summation(1), 1)
 // Test.assertEquals(summation(8), 36)
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - (sonYearsOld + sonYearsOld))
+}
+
+console.log(twiceAsOld(55,30))
+
+// assert.strictEqual(twiceAsOld(36,7) , 22);
