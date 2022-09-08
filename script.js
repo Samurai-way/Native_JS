@@ -1843,19 +1843,29 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // let opposite = (number) => number > 0 ? -(number) : - (number)
 //
 // console.log(opposite(1))
+//
+// function removeUrlAnchor(url){
+//     let result = url.split('#')[0]
+//     return result
+// }
+// console.log(removeUrlAnchor('www.codewars.com#about'))
+//
+// function create(num){
+//     let a = ''
+//     for (let i = 0; i < num.length; i++) {
+//         if(num[i] === '#') {break}
+//         a = a + num[i]
+//     }
+//     return a
+// }
+// console.log(create('www.codewars.com#about'))
 
-function removeUrlAnchor(url){
-    let result = url.split('#')[0]
-    return result
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
 }
-console.log(removeUrlAnchor('www.codewars.com#about'))
 
-function create(num){
-    let a = ''
-    for (let i = 0; i < num.length; i++) {
-        if(num[i] === '#') {break}
-        a = a + num[i]
-    }
-    return a
-}
-console.log(create('www.codewars.com#about'))
+console.log(reverseWords("yoda doesn't speak like this" ))
+
+let a = (b) => b.split(' ').reverse().join(' ')
+
+console.log(a('hello my dear friends'))
