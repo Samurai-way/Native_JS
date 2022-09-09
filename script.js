@@ -1870,8 +1870,8 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //
 // console.log(a('hello my dear friends'))
 
-const bonusTime = (salary, bonus) => bonus ? '£' + salary * 10 : salary
-console.log(bonusTime(2000,true))
+// const bonusTime = (salary, bonus) => bonus ? '£' + salary * 10 : salary
+// console.log(bonusTime(2000,true))
 
 // assert.strictEqual(bonusTime(10000, true), '£100000');
 // assert.strictEqual(bonusTime(25000, true), '£250000');
@@ -1880,3 +1880,10 @@ console.log(bonusTime(2000,true))
 // assert.strictEqual(bonusTime(2, true), '£20');
 // assert.strictEqual(bonusTime(78, false), '£78');
 // assert.strictEqual(bonusTime(67890, true), '£678900');
+
+function last(x){
+    return x.split(' ').sort((a,b)=> a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1))
+}
+console.log(last('take me to semynak'))
+
+// assert.deepEqual(last('take me to semynak'), ['take', 'me', 'semynak', 'to']);
