@@ -1913,3 +1913,68 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // }
 //
 // console.log(greet())
+// function getCount(str) {
+//     let vowel = 'aeiou';
+//     let vcount = 0;
+//     for(let x = 0; x < str.length ; x++) {
+//         if (vowel.indexOf(str[x]) !== -1) {
+//             vcount += 1;
+//         }
+//     }
+//     return vcount;
+// }
+//
+// const getCount = (str) => (str.match(/[aeiou]/ig) || []).length
+
+// console.log(get(("aaabracadabra")))
+
+// console.log(getCount(("abracadabra")))
+// var str = "hieeelalaooo"; //строка
+// var vowels = "aeiouy"; //гласные
+// var pos=0, res;
+// var res = str.charAt(0);
+// for (var i = 0; i <= str.length; i++) {
+//     for (var j = 0; j <= vowels.length; j++) {
+//         if (pos == i) continue;//если есть позиция букву которой мы взяли то пропускаем
+//         if (str[i] != vowels[j]) {//если согласная то
+//             pos = i + 2;//позиция увеличивается на два
+//         } else {
+//             pos = i + 3;//если гласная то на три
+//         }
+//     }
+//     res += str[pos];//получаем букву
+//     console.log(res)
+// }
+
+// const count =(arr)=> arr.reduce((acc, n) => (acc[n] = (acc[n] || 0) + 1, acc), {});
+// const duplicateCount=(num)=> Object.values(num).filter(n => n > 1).length;
+
+// function maxCount(str){
+//     let obj = {};
+//     for(let i = 0 ; i < str.length; i++){
+//         let key = str[i];
+//         if(obj[key]){
+//             obj[key]++
+//         }else {
+//             obj[key] = 1;
+//         }
+//     }
+//
+//     let maxCount = 0 ;
+//     let maxString = "";
+//     for(let key in obj){
+//         if(maxCount < obj[key]){
+//             maxCount = obj[key];
+//             maxString = key;
+//         }
+//     }
+//     return maxCount;
+// }
+
+
+const maxChar = (array) =>
+    array.filter(e =>
+        e === array.filter(arr =>
+            arr === 1).length).length
+
+console.log(maxChar([1, 4, 1, 2, 11, 2, 3, 1]))
