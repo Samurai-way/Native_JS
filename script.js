@@ -1900,8 +1900,16 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //
 // console.log(findNextPower(8, 3))
 // assert.strictEqual(findNextPower(8, 3), 27)
-
-let checkAlive = (health) => health > 0 ? true : false
-
+// let checkAlive = (health) => health > 0 ? true : false
 // Test.assertEquals(checkAlive(5), true)
 // Test.assertEquals(checkAlive(0), false)
+
+function greet() {
+    if ('PUTIN HUILO') {
+        return 'hello world!';
+    } else {
+        return 'Putin huilo!!'
+    }
+}
+
+console.log(greet())
