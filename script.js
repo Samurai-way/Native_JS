@@ -1558,11 +1558,11 @@ let tasks = {
 //     return JSON.stringify(str.repeat(number).split(strDEF))
 // }
 
-function rep(a, count, x){
+function rep(a, count, x) {
     let string = '';
-    for(let i = 0; i <=count; i++){
+    for (let i = 0; i <= count; i++) {
         string += a;
-        if(i < count) {
+        if (i < count) {
             string += x
         }
     }
@@ -1580,9 +1580,9 @@ function rep(a, count, x){
 // checkStart("Incubator", "yo") => false
 // str.startWith() slice indexOF
 
-let task2 = function(value, set){
+let task2 = function (value, set) {
     value = value.toLowerCase()
-    return set.split('').reduce((a,b) => value.includes(b) ? a : a + 1, 0) < 1
+    return set.split('').reduce((a, b) => value.includes(b) ? a : a + 1, 0) < 1
 }
 // console.log(task2("Incubator", "tor"))
 
@@ -1594,9 +1594,10 @@ let task2 = function(value, set){
 
 //truncateString("Всем студентам инкубатора желаю удачи!", 10) => "Всем студе..."
 
-function rizen( text, limit) {
+function rizen(text, limit) {
     return text.slice(0, limit) + '...'
 }
+
 // console.log(rizen("Всем студентам инкубатора желаю удачи!", 7))
 
 //4. Реализуйте функцию, которая принимает параметром сторку (предложение)
@@ -1880,10 +1881,23 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // assert.strictEqual(bonusTime(2, true), '£20');
 // assert.strictEqual(bonusTime(78, false), '£78');
 // assert.strictEqual(bonusTime(67890, true), '£678900');
-
-function last(x){
-    return x.split(' ').sort((a,b)=> a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1))
-}
-console.log(last('take me to semynak'))
-
+// function last(x){
+//     return x.split(' ').sort((a,b)=> a.charCodeAt(a.length -1) - b.charCodeAt(b.length - 1))
+// }
+// console.log(last('take me to semynak'))
 // assert.deepEqual(last('take me to semynak'), ['take', 'me', 'semynak', 'to']);
+
+function findNextPower(val, pow_) {
+    if (val == 1) {
+        return 2 ** pow_
+    }
+    for (let i = 0; i <= val ; i++) {
+        if(i ** pow_ > val) {
+            return i ** pow_
+        }
+    }
+}
+
+console.log(findNextPower(8, 3))
+
+// assert.strictEqual(findNextPower(8, 3), 27)
