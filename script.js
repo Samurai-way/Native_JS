@@ -1887,17 +1887,21 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // console.log(last('take me to semynak'))
 // assert.deepEqual(last('take me to semynak'), ['take', 'me', 'semynak', 'to']);
 
-function findNextPower(val, pow_) {
-    if (val == 1) {
-        return 2 ** pow_
-    }
-    for (let i = 0; i <= val ; i++) {
-        if(i ** pow_ > val) {
-            return i ** pow_
-        }
-    }
-}
-
-console.log(findNextPower(8, 3))
-
+// function findNextPower(val, pow_) {
+//     if (val == 1) {
+//         return 2 ** pow_
+//     }
+//     for (let i = 0; i <= val ; i++) {
+//         if(i ** pow_ > val) {
+//             return i ** pow_
+//         }
+//     }
+// }
+//
+// console.log(findNextPower(8, 3))
 // assert.strictEqual(findNextPower(8, 3), 27)
+
+let checkAlive = (health) => health > 0 ? true : false
+
+// Test.assertEquals(checkAlive(5), true)
+// Test.assertEquals(checkAlive(0), false)
