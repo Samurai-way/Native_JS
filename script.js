@@ -1904,12 +1904,12 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // Test.assertEquals(checkAlive(5), true)
 // Test.assertEquals(checkAlive(0), false)
 
-function greet() {
-    if ('PUTIN HUILO') {
-        return 'hello world!';
-    } else {
-        return 'Putin huilo!!'
-    }
-}
-
-console.log(greet())
+// function greet() {
+//     if ('PUTIN HUILO') {
+//         return 'hello world!';
+//     } else {
+//         return 'Putin huilo!!'
+//     }
+// }
+//
+// console.log(greet())
