@@ -2002,14 +2002,14 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //     }
 // }
 
-function geometricSequenceElements(a, r, n) {
-    if (n === 1) {
-        return a
-    } else {
-        return geometricSequenceElements(a, r, n - 1) * r
-    }
-}
-console.log(geometricSequenceElements(2, 2, 10))
+// function geometricSequenceElements(a, r, n) {
+//     if (n === 1) {
+//         return a
+//     } else {
+//         return geometricSequenceElements(a, r, n - 1) * r
+//     }
+// }
+// console.log(geometricSequenceElements(2, 2, 10))
 //
 // var startNumber = 3;
 // var multiplier = 3;
@@ -2023,3 +2023,5 @@ console.log(geometricSequenceElements(2, 2, 10))
 //         console.log (startNumber);
 //     }
 // }
+
+
