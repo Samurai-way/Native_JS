@@ -2024,4 +2024,14 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //     }
 // }
 
+function breakChocolate(n,m) {
+    if (n <=0 || m <= 0){
+        return 0
+    } else {
+        return n * m -1
+    }
+}
 
+console.log(breakChocolate(8,8))
+// Test.assertEquals(breakChocolate(5, 5) , 24)
+// Test.assertEquals(breakChocolate(1, 1) , 0)
