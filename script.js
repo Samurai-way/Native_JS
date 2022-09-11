@@ -1970,11 +1970,25 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //     }
 //     return maxCount;
 // }
-
-
-const maxChar = (array) =>
-    array.filter(e =>
-        e === array.filter(arr =>
-            arr === 1).length).length
-
-console.log(maxChar([1, 4, 1, 2, 11, 2, 3, 1]))
+// const maxChar = (array) =>
+//     array.filter(e =>
+//         e === array.filter(arr =>
+//             arr === 1).length).length
+//
+// console.log(maxChar([1, 4, 1, 2, 11, 2, 3, 1])
+const hero = (bullets, dragons) => bullets >= 2*dragons
+console.log(hero(0, 1))
+// assert.strictEqual(hero(10, 5), true);
+// assert.strictEqual(hero(7, 4), false);
+// assert.strictEqual(hero(4, 5), false);
+// assert.strictEqual(hero(100, 40), true);
+// assert.strictEqual(hero(1500, 751), false);
+// assert.strictEqual(hero(0, 1), false);
+const paperwork = (n, m) => n > 0 && m > 0 ? n * m : 0
+console.log(paperwork(5,-5))
+// If n < 0 or m < 0 return 0
+// assert.strictEqual(paperwork(5,5), 25, 'Failed at paperwork(5, 5)');
+// assert.strictEqual(paperwork(5,-5), 0, 'Failed at paperwork(5, -5)');
+// assert.strictEqual(paperwork(-5,-5), 0, 'Failed at paperwork(-5, -5)');
+// assert.strictEqual(paperwork(-5,5), 0, 'Failed at paperwork(-5, 5)');
+// assert.strictEqual(paperwork(5,0), 0, 'Failed at paperwork(5, 0)');
