@@ -386,32 +386,32 @@
 // }
 //
 // console.log(summNumb([14,15]))
+//
+// const tasksTitle = [
+//     {
+//         id: 1,
+//         title: 'hello my dear friend',
+//         filter: 'all',
+//     },
+//     {
+//         id: 2,
+//         title: 'hello my dear friend',
+//         filter: 'all',
+//     }
+// ]
 
-const tasksTitle = [
-    {
-        id: 1,
-        title: 'hello my dear friend',
-        filter: 'all',
-    },
-    {
-        id: 2,
-        title: 'hello my dear friend',
-        filter: 'all',
-    }
-]
-
-let tasks = {
-    1: [
-        {id: 11, titles: 'JS', isDone: false},
-        {id: 13, titles: 'CSS', isDone: false},
-        {id: 15, titles: 'Ract', isDone: false},
-    ],
-    2: [
-        {id: 20, titles: 'Cola', isDone: false},
-        {id: 21, titles: 'Water', isDone: false},
-        {id: 30, titles: 'Sprite', isDone: false},
-    ]
-}
+// let tasks = {
+//     1: [
+//         {id: 11, titles: 'JS', isDone: false},
+//         {id: 13, titles: 'CSS', isDone: false},
+//         {id: 15, titles: 'Ract', isDone: false},
+//     ],
+//     2: [
+//         {id: 20, titles: 'Cola', isDone: false},
+//         {id: 21, titles: 'Water', isDone: false},
+//         {id: 30, titles: 'Sprite', isDone: false},
+//     ]
+// }
 
 // console.log(tasks[1].find(t => t.id === 13))
 // console.log([...tasks[1], {id: 17, title: 'KY'}])
@@ -1608,7 +1608,7 @@ function rizen(text, limit) {
 // split()
 
 let findLongestWord = (str) => str.split(' ').reduce((a, b) => (b.length < a.length) ? b : a);
-console.log(findLongestWord('Всем студентам инкубатора желаю удачи'))
+// console.log(findLongestWord('Всем студентам инкубатора желаю удачи'))
 
 //5. Реализуйте функцию, которая принимает параметром сторку (предложение)
 // и возвращает то же предложение, где все слова написаны строчными, но начинаются с заглавных букв.
@@ -1626,7 +1626,7 @@ function capitalize(str) {
     return x;
 }
 
-console.log(capitalize("всем стУдентам инкуБатора Желаю удачИ!"))
+// console.log(capitalize("всем стУдентам инкуБатора Желаю удачИ!"))
 
 // return str.toLowerCase().split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
 
@@ -2042,13 +2042,35 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 //         return Math.pow(array.find((element) => element == array[n]), n);
 //     }
 // }
-
-
-function maskify(cc) {
-    return cc.split('').map((el, index) => index < cc.length - 4 ? '#' : el).join('')
-}
-
-console.log(maskify('4556364607935616'))
+// function maskify(cc) {
+//     return cc.split('').map((el, index) => index < cc.length - 4 ? '#' : el).join('')
+// }
+//
+// console.log(maskify('4556364607935616'))
 // Test.assertEquals(maskify('4556364607935616'), '############5616');
 // Test.assertEquals(maskify('1'), '1');
 // Test.assertEquals(maskify('11111'), '#1111');
+
+// const person = {
+//     name: 'Dima',
+//     age: 10,
+//     city: {
+//         name: 'Lviv',
+//         number: 1
+//     }
+// }
+//
+//
+// let copy = {...person, city: {...person.city}}
+//
+//
+// copy.age = 15
+// copy.city.name = 'Kiev'
+// console.log(copy)
+// console.log(person)
+
+function numberToString(num) {
+    return JSON.stringify(num)
+}
+
+console.log(numberToString(67))
