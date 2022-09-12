@@ -2035,8 +2035,13 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // Test.assertEquals(breakChocolate(5, 5) , 24)
 // Test.assertEquals(breakChocolate(1, 1) , 0)
 
-function removeEveryOther(arr) {
-    return arr.filter((_, index) => index % 2 === 0 )
+function index(array, n){
+    if (array[n] == undefined) {
+        return -1;
+    }  else {
+        return Math.pow(array.find((element) => element == array[n]), n);
+    }
 }
 
-console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+
+console.log(index([1, 2, 3, 4],2))
