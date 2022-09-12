@@ -2035,13 +2035,20 @@ console.log(capitalize("всем стУдентам инкуБатора Жел�
 // Test.assertEquals(breakChocolate(5, 5) , 24)
 // Test.assertEquals(breakChocolate(1, 1) , 0)
 
-function index(array, n){
-    if (array[n] == undefined) {
-        return -1;
-    }  else {
-        return Math.pow(array.find((element) => element == array[n]), n);
-    }
+// function index(array, n){
+//     if (array[n] == undefined) {
+//         return -1;
+//     }  else {
+//         return Math.pow(array.find((element) => element == array[n]), n);
+//     }
+// }
+
+
+function maskify(cc) {
+    return cc.split('').map((el, index) => index < cc.length - 4 ? '#' : el).join('')
 }
 
-
-console.log(index([1, 2, 3, 4],2))
+console.log(maskify('4556364607935616'))
+// Test.assertEquals(maskify('4556364607935616'), '############5616');
+// Test.assertEquals(maskify('1'), '1');
+// Test.assertEquals(maskify('11111'), '#1111');
