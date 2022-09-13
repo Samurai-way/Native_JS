@@ -2105,26 +2105,46 @@ function capitalize(str) {
 // Test.assertSimilar(repeatStr(5, "#"), "#####");
 // Test.assertSimilar(repeatStr(2, "ha "), "ha ha ");
 
-function findUniq(arr) {
-    let result = '';
-    let j;
-    for (let i = 0; i < arr.length; i++) {
-        for (j = 0; j < arr.length; j++)
-            if (i != j && arr[i] == arr[j]) {
-                result = arr[i];
-                break;
-            }
-        if (j == arr.length)
-            return arr[i];
-    }
-    return result;
-}
-
-console.log(findUniq([ 0, 0, 1 ]))
-
-// assert.strictEqual(findUniq([ 1, 0, 0 ]), 1);
-// assert.strictEqual(findUniq([ 0, 1, 0 ]), 1);
-// assert.strictEqual(findUniq([ 0, 0, 1 ]), 1);
-// assert.strictEqual(findUniq([ 1, 1, 1, 2, 1, 1 ]), 2);
-// assert.strictEqual(findUniq([ 1, 1, 2, 1, 1 ]), 2);
-// assert.strictEqual(findUniq([ 3, 10, 3, 3, 3 ]), 10);
+// function findUniq(arr) {
+//     let result = '';
+//     let j;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (j = 0; j < arr.length; j++)
+//             if (i != j && arr[i] == arr[j]) {
+//                 result = arr[i];
+//                 break;
+//             }
+//         if (j == arr.length)
+//             return arr[i];
+//     }
+//     return result;
+// }
+//
+// console.log(findUniq([ 0, 0, 1,1,2,2,5 ]))
+//
+// // assert.strictEqual(findUniq([ 1, 0, 0 ]), 1);
+// // assert.strictEqual(findUniq([ 0, 1, 0 ]), 1);
+// // assert.strictEqual(findUniq([ 0, 0, 1 ]), 1);
+// // assert.strictEqual(findUniq([ 1, 1, 1, 2, 1, 1 ]), 2);
+// // assert.strictEqual(findUniq([ 1, 1, 2, 1, 1 ]), 2);
+// // assert.strictEqual(findUniq([ 3, 10, 3, 3, 3 ]), 10);
+//
+// function other(arr){
+//     let a = ''
+//     let x;
+//
+//     for (let i = 0; i < arr.length; i++) {
+//         for (x = 0; x < arr.length; x++) {
+//             if(i !== x && arr[i] === arr[x]){
+//                 a = arr[i]
+//                 {break}
+//             }
+//             if(x == a){
+//                 return arr[i]
+//             }
+//         }
+//     }
+//     return a
+// }
+//
+// console.log(other([ 1, 0, 0,1,5 ]))
