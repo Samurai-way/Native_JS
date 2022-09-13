@@ -2090,18 +2090,41 @@ function capitalize(str) {
 // Test.assertEquals(longest("aretheyhere", "yestheyarehere"), "aehrsty")
 // Test.assertEquals(longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu")
 // Test.assertEquals(longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy")
-
-function repeatStr (n, s) {
-    let a = [];
-    while(a.length < n){
-        a.push(s);
-
-    }
-    return a.join('');
-}
-
-repeatStr(3, 'ha')
-
+//
+// function repeatStr (n, s) {
+//     let a = [];
+//     while(a.length < n){
+//         a.push(s);
+//
+//     }
+//     return a.join('');
+// }
+//
+// repeatStr(3, 'ha')
 // Test.assertSimilar(repeatStr(3, "*"), "***");
 // Test.assertSimilar(repeatStr(5, "#"), "#####");
 // Test.assertSimilar(repeatStr(2, "ha "), "ha ha ");
+
+function findUniq(arr) {
+    let result = '';
+    let j;
+    for (let i = 0; i < arr.length; i++) {
+        for (j = 0; j < arr.length; j++)
+            if (i != j && arr[i] == arr[j]) {
+                result = arr[i];
+                break;
+            }
+        if (j == arr.length)
+            return arr[i];
+    }
+    return result;
+}
+
+console.log(findUniq([ 0, 0, 1 ]))
+
+// assert.strictEqual(findUniq([ 1, 0, 0 ]), 1);
+// assert.strictEqual(findUniq([ 0, 1, 0 ]), 1);
+// assert.strictEqual(findUniq([ 0, 0, 1 ]), 1);
+// assert.strictEqual(findUniq([ 1, 1, 1, 2, 1, 1 ]), 2);
+// assert.strictEqual(findUniq([ 1, 1, 2, 1, 1 ]), 2);
+// assert.strictEqual(findUniq([ 3, 10, 3, 3, 3 ]), 10);
