@@ -2073,23 +2073,35 @@ function capitalize(str) {
 // }
 //
 // console.log(numberToString(67))
-
-function longest(s1, s2) {
-    let s3 = s1 + s2
-    let c = {};
-    let r = '';
-    for (let i = 0; i < s3.length; i++) {
-        if (!c[s3[i]]) {
-            r = r + s3[i];
-            c[s3[i]] = 1;
-        }
-    }
-    return r.split('').sort().join('');
-}
-
-console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
-
-
+// function longest(s1, s2) {
+//     let s3 = s1 + s2
+//     let c = {};
+//     let r = '';
+//     for (let i = 0; i < s3.length; i++) {
+//         if (!c[s3[i]]) {
+//             r = r + s3[i];
+//             c[s3[i]] = 1;
+//         }
+//     }
+//     return r.split('').sort().join('');
+// }
+//
+// console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"))
 // Test.assertEquals(longest("aretheyhere", "yestheyarehere"), "aehrsty")
 // Test.assertEquals(longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu")
 // Test.assertEquals(longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy")
+
+function repeatStr (n, s) {
+    let a = [];
+    while(a.length < n){
+        a.push(s);
+
+    }
+    return a.join('');
+}
+
+repeatStr(3, 'ha')
+
+// Test.assertSimilar(repeatStr(3, "*"), "***");
+// Test.assertSimilar(repeatStr(5, "#"), "#####");
+// Test.assertSimilar(repeatStr(2, "ha "), "ha ha ");
