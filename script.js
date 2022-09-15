@@ -2148,3 +2148,11 @@ function capitalize(str) {
 // }
 //
 // console.log(other([ 1, 0, 0,1,5 ]))
+
+// function digitize(n) {
+//     return String(n).split('').reverse().map(el => +el)
+// }
+//
+// console.log(digitize(35231))
+// assert.deepEqual(digitize(35231),[1,3,2,5,3]);
+// assert.deepEqual(digitize(0),[0]);
