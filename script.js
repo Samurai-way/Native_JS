@@ -2156,3 +2156,17 @@ function capitalize(str) {
 // console.log(digitize(35231))
 // assert.deepEqual(digitize(35231),[1,3,2,5,3]);
 // assert.deepEqual(digitize(0),[0]);
+
+function vaporcode(string) {
+  let res = '';
+    for (let i = 0; i < string.length; i++) {
+        if(string[i] != ' '){
+            res += string[i] + '  ';
+        }
+    }
+    return res.toUpperCase().trim()
+}
+console.log(vaporcode("Lets go to the movies"))
+
+// assert.strictEqual(vaporcode("Lets go to the movies"),"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S");
+// assert.strictEqual(vaporcode("Why isnt my code working"),"W  H  Y  I  S  N  T  M  Y  C  O  D  E  W  O  R  K  I  N  G")
