@@ -2157,16 +2157,37 @@ function capitalize(str) {
 // assert.deepEqual(digitize(35231),[1,3,2,5,3]);
 // assert.deepEqual(digitize(0),[0]);
 
-function vaporcode(string) {
-  let res = '';
-    for (let i = 0; i < string.length; i++) {
-        if(string[i] != ' '){
-            res += string[i] + '  ';
-        }
-    }
-    return res.toUpperCase().trim()
-}
-console.log(vaporcode("Lets go to the movies"))
+// function vaporcode(string) {
+//   let res = '';
+//     for (let i = 0; i < string.length; i++) {
+//         if(string[i] != ' '){
+//             res += string[i] + '  ';
+//         }
+//     }
+//     return res.toUpperCase().trim()
+// }
+// console.log(vaporcode("Lets go to the movies"))
 
 // assert.strictEqual(vaporcode("Lets go to the movies"),"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S");
 // assert.strictEqual(vaporcode("Why isnt my code working"),"W  H  Y  I  S  N  T  M  Y  C  O  D  E  W  O  R  K  I  N  G")
+
+let person = {
+    name: 'Dima',
+    age: 30,
+    isDone: true,
+    date: {
+        street: 'Volodimira',
+        house: 15
+    },
+    steck: ['JS', 'HTML', 'REACT', 'CSS']
+}
+
+let copy = {
+    ...person, name: 'Petya',
+    isDone: false,
+    date: {...person.date, house: 10, street: 'Kovaleva'},
+    steck: ['Angular', ...person.steck.slice(4), 'React']
+}
+
+console.log(copy)
+console.log(person)
