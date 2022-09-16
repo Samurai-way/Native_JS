@@ -2226,8 +2226,74 @@ function capitalize(str) {
 // assert.strictEqual(sumTwoSmallestNumbers([23, 71, 33, 82, 1]), 24 , "Sum should be 24");
 // assert.strictEqual(sumTwoSmallestNumbers([52, 76, 14, 12, 4]), 16 , "Sum should be 16");
 
-function sumTwoSmallestNumbers(numbers) {
-    let [ a, b ] = numbers.sort((a, b) => a - b)
-    return a + b
+// function sumTwoSmallestNumbers(numbers) {
+//     let [ a, b ] = numbers.sort((a, b) => a - b)
+//     return a + b
+// }
+// console.log(sumTwoSmallestNumbers([23, 71, 33, 82, 1]))
+
+// let arr = [
+//     {id: 1, title: "What to learn", filter: "all"},
+//     {id: 2, title: "What to buy", filter: "all"}
+// ]
+// let copy = arr.map(el => ({...el}))
+// copy[0].filter = 'React'
+// copy[1].id = 10
+//
+//
+// console.log(copy)
+
+
+///                                                               10
+
+let man7 = {
+    name: 'John',
+    age: 28,
+    mother: {
+        name: "Kate",
+        age: 50,
+        work: {
+            position: "doctor",
+            experience: 15
+        },
+        parents: [
+            {
+                name: "Kevin",
+                age: 80,
+                favoriteDish: {
+                    title: "borscht",
+                    ingredients: [
+                        {title: "beet", amount: 3},
+                        {title: "potatoes", amount: 5},
+                        {title: "carrot", amount: 1},
+                    ]
+                }
+            },
+            {
+                name: "Jennifer",
+                age: 78,
+                favoriteDish: {
+                    title: "sushi",
+                    ingredients: [
+                        {title: "fish", amount: 1},
+                        {title: "rise", amount: 0.5}
+                    ]
+                }
+            },
+        ]
+    }
+};
+
+let man7FullCopy  = {
+    ...man7,
+    mother: {
+        ...man7.mother,
+        work: {...man7.mother.work},
+        parents: [...man7.mother.parents.map(e => ({...e, favoriteDish: {...e.favoriteDish, ingredients:
+                    [...e.favoriteDish.ingredients.map(e => ({...e}))]}}))]
+    }
 }
-console.log(sumTwoSmallestNumbers([23, 71, 33, 82, 1]))
+
+man7FullCopy.mother.parents[0].favoriteDish.ingredients[0].title = 'sushi'
+console.log(man7)
+console.log(man7FullCopy)
