@@ -2168,6 +2168,9 @@ function capitalize(str) {
 // }
 // console.log(vaporcode("Lets go to the movies"))
 
+
+                                                        //  16.09
+
 // assert.strictEqual(vaporcode("Lets go to the movies"),"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S");
 // assert.strictEqual(vaporcode("Why isnt my code working"),"W  H  Y  I  S  N  T  M  Y  C  O  D  E  W  O  R  K  I  N  G")
 // let person = {
@@ -2190,18 +2193,41 @@ function capitalize(str) {
 //
 // console.log(copy)
 // console.log(person)
+// let arr = [
+//     {id: 1, title: "What to learn", filter: "all"},
+//     {id: 2, title: "What to buy", filter: "all"}
+// ]
+//
+// let copy = [
+//     ...arr,
+//     arr[0].filter = 'active',
+//     arr[0].id = 5,
+//     arr[1].title = 'shugor'
+// ]
+//
+// console.log(copy)
+// console.log(arr)
+// let vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+// function arrayClone(arr) {
+//    return arr = [
+//         ...vegetables.slice(1)
+//     ]
+// }
+//
+// console.log(arrayClone(['Капуста', 'Репа', 'Редиска', 'Морковка']))
 
-let arr = [
-    {id: 1, title: "What to learn", filter: "all"},
-    {id: 2, title: "What to buy", filter: "all"}
-]
+// let vegetables = ['Капуста', 'Репа', 'Редиска', 'Морковка'];
+// console.log(vegetables.join(','))
+// console.log(vegetables.toString())
+//
+// assert.strictEqual(sumTwoSmallestNumbers([5, 8, 12, 19, 22]), 13 , "Sum should be 13");
+// assert.strictEqual(sumTwoSmallestNumbers([15, 28, 4, 2, 43]), 6 , "Sum should be 6");
+// assert.strictEqual(sumTwoSmallestNumbers([3, 87, 45, 12, 7]), 10 , "Sum should be 10");
+// assert.strictEqual(sumTwoSmallestNumbers([23, 71, 33, 82, 1]), 24 , "Sum should be 24");
+// assert.strictEqual(sumTwoSmallestNumbers([52, 76, 14, 12, 4]), 16 , "Sum should be 16");
 
-let copy = [
-    ...arr,
-    arr[0].filter = 'active',
-    arr[0].id = 5,
-    arr[1].title = 'shugor'
-]
-
-console.log(copy)
-console.log(arr)
+function sumTwoSmallestNumbers(numbers) {
+    let [ a, b ] = numbers.sort((a, b) => a - b)
+    return a + b
+}
+console.log(sumTwoSmallestNumbers([23, 71, 33, 82, 1]))
