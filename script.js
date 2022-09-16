@@ -2170,24 +2170,38 @@ function capitalize(str) {
 
 // assert.strictEqual(vaporcode("Lets go to the movies"),"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S");
 // assert.strictEqual(vaporcode("Why isnt my code working"),"W  H  Y  I  S  N  T  M  Y  C  O  D  E  W  O  R  K  I  N  G")
+// let person = {
+//     name: 'Dima',
+//     age: 30,
+//     isDone: true,
+//     date: {
+//         street: 'Volodimira',
+//         house: 15
+//     },
+//     steck: ['JS', 'HTML', 'REACT', 'CSS']
+// }
+//
+// let copy = {
+//     ...person, name: 'Petya',
+//     isDone: false,
+//     date: {...person.date, house: 10, street: 'Kovaleva'},
+//     steck: ['Angular', ...person.steck.slice(4), 'React']
+// }
+//
+// console.log(copy)
+// console.log(person)
 
-let person = {
-    name: 'Dima',
-    age: 30,
-    isDone: true,
-    date: {
-        street: 'Volodimira',
-        house: 15
-    },
-    steck: ['JS', 'HTML', 'REACT', 'CSS']
-}
+let arr = [
+    {id: 1, title: "What to learn", filter: "all"},
+    {id: 2, title: "What to buy", filter: "all"}
+]
 
-let copy = {
-    ...person, name: 'Petya',
-    isDone: false,
-    date: {...person.date, house: 10, street: 'Kovaleva'},
-    steck: ['Angular', ...person.steck.slice(4), 'React']
-}
+let copy = [
+    ...arr,
+    arr[0].filter = 'active',
+    arr[0].id = 5,
+    arr[1].title = 'shugor'
+]
 
 console.log(copy)
-console.log(person)
+console.log(arr)
