@@ -2315,3 +2315,21 @@ function capitalize(str) {
 //
 // console.log(man)
 // console.log(copy)
+
+let person = [
+    {name: 'dima', two_name: 'pupkin', age: 10},
+    {
+        name: 'dima',
+        two_name: 'pupkin',
+        age: 10,
+        country: {
+            city: 'Lviv'
+        }
+    }
+]
+
+let copy = person.map(el => ({...el, country: {...person[1].country}}))
+
+copy[1].country.city = 'Gorod'
+console.log(person)
+console.log(copy)
