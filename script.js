@@ -2316,20 +2316,29 @@ function capitalize(str) {
 // console.log(man)
 // console.log(copy)
 
-let person = [
-    {name: 'dima', two_name: 'pupkin', age: 10},
-    {
-        name: 'dima',
-        two_name: 'pupkin',
-        age: 10,
-        country: {
-            city: 'Lviv'
-        }
-    }
-]
+// let person = [
+//     {name: 'dima', two_name: 'pupkin', age: 10},
+//     {
+//         name: 'dima',
+//         two_name: 'pupkin',
+//         age: 10,
+//         country: {
+//             city: 'Lviv'
+//         }
+//     }
+// ]
+//
+// let copy = person.map(el => ({...el, country: {...person[1].country}}))
+//
+// copy[1].country.city = 'Gorod'
+// console.log(person)
+// console.log(copy)
 
-let copy = person.map(el => ({...el, country: {...person[1].country}}))
+function greet(name){
+    return `Hello, ${name} how are you doing today?`
+}
 
-copy[1].country.city = 'Gorod'
-console.log(person)
-console.log(copy)
+console.log(greet("Ryan"))
+
+// assert.strictEqual(greet("Ryan"), "Hello, Ryan how are you doing today?");
+// assert.strictEqual(greet("Shingles"), "Hello, Shingles how are you doing today?");
