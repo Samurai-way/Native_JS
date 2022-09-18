@@ -38,7 +38,7 @@ let b = {
     ...arr,
     'isDone': 15
 }
-console.log(b)
+// console.log(b)
 
 let person = {
     'name': {
@@ -52,4 +52,15 @@ let person = {
 }
 person.name.street = 'Kharkov'
 person.sorname = 'Ivanov'
-console.log(person)
+// console.log(person)
+
+
+const binaryArrayToNumber = arr => {
+    return parseInt((arr + '')
+        .replace(/[^01]/gi, ''), 2);
+ }
+console.log(binaryArrayToNumber([0,0,1,0]))
+// Test.assertEquals(binaryArrayToNumber([0,0,0,1]), 1);
+// Test.assertEquals(binaryArrayToNumber([0,0,1,0]), 2);
+// Test.assertEquals(binaryArrayToNumber([1,1,1,1]), 15);
+// Test.assertEquals(binaryArrayToNumber([0,1,1,0]), 6);
