@@ -59,8 +59,23 @@ const binaryArrayToNumber = arr => {
     return parseInt((arr + '')
         .replace(/[^01]/gi, ''), 2);
  }
-console.log(binaryArrayToNumber([0,0,1,0]))
+// console.log(binaryArrayToNumber([0,0,1,0]))
 // Test.assertEquals(binaryArrayToNumber([0,0,0,1]), 1);
 // Test.assertEquals(binaryArrayToNumber([0,0,1,0]), 2);
 // Test.assertEquals(binaryArrayToNumber([1,1,1,1]), 15);
 // Test.assertEquals(binaryArrayToNumber([0,1,1,0]), 6);
+
+function longestConsec(strarr, k) {
+    if (strarr.length == 0 || k > strarr.length || k <= 0) return '';
+    let longStr = '';
+    let newStr = '';
+    for (let i = 0; i < strarr.length; i++){
+        newStr = strarr.slice(i, i+k);
+        if (newStr.join('').length > longStr.length ){
+            longStr = newStr.join('');
+        }
+    }
+    return longStr;
+}
+
+console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
