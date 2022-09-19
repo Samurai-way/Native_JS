@@ -1,81 +1,52 @@
-                                            //      7 kyu
-
-// function getSum( a,b ) {
-//     let min = Math.min(a,b),
-//         max = Math.max(a,b)
-//     return (max - min + 1) * (max + min) / 2
-// }
-//
-// console.log(getSum(0, 1))
-// // assert.strictEqual(getSum(0,-1),-1);
-// // assert.strictEqual(getSum(0,1),1);
-
-                                            // Repeat
-
-// let person = {
-//     name: 'Dima',
-//     age: 15,
-//     info:[
-//         {name: 'Kiev', street: 'Soborna'}
-//     ]
-// }
-// let copy = {
-//     ...person,
-//     info: person.info.map(e => ({...e}))
-// }
-//
-// copy.info[0].street = 'Green'
-// console.log(copy)
-// console.log(person)
-                                    // Associatove massive
 let arr = {
-    'one': 1,
-    'two': 2,
-    'isDone': true,
-    'name': 'Dima'
+    'sos': 'pisos'
 }
-let b = {
-    ...arr,
-    'isDone': 15
+
+arr['sos'] = ['pis']
+
+// console.log(arr)
+
+
+function findShort(s) {
+    let arr = []
+    s.split(' ').map(el => {
+        // console.log(el.length)
+        arr.push(el.length)
+
+    })
+    return Math.min(...arr)
+
 }
-// console.log(b)
 
-let person = {
-    'name': {
-        'city': 'Kiev',
-        'street': 'Soborna'
-    },
-    'street':{
-        name: 'Soborna',
-        'age': 20
-    }
-}
-person.name.street = 'Kharkov'
-person.sorname = 'Ivanov'
-// console.log(person)
+// console.log(findShort("turns o random test cases are easier writing out basic ones"))
 
 
-const binaryArrayToNumber = arr => {
-    return parseInt((arr + '')
-        .replace(/[^01]/gi, ''), 2);
- }
-// console.log(binaryArrayToNumber([0,0,1,0]))
-// Test.assertEquals(binaryArrayToNumber([0,0,0,1]), 1);
-// Test.assertEquals(binaryArrayToNumber([0,0,1,0]), 2);
-// Test.assertEquals(binaryArrayToNumber([1,1,1,1]), 15);
-// Test.assertEquals(binaryArrayToNumber([0,1,1,0]), 6);
+// assert.strictEqual(findShort("bitcoin take over the world maybe who knows perhaps"), 3);
+// assert.strictEqual(findShort("turns out random test cases are easier than writing out basic ones"), 3);
+// assert.strictEqual(findShort("Let's travel abroad shall we"), 2);
 
-function longestConsec(strarr, k) {
-    if (strarr.length == 0 || k > strarr.length || k <= 0) return '';
-    let longStr = '';
-    let newStr = '';
-    for (let i = 0; i < strarr.length; i++){
-        newStr = strarr.slice(i, i+k);
-        if (newStr.join('').length > longStr.length ){
-            longStr = newStr.join('');
+function tidyNumber(n) {
+    let a = n.toString().split('')
+    for (let i = 0; i < a.length - 1; i++) {
+        if (a[i] <= a[i + 1]) {
+            return false
         }
+        return true
     }
-    return longStr;
+}
+// console.log(tidyNumber(891))
+// Test.assertEquals(tidyNumber(12),true);
+// Test.assertEquals(tidyNumber(102),false);
+// Test.assertEquals(tidyNumber(9672),false);
+// Test.assertEquals(tidyNumber(2789),true);
+// Test.assertEquals(tidyNumber(2335),true);
+
+function disemvowel(str) {
+    return str.toLowerCase().replace(/[aeiouy]/gi, '')
 }
 
-console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
+console.log(disemvowel("This website is for losers LOL!"))
+
+// assert.strictEqual(disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!"), "Ths wbst s fr lsrs LL!")
+// assert.strictEqual(disemvowel("No offense but,\nYour writing is among the worst I've ever read"), "N ffns bt,\nYr wrtng s mng th wrst 'v vr rd")
+// assert.strictEqual(disemvowel("What are you, a communist?"), "Wht r y,  cmmnst?")
