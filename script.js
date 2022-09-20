@@ -55,14 +55,29 @@ function correct(string){
     return string.replace(/5/gi, 'S').replace(/1/gi, 'I').replace(/0/gi, 'O')
 }
 
-console.log(correct("PAR15"))
-//
-// S is misinterpreted as 5
-// O is misinterpreted as 0
-// I is misinterpreted as 1
+// console.log(correct("PAR15"))
 
-// assert.strictEqual(correct("L0ND0N"),"LONDON");
-// assert.strictEqual(correct("DUBL1N"),"DUBLIN");
-// assert.strictEqual(correct("51NGAP0RE"),"SINGAPORE");
-// assert.strictEqual(correct("BUDAPE5T"),"BUDAPEST");
-// assert.strictEqual(correct("PAR15"),"PARIS");
+function greet(language) {
+    return (el => el[language] || 'Welcome')
+    ({
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso'
+    })
+}
+
+console.log(greet('dutch'))
