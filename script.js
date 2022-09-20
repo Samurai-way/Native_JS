@@ -45,8 +45,24 @@ function disemvowel(str) {
     return str.toLowerCase().replace(/[aeiouy]/gi, '')
 }
 
-console.log(disemvowel("This website is for losers LOL!"))
+// console.log(disemvowel("This website is for losers LOL!"))
 
 // assert.strictEqual(disemvowel("This website is for losers LOL!"), "Ths wbst s fr lsrs LL!"), "Ths wbst s fr lsrs LL!")
 // assert.strictEqual(disemvowel("No offense but,\nYour writing is among the worst I've ever read"), "N ffns bt,\nYr wrtng s mng th wrst 'v vr rd")
 // assert.strictEqual(disemvowel("What are you, a communist?"), "Wht r y,  cmmnst?")
+
+function correct(string){
+    return string.replace(/5/gi, 'S').replace(/1/gi, 'I').replace(/0/gi, 'O')
+}
+
+console.log(correct("PAR15"))
+//
+// S is misinterpreted as 5
+// O is misinterpreted as 0
+// I is misinterpreted as 1
+
+// assert.strictEqual(correct("L0ND0N"),"LONDON");
+// assert.strictEqual(correct("DUBL1N"),"DUBLIN");
+// assert.strictEqual(correct("51NGAP0RE"),"SINGAPORE");
+// assert.strictEqual(correct("BUDAPE5T"),"BUDAPEST");
+// assert.strictEqual(correct("PAR15"),"PARIS");
