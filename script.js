@@ -84,3 +84,13 @@ function greet(language) {
 
 let otherAngle = (a, b) =>  180 - a - b
 
+function minMax(arr){
+   let a =  Math.min(...arr)
+    let b = Math.max(...arr)
+    return [a,b]
+}
+
+console.log(minMax([1,2,3,4,5]))
+// [1,2,3,4,5] --> [1,5]
+//     [2334454,5] --> [5,2334454]
+//     [1]         --> [1,1]
