@@ -80,4 +80,7 @@ function greet(language) {
     })
 }
 
-console.log(greet('dutch'))
+
+
+let otherAngle = (a, b) =>  180 - a - b
+
