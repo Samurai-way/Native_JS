@@ -34,6 +34,7 @@ function tidyNumber(n) {
         return true
     }
 }
+
 // console.log(tidyNumber(891))
 // Test.assertEquals(tidyNumber(12),true);
 // Test.assertEquals(tidyNumber(102),false);
@@ -51,7 +52,7 @@ function disemvowel(str) {
 // assert.strictEqual(disemvowel("No offense but,\nYour writing is among the worst I've ever read"), "N ffns bt,\nYr wrtng s mng th wrst 'v vr rd")
 // assert.strictEqual(disemvowel("What are you, a communist?"), "Wht r y,  cmmnst?")
 
-function correct(string){
+function correct(string) {
     return string.replace(/5/gi, 'S').replace(/1/gi, 'I').replace(/0/gi, 'O')
 }
 
@@ -81,16 +82,29 @@ function greet(language) {
 }
 
 
+let otherAngle = (a, b) => 180 - a - b
 
-let otherAngle = (a, b) =>  180 - a - b
-
-function minMax(arr){
-   let a =  Math.min(...arr)
+function minMax(arr) {
+    let a = Math.min(...arr)
     let b = Math.max(...arr)
-    return [a,b]
+    return [a, b]
 }
 
-console.log(minMax([1,2,3,4,5]))
 // [1,2,3,4,5] --> [1,5]
 //     [2334454,5] --> [5,2334454]
 //     [1]         --> [1,1]
+function removeSmallest(numbers) {
+    if(!numbers)return [];
+    let min=Math.min.apply(null,numbers);
+    let newArr = numbers.slice(0);
+    newArr.splice(newArr.indexOf(min),1);
+    return newArr;
+}
+
+console.log(removeSmallest([1, 2, 3, 4, 5]))
+
+// Test.assertSimilar(removeSmallest([1, 2, 3, 4, 5]), [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]");
+// Test.assertSimilar(removeSmallest([5, 3, 2, 1, 4]), [5, 3, 2, 4], "Wrong result for [5, 3, 2, 1, 4]");
+// Test.assertSimilar(removeSmallest([2, 2, 1, 2, 1]), [2, 2, 2, 1], "Wrong result for [2, 2, 1, 2, 1]");
+// Test.assertSimilar(removeSmallest([]), [], "Wrong result for []");
+
