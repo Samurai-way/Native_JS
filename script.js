@@ -119,7 +119,7 @@ function finalGrade(exam, projects) {
         return 0
     }
 }
-console.log(finalGrade(100,12))
+// console.log(finalGrade(100,12))
 // 100, 12 --> 100
 // 99, 0 --> 100
 // 10, 15 --> 100
@@ -133,3 +133,21 @@ console.log(finalGrade(100,12))
 
 // assert.strictEqual(finalGrade(100, 12), 100);
 // assert.strictEqual(finalGrade(85, 5), 90);
+
+function toAcronym(inp){
+    let a = inp.split(' ')
+    let b = []
+    for (let i = 0; i < a.length; i++) {
+            b.push(a[i][0])
+    }
+    return b.join('').toUpperCase()
+}
+
+console.log(toAcronym("Code Wars"))
+// let tests = [
+//     ["Code Wars", "CW"],
+//     ["Water Closet", "WC"],
+//     ["Portable Network Graphics", "PNG"],
+//     ["PHP: Hypertext Preprocessor", "PHP"],
+//     ["hyper text markup language", "HTML"]
+// ];
