@@ -94,17 +94,42 @@ function minMax(arr) {
 //     [2334454,5] --> [5,2334454]
 //     [1]         --> [1,1]
 function removeSmallest(numbers) {
-    if(!numbers)return [];
-    let min=Math.min.apply(null,numbers);
+    if (!numbers) return [];
+    let min = Math.min.apply(null, numbers);
     let newArr = numbers.slice(0);
-    newArr.splice(newArr.indexOf(min),1);
+    newArr.splice(newArr.indexOf(min), 1);
     return newArr;
 }
 
-console.log(removeSmallest([1, 2, 3, 4, 5]))
+// console.log(removeSmallest([1, 2, 3, 4, 5]))
 
 // Test.assertSimilar(removeSmallest([1, 2, 3, 4, 5]), [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]");
 // Test.assertSimilar(removeSmallest([5, 3, 2, 1, 4]), [5, 3, 2, 4], "Wrong result for [5, 3, 2, 1, 4]");
 // Test.assertSimilar(removeSmallest([2, 2, 1, 2, 1]), [2, 2, 2, 1], "Wrong result for [2, 2, 1, 2, 1]");
 // Test.assertSimilar(removeSmallest([]), [], "Wrong result for []");
 
+function finalGrade(exam, projects) {
+    if (exam > 90 || projects > 10) {
+        return 100
+    } else if (exam > 75 && projects >= 5) {
+        return 90
+    } else if (exam > 50 && projects >= 2) {
+        return 75
+    } else {
+        return 0
+    }
+}
+console.log(finalGrade(100,12))
+// 100, 12 --> 100
+// 99, 0 --> 100
+// 10, 15 --> 100
+//
+// 85, 5 --> 90
+//
+// 55, 3 --> 75
+//
+// 55, 0 --> 0
+// 20, 2 --> 0
+
+// assert.strictEqual(finalGrade(100, 12), 100);
+// assert.strictEqual(finalGrade(85, 5), 90);
