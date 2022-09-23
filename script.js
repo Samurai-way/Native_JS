@@ -158,10 +158,28 @@ let person = {
         secondName: 'Dimych'
     }
 }
-let copy = {
-    ...person,
-    name: {
-        ...person.name
-    }
+// let copy = {
+//     ...person,
+//     name: {
+//         ...person.name
+//     }
+// }
+// copy.name.firstName = 'Artur'
+
+// let a = 7
+// console.log(a)
+// let b = new Promise(function (resolve, reject) {
+//     setInterval(()=>{
+//         resolve(a = 100)
+//     }, 2000)
+//
+// })
+// b.then(function (){
+//     console.log(a)
+// })
+
+
+let a = (b) => {
+    return b * 5
 }
-copy.name.firstName = 'Artur'
+console.log(a(10))
