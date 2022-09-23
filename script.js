@@ -143,7 +143,7 @@ function toAcronym(inp){
     return b.join('').toUpperCase()
 }
 
-console.log(toAcronym("Code Wars"))
+// console.log(toAcronym("Code Wars"))
 // let tests = [
 //     ["Code Wars", "CW"],
 //     ["Water Closet", "WC"],
@@ -151,3 +151,17 @@ console.log(toAcronym("Code Wars"))
 //     ["PHP: Hypertext Preprocessor", "PHP"],
 //     ["hyper text markup language", "HTML"]
 // ];
+
+let person = {
+    name: {
+        firstName: 'Dima',
+        secondName: 'Dimych'
+    }
+}
+let copy = {
+    ...person,
+    name: {
+        ...person.name
+    }
+}
+copy.name.firstName = 'Artur'
