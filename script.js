@@ -119,6 +119,7 @@ function finalGrade(exam, projects) {
         return 0
     }
 }
+
 // console.log(finalGrade(100,12))
 // 100, 12 --> 100
 // 99, 0 --> 100
@@ -134,11 +135,11 @@ function finalGrade(exam, projects) {
 // assert.strictEqual(finalGrade(100, 12), 100);
 // assert.strictEqual(finalGrade(85, 5), 90);
 
-function toAcronym(inp){
+function toAcronym(inp) {
     let a = inp.split(' ')
     let b = []
     for (let i = 0; i < a.length; i++) {
-            b.push(a[i][0])
+        b.push(a[i][0])
     }
     return b.join('').toUpperCase()
 }
@@ -188,9 +189,17 @@ let person = {
 const SmallestIntegerFinder = (args) => {
     return Math.min(...args)
 }
-console.log(SmallestIntegerFinder([34, -345, -1, 100]))
-// assert.strictEqual(sif.findSmallestInt([78,56,232,12,8]),8,'Should return the smallest int 8');
-// assert.strictEqual(sif.findSmallestInt([78,56,232,12,18]),12,'Should return the smallest int 12');
-// assert.strictEqual(sif.findSmallestInt([78,56,232,412,228]),56,'Should return the smallest int 56');
-// assert.strictEqual(sif.findSmallestInt([78,56,232,12,0]),0,'Should return the smallest int 0');
-// assert.strictEqual(sif.findSmallestInt([1,56,232,12,8]),1,'Should return the smallest int 1');
+
+// console.log(SmallestIntegerFinder([34, -345, -1, 100]))
+
+let likeOrDislike = (buttons) => buttons.reduce((p,c) => c == p ? Nothing : c,Nothing)
+
+
+// console.log(likeOrDislike(["Dislike","Dislike"]))
+c
+// assert.strictEqual( likeOrDislike([Dislike,Dislike]), Nothing );
+// assert.strictEqual( likeOrDislike([Like,Like,Like]), Like );
+// assert.strictEqual( likeOrDislike([Like,Dislike]), Dislike );
+// assert.strictEqual( likeOrDislike([Dislike,Like,Dislike]), Dislike );
+// assert.strictEqual( likeOrDislike([Like,Like,Dislike,Like,Like,Like,Like,Dislike]), Dislike );
+// assert.strictEqual( likeOrDislike([]), Nothing );
