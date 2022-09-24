@@ -194,12 +194,17 @@ const SmallestIntegerFinder = (args) => {
 
 let likeOrDislike = (buttons) => buttons.reduce((p,c) => c == p ? Nothing : c,Nothing)
 
+function getMiddle(s) {
+    let a = s.split('')
+    while (a.length > 2){
+        a.pop()
+        a.shift()
+    }
+    return a.join('')
+}
 
-// console.log(likeOrDislike(["Dislike","Dislike"]))
-c
-// assert.strictEqual( likeOrDislike([Dislike,Dislike]), Nothing );
-// assert.strictEqual( likeOrDislike([Like,Like,Like]), Like );
-// assert.strictEqual( likeOrDislike([Like,Dislike]), Dislike );
-// assert.strictEqual( likeOrDislike([Dislike,Like,Dislike]), Dislike );
-// assert.strictEqual( likeOrDislike([Like,Like,Dislike,Like,Like,Like,Like,Dislike]), Dislike );
-// assert.strictEqual( likeOrDislike([]), Nothing );
+console.log(getMiddle("testing"))
+// Test.assertEquals(getMiddle("test"),"es");
+// Test.assertEquals(getMiddle("testing"),"t");
+// Test.assertEquals(getMiddle("middle"),"dd");
+// Test.assertEquals(getMiddle("A"),"A");
