@@ -179,7 +179,18 @@ let person = {
 // })
 
 
-let a = (b) => {
-    return b * 5
+// let a = (b) => {
+//     return b * 5
+// }
+// console.log(a(10))
+
+
+const SmallestIntegerFinder = (args) => {
+    return Math.min(...args)
 }
-console.log(a(10))
+console.log(SmallestIntegerFinder([34, -345, -1, 100]))
+// assert.strictEqual(sif.findSmallestInt([78,56,232,12,8]),8,'Should return the smallest int 8');
+// assert.strictEqual(sif.findSmallestInt([78,56,232,12,18]),12,'Should return the smallest int 12');
+// assert.strictEqual(sif.findSmallestInt([78,56,232,412,228]),56,'Should return the smallest int 56');
+// assert.strictEqual(sif.findSmallestInt([78,56,232,12,0]),0,'Should return the smallest int 0');
+// assert.strictEqual(sif.findSmallestInt([1,56,232,12,8]),1,'Should return the smallest int 1');
