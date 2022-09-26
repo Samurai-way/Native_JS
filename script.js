@@ -229,4 +229,15 @@ let isSquare = function(n){
         let result = Math.sqrt(n);
         return (result % 1 === 0);
     }
-console.log(isSquare(25))
+// console.log(isSquare(25))
+
+const sequenceSum = (begin, end, step) => {
+    let sum = 0
+    for (let i = begin; i <= end; i += step) sum += i;
+    return sum
+};
+console.log(sequenceSum(1,5, 1))
+
+// assert.strictEqual(sequenceSum(2, 6, 2), 12)
+// assert.strictEqual(sequenceSum(1, 5, 1), 15)
+// assert.strictEqual(sequenceSum(1, 5, 3), 5)
