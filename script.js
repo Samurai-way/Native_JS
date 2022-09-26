@@ -236,8 +236,20 @@ const sequenceSum = (begin, end, step) => {
     for (let i = begin; i <= end; i += step) sum += i;
     return sum
 };
-console.log(sequenceSum(1,5, 1))
+// console.log(sequenceSum(1,5, 1))
 
 // assert.strictEqual(sequenceSum(2, 6, 2), 12)
 // assert.strictEqual(sequenceSum(1, 5, 1), 15)
 // assert.strictEqual(sequenceSum(1, 5, 3), 5)
+
+function highAndLow(numbers){
+    let arr = numbers.split(' ')
+    let max = Math.max(...arr)
+    let min = Math.min(...arr)
+    return [max, min].join(' ')
+
+}
+console.log(highAndLow("1 9 3 4 -5"))
+// highAndLow("1 2 3 4 5");  // return "5 1"
+// highAndLow("1 2 -3 4 5"); // return "5 -3"
+// highAndLow("1 9 3 4 -5"); // return "9 -5"
