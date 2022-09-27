@@ -298,3 +298,15 @@ console.log(isTriangle(1,2,2))
 
 // assert.strictEqual(isTriangle(1,2,2), true);
 // assert.strictEqual(isTriangle(7,2,2), false);
+
+const user = {
+    age: 18,
+    showAge(){
+        console.log(this.age)
+    }
+}
+const animal = {
+    age: 2,
+    getMyAge: user.showAge.bind(user)
+}
+animal.getMyAge()
