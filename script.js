@@ -253,3 +253,13 @@ console.log(highAndLow("1 9 3 4 -5"))
 // highAndLow("1 2 3 4 5");  // return "5 1"
 // highAndLow("1 2 -3 4 5"); // return "5 -3"
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
+
+function nameShuffler(str){
+    let arr = str.split(' ').reverse().join(' ')
+    return arr
+}
+
+console.log(nameShuffler('Mary jeggins'))
+// assert.strictEqual(nameShuffler('john McClane'),'McClane john');
+// assert.strictEqual(nameShuffler('Mary jeggins'),'jeggins Mary')
+// assert.strictEqual(nameShuffler('tom jerry'),'jerry tom')
