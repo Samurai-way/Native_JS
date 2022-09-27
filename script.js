@@ -266,9 +266,35 @@ function nameShuffler(str){
 
 let friend = (friends) => friends.filter(el => el.length === 4)
 
-console.log(friend(["Love", "Your", "Face", "1"]))
+// console.log(friend(["Love", "Your", "Face", "1"]))
 
 // (friend(["Ryan", "Kieran", "Mark"]), ["Ryan", "Mark"])
 // (friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]), ["Ryan"])
 // (friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]), ["Jimm", "Cari", "aret"])
 // (friend(["Love", "Your", "Face", "1"]), ["Love", "Your", "Face"])
+
+function isTriangle(a,b,c) {
+    let ar12 = [a, b, c];
+    if (triangleLineValidation(ar12) === 3 ) {
+        return true;
+    } else { return false}
+    function triangleLineValidation(ar12) {
+        let check = 0;
+        for (let i = 0; i < ar12.length; i += 1) {
+            for (let j = i + 1; i < ar12.length; i += 1) {
+                if (ar12[i] + ar12[j] > ar12[2 - i] && Math.abs(ar12[i] - ar12[j]) < ar12[2 - i]) {
+                    check += 1;
+                }
+            }
+        }
+        return check;
+}}
+
+function isTriangle(a,b,c)
+{
+    return a + b > c && a + c > b && b + c > a
+}
+console.log(isTriangle(1,2,2))
+
+// assert.strictEqual(isTriangle(1,2,2), true);
+// assert.strictEqual(isTriangle(7,2,2), false);
