@@ -249,7 +249,7 @@ function highAndLow(numbers){
     return [max, min].join(' ')
 
 }
-console.log(highAndLow("1 9 3 4 -5"))
+// console.log(highAndLow("1 9 3 4 -5"))
 // highAndLow("1 2 3 4 5");  // return "5 1"
 // highAndLow("1 2 -3 4 5"); // return "5 -3"
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
@@ -259,7 +259,16 @@ function nameShuffler(str){
     return arr
 }
 
-console.log(nameShuffler('Mary jeggins'))
+// console.log(nameShuffler('Mary jeggins'))
 // assert.strictEqual(nameShuffler('john McClane'),'McClane john');
 // assert.strictEqual(nameShuffler('Mary jeggins'),'jeggins Mary')
 // assert.strictEqual(nameShuffler('tom jerry'),'jerry tom')
+
+let friend = (friends) => friends.filter(el => el.length === 4)
+
+console.log(friend(["Love", "Your", "Face", "1"]))
+
+// (friend(["Ryan", "Kieran", "Mark"]), ["Ryan", "Mark"])
+// (friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]), ["Ryan"])
+// (friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]), ["Jimm", "Cari", "aret"])
+// (friend(["Love", "Your", "Face", "1"]), ["Love", "Your", "Face"])
