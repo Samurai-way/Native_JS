@@ -294,7 +294,7 @@ function isTriangle(a,b,c)
 {
     return a + b > c && a + c > b && b + c > a
 }
-console.log(isTriangle(1,2,2))
+// console.log(isTriangle(1,2,2))
 
 // assert.strictEqual(isTriangle(1,2,2), true);
 // assert.strictEqual(isTriangle(7,2,2), false);
@@ -302,7 +302,7 @@ console.log(isTriangle(1,2,2))
 const user = {
     age: 18,
     showAge(){
-        console.log(this.age)
+        // console.log(this.age)
     }
 }
 const animal = {
@@ -310,3 +310,11 @@ const animal = {
     getMyAge: user.showAge.bind(user)
 }
 animal.getMyAge()
+
+
+
+function roundToNext5(n){
+    return Math.ceil(n/5)*5;
+}
+
+console.log(roundToNext5(2))
