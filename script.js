@@ -192,11 +192,11 @@ const SmallestIntegerFinder = (args) => {
 
 // console.log(SmallestIntegerFinder([34, -345, -1, 100]))
 
-let likeOrDislike = (buttons) => buttons.reduce((p,c) => c == p ? Nothing : c,Nothing)
+let likeOrDislike = (buttons) => buttons.reduce((p, c) => c == p ? Nothing : c, Nothing)
 
 function getMiddle(s) {
     let a = s.split('')
-    while (a.length > 2){
+    while (a.length > 2) {
         a.pop()
         a.shift()
     }
@@ -210,11 +210,7 @@ function getMiddle(s) {
 // Test.assertEquals(getMiddle("A"),"A");
 
 function accum(s) {
-   return s.toLowerCase().
-   split('').
-   map((el, index)=>el.
-   toUpperCase() + el.repeat(index)).
-   join('-')
+    return s.toLowerCase().split('').map((el, index) => el.toUpperCase() + el.repeat(index)).join('-')
 }
 
 console.log(accum("ZpglnRxqenU"))
@@ -225,10 +221,10 @@ console.log(accum("ZpglnRxqenU"))
 // Test.assertEquals(accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
 // Test.assertEquals(accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
 
-let isSquare = function(n){
-        let result = Math.sqrt(n);
-        return (result % 1 === 0);
-    }
+let isSquare = function (n) {
+    let result = Math.sqrt(n);
+    return (result % 1 === 0);
+}
 // console.log(isSquare(25))
 
 const sequenceSum = (begin, end, step) => {
@@ -242,19 +238,20 @@ const sequenceSum = (begin, end, step) => {
 // assert.strictEqual(sequenceSum(1, 5, 1), 15)
 // assert.strictEqual(sequenceSum(1, 5, 3), 5)
 
-function highAndLow(numbers){
+function highAndLow(numbers) {
     let arr = numbers.split(' ')
     let max = Math.max(...arr)
     let min = Math.min(...arr)
     return [max, min].join(' ')
 
 }
+
 // console.log(highAndLow("1 9 3 4 -5"))
 // highAndLow("1 2 3 4 5");  // return "5 1"
 // highAndLow("1 2 -3 4 5"); // return "5 -3"
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
 
-function nameShuffler(str){
+function nameShuffler(str) {
     let arr = str.split(' ').reverse().join(' ')
     return arr
 }
@@ -273,11 +270,14 @@ let friend = (friends) => friends.filter(el => el.length === 4)
 // (friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]), ["Jimm", "Cari", "aret"])
 // (friend(["Love", "Your", "Face", "1"]), ["Love", "Your", "Face"])
 
-function isTriangle(a,b,c) {
+function isTriangle(a, b, c) {
     let ar12 = [a, b, c];
-    if (triangleLineValidation(ar12) === 3 ) {
+    if (triangleLineValidation(ar12) === 3) {
         return true;
-    } else { return false}
+    } else {
+        return false
+    }
+
     function triangleLineValidation(ar12) {
         let check = 0;
         for (let i = 0; i < ar12.length; i += 1) {
@@ -288,12 +288,13 @@ function isTriangle(a,b,c) {
             }
         }
         return check;
-}}
+    }
+}
 
-function isTriangle(a,b,c)
-{
+function isTriangle(a, b, c) {
     return a + b > c && a + c > b && b + c > a
 }
+
 // console.log(isTriangle(1,2,2))
 
 // assert.strictEqual(isTriangle(1,2,2), true);
@@ -301,7 +302,7 @@ function isTriangle(a,b,c)
 
 const user = {
     age: 18,
-    showAge(){
+    showAge() {
         // console.log(this.age)
     }
 }
@@ -312,9 +313,29 @@ const animal = {
 animal.getMyAge()
 
 
-
-function roundToNext5(n){
-    return Math.ceil(n/5)*5;
+function roundToNext5(n) {
+    return Math.ceil(n / 5) * 5;
 }
 
-console.log(roundToNext5(2))
+// console.log(roundToNext5(2))
+
+function arithmetic(a, b, operator) {
+    switch (operator) {
+        case 'add':
+            return a + b;
+        case 'subtract':
+            return a - b
+        case 'multiply':
+            return a * b
+        case 'divide':
+            return a / b
+        default:
+            console.log('vse')
+    }
+}
+
+console.log(arithmetic(10,2,'divide'))
+// 5, 2, "add"      --> 7
+// 5, 2, "subtract" --> 3
+// 5, 2, "multiply" --> 10
+// 5, 2, "divide"   --> 2.5
