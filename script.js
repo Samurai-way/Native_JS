@@ -339,3 +339,14 @@ console.log(arithmetic(10,2,'divide'))
 // 5, 2, "subtract" --> 3
 // 5, 2, "multiply" --> 10
 // 5, 2, "divide"   --> 2.5
+
+function reverseLetter(str) {
+    return str.split('').reverse().join('').replace(/[^a-z]/gi, '')
+}
+
+console.log(reverseLetter("ab23c"))
+
+// Test.assertEquals(reverseLetter("krishan"),"nahsirk")
+// Test.assertEquals(reverseLetter("ultr53o?n"),"nortlu")
+// Test.assertEquals(reverseLetter("ab23c"),"cba")
+// Test.assertEquals(reverseLetter("krish21an"),"nahsirk")
