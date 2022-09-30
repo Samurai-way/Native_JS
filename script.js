@@ -355,7 +355,7 @@ function minValue(values){
     return +[...new Set(values)].sort().join('')
 }
 
-console.log(minValue([4,7,5]))
+// console.log(minValue([4,7,5]))
 // assert.strictEqual(minValue([1, 3, 1]), 13);
 // assert.strictEqual(minValue([4, 7, 5, 7]), 457);
 // assert.strictEqual(minValue([4, 8, 1, 4]), 148);
