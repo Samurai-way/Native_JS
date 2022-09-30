@@ -363,3 +363,16 @@ function minValue(values){
 // assert.strictEqual(minValue([6, 7, 8, 7, 6, 6]), 678);
 // assert.strictEqual(minValue([5, 6, 9, 9, 7, 6, 4]), 45679);
 // assert.strictEqual(minValue([1, 9, 1, 3, 7, 4, 6, 6, 7]), 134679);
+
+
+function solution(nums){
+    if(!nums){
+        return []
+    } else {
+        return nums.sort((a,b) => a - b)
+    }
+
+}
+// console.log(solution([20, 2, 10]))
+// solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
+// solution(null); // should return []
