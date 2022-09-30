@@ -334,7 +334,7 @@ function arithmetic(a, b, operator) {
     }
 }
 
-console.log(arithmetic(10,2,'divide'))
+// console.log(arithmetic(10,2,'divide'))
 // 5, 2, "add"      --> 7
 // 5, 2, "subtract" --> 3
 // 5, 2, "multiply" --> 10
@@ -344,9 +344,22 @@ function reverseLetter(str) {
     return str.split('').reverse().join('').replace(/[^a-z]/gi, '')
 }
 
-console.log(reverseLetter("ab23c"))
+// console.log(reverseLetter("ab23c"))
 
 // Test.assertEquals(reverseLetter("krishan"),"nahsirk")
 // Test.assertEquals(reverseLetter("ultr53o?n"),"nortlu")
 // Test.assertEquals(reverseLetter("ab23c"),"cba")
 // Test.assertEquals(reverseLetter("krish21an"),"nahsirk")
+
+function minValue(values){
+    return +[...new Set(values)].sort().join('')
+}
+
+console.log(minValue([4,7,5]))
+// assert.strictEqual(minValue([1, 3, 1]), 13);
+// assert.strictEqual(minValue([4, 7, 5, 7]), 457);
+// assert.strictEqual(minValue([4, 8, 1, 4]), 148);
+// assert.strictEqual(minValue([5, 7, 9, 5, 7]), 579);
+// assert.strictEqual(minValue([6, 7, 8, 7, 6, 6]), 678);
+// assert.strictEqual(minValue([5, 6, 9, 9, 7, 6, 4]), 45679);
+// assert.strictEqual(minValue([1, 9, 1, 3, 7, 4, 6, 6, 7]), 134679);
