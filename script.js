@@ -351,7 +351,7 @@ function reverseLetter(str) {
 // Test.assertEquals(reverseLetter("ab23c"),"cba")
 // Test.assertEquals(reverseLetter("krish21an"),"nahsirk")
 
-function minValue(values){
+function minValue(values) {
     return +[...new Set(values)].sort().join('')
 }
 
@@ -365,14 +365,28 @@ function minValue(values){
 // assert.strictEqual(minValue([1, 9, 1, 3, 7, 4, 6, 6, 7]), 134679);
 
 
-function solution(nums){
-    if(!nums){
+function solution(nums) {
+    if (!nums) {
         return []
     } else {
-        return nums.sort((a,b) => a - b)
+        return nums.sort((a, b) => a - b)
     }
 
 }
+
 // console.log(solution([20, 2, 10]))
 // solution([1, 2, 10, 50, 5]); // should return [1,2,5,10,50]
 // solution(null); // should return []
+
+let capitals = function (word) {
+    let arr = []
+    for (let i = 0; i < word.length; i++) {
+        if(word[i] == word[i].toUpperCase()){
+            arr.push(i)
+        }
+    }
+    return arr
+};
+console.log(capitals('CodEWaRs'))
+
+// assert.deepEqual(capitals('CodEWaRs'), [0,3,4,6] );
