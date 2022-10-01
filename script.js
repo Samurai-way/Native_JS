@@ -381,12 +381,29 @@ function solution(nums) {
 let capitals = function (word) {
     let arr = []
     for (let i = 0; i < word.length; i++) {
-        if(word[i] == word[i].toUpperCase()){
+        if (word[i] == word[i].toUpperCase()) {
             arr.push(i)
         }
     }
     return arr
 };
-console.log(capitals('CodEWaRs'))
+// console.log(capitals('CodEWaRs'))
 
 // assert.deepEqual(capitals('CodEWaRs'), [0,3,4,6] );
+
+function getDivisorsCnt(n) {
+    let res = 0
+    for (let i = n; i > 0; i--) {
+        if(n % i == 0){
+            res++
+        }
+    }
+    return res
+}
+
+console.log(getDivisorsCnt(11))
+
+// Test.assertEquals(getDivisorsCnt(1) , 1);
+// Test.assertEquals(getDivisorsCnt(10) , 4);
+// Test.assertEquals(getDivisorsCnt(11) , 2);
+// Test.assertEquals(getDivisorsCnt(54) , 8);
