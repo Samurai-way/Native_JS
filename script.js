@@ -394,16 +394,30 @@ let capitals = function (word) {
 function getDivisorsCnt(n) {
     let res = 0
     for (let i = n; i > 0; i--) {
-        if(n % i == 0){
+        if (n % i == 0) {
             res++
         }
     }
     return res
 }
 
-console.log(getDivisorsCnt(11))
+// console.log(getDivisorsCnt(11))
 
 // Test.assertEquals(getDivisorsCnt(1) , 1);
 // Test.assertEquals(getDivisorsCnt(10) , 4);
 // Test.assertEquals(getDivisorsCnt(11) , 2);
 // Test.assertEquals(getDivisorsCnt(54) , 8);
+function oddOrEven(array) {
+    return array.reduce(function (sum, item) {
+        return sum + item
+    }, 0) % 2 == 0 ? 'even' : 'odd';
+}
+
+// assert.strictEqual(oddOrEven([0]), 'even')
+// assert.strictEqual(oddOrEven([1]), 'odd')
+// assert.strictEqual(oddOrEven([]), 'even')
+
+const sortByLength = (array) => array.sort((a, b) => a.length - b.length)
+
+// console.log(sortByLength(["", "Moderately", "Brains", "Pizza"]))
+// Test.assertDeepEquals(sortByLength(["Beg", "Life", "I", "To"]),["I", "To", "Beg", "Life"]);
