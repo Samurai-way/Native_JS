@@ -421,3 +421,56 @@ const sortByLength = (array) => array.sort((a, b) => a.length - b.length)
 
 // console.log(sortByLength(["", "Moderately", "Brains", "Pizza"]))
 // Test.assertDeepEquals(sortByLength(["Beg", "Life", "I", "To"]),["I", "To", "Beg", "Life"]);
+
+function checkExam(array1, array2) {
+    let points = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] == array2[i]) {
+            points += 4;
+        } else if (array2[i] === "") {
+            points += 0;
+        } else {
+            points -= 1;
+        }
+    }
+    if (points > 0) {
+        return points;
+    } else {
+        return 0;
+    }
+}
+// console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]))
+// assert.strictEqual(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
+// assert.strictEqual(checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);
+// assert.strictEqual(checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]), 16);
+// assert.strictEqual(checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]), 0);
+
+const quarterOf = (month) => {
+    switch (month) {
+        case 1:
+            return 1
+        case 2:
+            return 1
+        case 3:
+            return 1
+        case 4:
+            return 2
+        case 5:
+            return 2
+        case 6:
+            return 2
+        case 7:
+            return 3
+        case 8:
+            return 3
+        case 9:
+            return 3
+        case 10:
+            return 4
+        case 11:
+            return 4
+        case 12:
+            return 4
+    }
+}
+console.log(quarterOf(1))
