@@ -473,4 +473,22 @@ const quarterOf = (month) => {
             return 4
     }
 }
-console.log(quarterOf(1))
+// console.log(quarterOf(1))
+
+// complete the function
+function solution(string) {
+    let spl = ''
+    for (latter of string) {
+        if(latter === latter.toUpperCase()){
+            spl += ' '
+            spl += latter
+        } else {
+            spl += latter
+        }
+    }
+    return spl
+}
+
+console.log(solution('camelCasing'))
+// Test.assertEquals(solution('camelCasing'), 'camel Casing', 'Unexpected result')
+// Test.assertEquals(solution('camelCasingTest'), 'camel Casing Test', 'Unexpected result')
