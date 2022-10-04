@@ -489,6 +489,21 @@ function solution(string) {
     return spl
 }
 
-console.log(solution('camelCasing'))
+// console.log(solution('camelCasing'))
 // Test.assertEquals(solution('camelCasing'), 'camel Casing', 'Unexpected result')
 // Test.assertEquals(solution('camelCasingTest'), 'camel Casing Test', 'Unexpected result')
+
+// Test.assertEquals(solve("code"),"code");
+function solve(s){
+    let numUpper = s.length - s.replace(/[A-Z]/g, '').length;
+    if(numUpper > 2 ) {
+        return s.toUpperCase()
+    } else{
+        return s.toLowerCase()
+    }
+}
+
+// console.log(solve("Code"))
+// Test.assertEquals(solve("CODe"),"CODE");
+// Test.assertEquals(solve("COde"),"code");
+// Test.assertEquals(solve("Code"),"code");
