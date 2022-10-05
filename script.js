@@ -531,3 +531,15 @@ const smallEnough = (a, limit) => {
 
 // console.log(smallEnough([66, 101], 200))
 // assert.strictEqual(smallEnough([66, 101], 200), true);
+
+function capitalize(s){
+    const sUpper = s.toUpperCase();
+    return [0, 1].map((i) =>
+        s.replace(/\w/g, (l, n) => [s, sUpper][+(n % 2 == i)][n])
+    );
+};
+console.log(capitalize("abcdef"))
+// Test.assertDeepEquals(capitalize("abcdef"),['AbCdEf', 'aBcDeF']);
+// Test.assertDeepEquals(capitalize("codewars"),['CoDeWaRs', 'cOdEwArS']);
+// Test.assertDeepEquals(capitalize("abracadabra"),['AbRaCaDaBrA', 'aBrAcAdAbRa']);
+// Test.assertDeepEquals(capitalize("codewarriors"),['CoDeWaRrIoRs', 'cOdEwArRiOrS']);
