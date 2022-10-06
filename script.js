@@ -538,8 +538,24 @@ function capitalize(s){
         s.replace(/\w/g, (l, n) => [s, sUpper][+(n % 2 == i)][n])
     );
 };
-console.log(capitalize("abcdef"))
+// console.log(capitalize("abcdef"))
 // Test.assertDeepEquals(capitalize("abcdef"),['AbCdEf', 'aBcDeF']);
 // Test.assertDeepEquals(capitalize("codewars"),['CoDeWaRs', 'cOdEwArS']);
 // Test.assertDeepEquals(capitalize("abracadabra"),['AbRaCaDaBrA', 'aBrAcAdAbRa']);
 // Test.assertDeepEquals(capitalize("codewarriors"),['CoDeWaRrIoRs', 'cOdEwArRiOrS']);
+
+function reverseWords(str) {
+    return str
+        .split('')
+        .reverse()
+        .join('')
+        .split(' ')
+        .reverse()
+        .join(' ')
+}
+
+console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
+// assert.strictEqual(reverseWords('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god');
+// assert.strictEqual(reverseWords('apple'), 'elppa');
+// assert.strictEqual(reverseWords('a b c d'), 'a b c d');
+// assert.strictEqual(reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');
