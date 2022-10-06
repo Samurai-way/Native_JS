@@ -554,8 +554,56 @@ function reverseWords(str) {
         .join(' ')
 }
 
-console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
+// console.log(reverseWords('The quick brown fox jumps over the lazy dog.'))
 // assert.strictEqual(reverseWords('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god');
 // assert.strictEqual(reverseWords('apple'), 'elppa');
 // assert.strictEqual(reverseWords('a b c d'), 'a b c d');
 // assert.strictEqual(reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');
+
+function wait(ms) {
+    return new Promise((res) => {
+        setTimeout( ()=> {res()}, ms )
+    })
+}
+
+// async function sum(){
+//     await wait(1000)
+//     console.log('1')
+//     await wait(2000)
+//     console.log('2')
+//     await wait(4000)
+//     console.log('3')
+// }
+// sum()
+
+
+function XO(str) {
+    let x = []
+    let o = []
+    for (let i = 0; i < str.length; i++) {
+        if(str[i].toLowerCase() === 'x'){
+            x.push(i)
+        }else if(str[i].toLowerCase() === 'o'){
+            o.push(i)
+        }
+    }
+    if(x.length === o.length){
+        return true
+    }else {
+        return false
+    }
+}
+
+// console.log(XO('ooom'))
+
+
+function res(str) {
+    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length
+}
+
+// console.log(res('xxxm'))
+// Test.assertEquals(XO('xo'),true);
+// Test.assertEquals(XO("xxOo"),true);
+// Test.assertEquals(XO("xxxm"),false);
+// Test.assertEquals(XO("Oo"),false);
+// Test.assertEquals(XO("ooom"),false);
