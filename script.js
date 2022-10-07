@@ -213,7 +213,7 @@ function accum(s) {
     return s.toLowerCase().split('').map((el, index) => el.toUpperCase() + el.repeat(index)).join('-')
 }
 
-console.log(accum("ZpglnRxqenU"))
+// console.log(accum("ZpglnRxqenU"))
 
 // Test.assertEquals(accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
 // Test.assertEquals(accum("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
@@ -607,3 +607,11 @@ function res(str) {
 // Test.assertEquals(XO("xxxm"),false);
 // Test.assertEquals(XO("Oo"),false);
 // Test.assertEquals(XO("ooom"),false);
+
+function addBinary(a, b) {
+    return (a + b).toString(2)
+};
+
+console.log(addBinary(1,1))
+// Test.expect(results1, "Something is wrong, no results!");
+// Test.assertEquals(results1, "11");
