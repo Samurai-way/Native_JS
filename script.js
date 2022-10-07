@@ -439,6 +439,7 @@ function checkExam(array1, array2) {
         return 0;
     }
 }
+
 // console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]))
 // assert.strictEqual(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]), 6);
 // assert.strictEqual(checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]), 7);
@@ -479,7 +480,7 @@ const quarterOf = (month) => {
 function solution(string) {
     let spl = ''
     for (latter of string) {
-        if(latter === latter.toUpperCase()){
+        if (latter === latter.toUpperCase()) {
             spl += ' '
             spl += latter
         } else {
@@ -494,11 +495,11 @@ function solution(string) {
 // Test.assertEquals(solution('camelCasingTest'), 'camel Casing Test', 'Unexpected result')
 
 // Test.assertEquals(solve("code"),"code");
-function solve(s){
+function solve(s) {
     let numUpper = s.length - s.replace(/[A-Z]/g, '').length;
-    if(numUpper > 2 ) {
+    if (numUpper > 2) {
         return s.toUpperCase()
-    } else{
+    } else {
         return s.toLowerCase()
     }
 }
@@ -509,7 +510,7 @@ function solve(s){
 // Test.assertEquals(solve("Code"),"code");
 
 function flattenAndSort(array) {
-    return array.flat().sort((a,b) => a - b)
+    return array.flat().sort((a, b) => a - b)
 }
 
 // console.log(flattenAndSort([[1, 3, 5], [100], [2, 4, 6]]))
@@ -522,7 +523,7 @@ function flattenAndSort(array) {
 
 const smallEnough = (a, limit) => {
     for (let i = 0; i < a.length; i++) {
-        if(a[i] > limit){
+        if (a[i] > limit) {
             return false
         }
     }
@@ -532,7 +533,7 @@ const smallEnough = (a, limit) => {
 // console.log(smallEnough([66, 101], 200))
 // assert.strictEqual(smallEnough([66, 101], 200), true);
 
-function capitalize(s){
+function capitalize(s) {
     const sUpper = s.toUpperCase();
     return [0, 1].map((i) =>
         s.replace(/\w/g, (l, n) => [s, sUpper][+(n % 2 == i)][n])
@@ -562,7 +563,9 @@ function reverseWords(str) {
 
 function wait(ms) {
     return new Promise((res) => {
-        setTimeout( ()=> {res()}, ms )
+        setTimeout(() => {
+            res()
+        }, ms)
     })
 }
 
@@ -581,15 +584,15 @@ function XO(str) {
     let x = []
     let o = []
     for (let i = 0; i < str.length; i++) {
-        if(str[i].toLowerCase() === 'x'){
+        if (str[i].toLowerCase() === 'x') {
             x.push(i)
-        }else if(str[i].toLowerCase() === 'o'){
+        } else if (str[i].toLowerCase() === 'o') {
             o.push(i)
         }
     }
-    if(x.length === o.length){
+    if (x.length === o.length) {
         return true
-    }else {
+    } else {
         return false
     }
 }
@@ -612,6 +615,23 @@ function addBinary(a, b) {
     return (a + b).toString(2)
 };
 
-console.log(addBinary(1,1))
+// console.log(addBinary(1,1))
 // Test.expect(results1, "Something is wrong, no results!");
 // Test.assertEquals(results1, "11");
+
+const order = (words) => words
+    .split(' ')
+    .sort((a, b) => a.
+    match(/[0-9]/) - b.
+    match(/[0-9]/))
+    .join(' ')
+
+console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
+
+//match(/[0-9]/) - [0-9] - любая цифра, или можно написать /\d/, будет тоже самое
+
+// match(/\d/)
+
+// assert.strictEqual(order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est")
+// assert.strictEqual(order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople")
+// assert.strictEqual(order(""), "", "empty input should return empty string" )
