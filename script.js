@@ -648,3 +648,22 @@ function mxdiflg(a1, a2) {
 // var s1 = ["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"];
 // var s2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"];
 // assert.strictEqual(mxdiflg(s1, s2), 13)
+
+function high(x){
+    let myObj = {};
+    for (let i = 1; i <= 26; i++) {
+        myObj[String.fromCharCode(i + 96)] = i;
+    }
+    let scores = x.split(' ').map(word => [...word].map(a => myObj[a]).reduce((a, b) => a + b, 0));
+    return x.split(' ')[scores.indexOf(Math.max(...scores))];
+}
+
+// console.log(high('man i need a taxi up to ubud'))
+// assert.strictEqual(high('man i need a taxi up to ubud'), 'taxi');
+// assert.strictEqual(high('what time are we climbing up the volcano'), 'volcano');
+// assert.strictEqual(high('take me to semynak'), 'semynak');
+// assert.strictEqual(high('aa b'), 'aa');
+// assert.strictEqual(high('b aa'), 'b');
+// assert.strictEqual(high('bb d'), 'bb');
+// assert.strictEqual(high('d bb'), 'd');
+// assert.strictEqual(high('aaa b'), 'aaa');
