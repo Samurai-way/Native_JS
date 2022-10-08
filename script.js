@@ -626,7 +626,7 @@ const order = (words) => words
     match(/[0-9]/))
     .join(' ')
 
-console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
+// console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
 
 //match(/[0-9]/) - [0-9] - любая цифра, или можно написать /\d/, будет тоже самое
 
@@ -635,3 +635,16 @@ console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
 // assert.strictEqual(order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est")
 // assert.strictEqual(order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople")
 // assert.strictEqual(order(""), "", "empty input should return empty string" )
+
+function mxdiflg(a1, a2) {
+    if (a1.length === 0 || a2.length === 0) return -1
+    let l1 = a1.map(str => str.length)
+    let l2 = a2.map(str => str.length)
+    return Math.max(Math.max(...l1) - Math.min(...l2), Math.max(...l2) - Math.min(...l1))
+}
+
+// console.log(mxdiflg(["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"], ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"]))
+
+// var s1 = ["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"];
+// var s2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"];
+// assert.strictEqual(mxdiflg(s1, s2), 13)
