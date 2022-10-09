@@ -621,9 +621,7 @@ function addBinary(a, b) {
 
 const order = (words) => words
     .split(' ')
-    .sort((a, b) => a.
-    match(/[0-9]/) - b.
-    match(/[0-9]/))
+    .sort((a, b) => a.match(/[0-9]/) - b.match(/[0-9]/))
     .join(' ')
 
 // console.log(order('4of Fo1r pe6ople g3ood th5e the2'))
@@ -649,7 +647,7 @@ function mxdiflg(a1, a2) {
 // var s2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"];
 // assert.strictEqual(mxdiflg(s1, s2), 13)
 
-function high(x){
+function high(x) {
     let myObj = {};
     for (let i = 1; i <= 26; i++) {
         myObj[String.fromCharCode(i + 96)] = i;
@@ -668,9 +666,8 @@ function high(x){
 // assert.strictEqual(high('d bb'), 'd');
 // assert.strictEqual(high('aaa b'), 'aaa');
 
-function validatePIN (pin) {
+function validatePIN(pin) {
     let i = pin.length;
-
     if (i != 4 && i != 6) {
         return false;
     }
@@ -679,7 +676,6 @@ function validatePIN (pin) {
             return false;
         }
     }
-
     return true;
 }
 
@@ -693,3 +689,27 @@ function validatePIN (pin) {
 // Test.assertEquals(validatePIN("1.234"),false, "Wrong output for '1.234'")
 // Test.assertEquals(validatePIN("-1.234"),false, "Wrong output for '-1.234'")
 // Test.assertEquals(validatePIN("00000000"),false, "Wrong output for '00000000'")
+
+function uniqueInOrder(it) {
+    let result = []
+    let last
+
+    for (let i = 0; i < it.length; i++) {
+        if(it[i] !== last){
+            result.push( last = it[i] )
+        }
+    }
+    return result
+}
+
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+// Test.assertSimilar(uniqueInOrder('AAAABBBCCDAABBB'), ['A','B','C','D','A','B'])
+// uniqueInOrder('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+// uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
+// uniqueInOrder([1,2,2,3,3])       == [1,2,3]
+
+
+
+
+
