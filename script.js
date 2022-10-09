@@ -667,3 +667,29 @@ function high(x){
 // assert.strictEqual(high('bb d'), 'bb');
 // assert.strictEqual(high('d bb'), 'd');
 // assert.strictEqual(high('aaa b'), 'aaa');
+
+function validatePIN (pin) {
+    let i = pin.length;
+
+    if (i != 4 && i != 6) {
+        return false;
+    }
+    while (i--) {
+        if (pin[i] < '0' || pin[i] > '9') {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// console.log(validatePIN('a234'))
+// Test.assertEquals(validatePIN("1"),false, "Wrong output for '1'")
+// Test.assertEquals(validatePIN("12"),false, "Wrong output for '12'")
+// Test.assertEquals(validatePIN("123"),false, "Wrong output for '123'")
+// Test.assertEquals(validatePIN("12345"),false, "Wrong output for '12345'")
+// Test.assertEquals(validatePIN("1234567"),false, "Wrong output for '1234567'")
+// Test.assertEquals(validatePIN("-1234"),false, "Wrong output for '-1234'")
+// Test.assertEquals(validatePIN("1.234"),false, "Wrong output for '1.234'")
+// Test.assertEquals(validatePIN("-1.234"),false, "Wrong output for '-1.234'")
+// Test.assertEquals(validatePIN("00000000"),false, "Wrong output for '00000000'")
