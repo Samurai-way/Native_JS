@@ -695,8 +695,8 @@ function uniqueInOrder(it) {
     let last
 
     for (let i = 0; i < it.length; i++) {
-        if(it[i] !== last){
-            result.push( last = it[i] )
+        if (it[i] !== last) {
+            result.push(last = it[i])
         }
     }
     return result
@@ -717,10 +717,23 @@ function uniqueInOrder(it) {
 //     return result
 // }
 
-const sumOfMinimums = (arr) => arr.reduce((a,b) => a + Math.min(...b), 0)
+const sumOfMinimums = (arr) => arr.reduce((a, b) => a + Math.min(...b), 0)
 
-console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
+// console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
 
 // it("Testing for [[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]", () => assert.strictEqual(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]), 9));
 // it("Testing for [[11, 12, 14, 54], [67, 89, 90, 56], [7, 9, 4, 3], [9, 8, 6, 7]]", () => assert.strictEqual(sumOfMinimums([[11, 12, 14, 54], [67, 89, 90, 56], [7, 9, 4, 3], [9, 8, 6, 7]]), 76));?
 
+const expandedForm = n => n.toString()
+    .split("")
+    .reverse()
+    .map( (a, i) => a * Math.pow(10, i))
+    .filter(a => a > 0)
+    .reverse()
+    .join(" + ");
+
+console.log(expandedForm(70304))
+
+// Test.assertEquals(expandedForm(12), '10 + 2');
+// Test.assertEquals(expandedForm(42), '40 + 2');
+// Test.assertEquals(expandedForm(70304), '70000 + 300 + 4');
