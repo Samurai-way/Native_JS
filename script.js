@@ -709,13 +709,15 @@ function uniqueInOrder(it) {
 // uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 // uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
-function sumOfMinimums(arr) {
-    let output = 0;
-    for (let i=0; i<arr.length; i++) {
-        output += Math.min(...arr[i]);
-    }
-    return output;
-}
+// function sumOfMinimums(arr) {
+//     let result = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         result += Math.min(...arr[i])
+//     }
+//     return result
+// }
+
+const sumOfMinimums = (arr) => arr.reduce((a,b) => a + Math.min(...b), 0)
 
 console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
 
