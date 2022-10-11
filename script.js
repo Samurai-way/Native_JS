@@ -746,3 +746,41 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
 // console.log(checkCoupon('123a','123','September 5, 2014','October 1, 2014'))
 // Test.assertEquals(checkCoupon('123','123','September 5, 2014','October 1, 2014'), true);
 // Test.assertEquals(checkCoupon('123a','123','September 5, 2014','October 1, 2014'), false);
+
+// let axios = {
+//     get() {
+//         let br = new Promise((res, rej) => {
+//             setTimeout(() => {
+//                 res('kyyyy')
+//             }, 4000)
+//         })
+//         console.log(br)
+//         return br
+//     }
+// }
+//
+// axios.get().then(data => console.log(data))
+//     .then(() => {
+//         console.log('1')
+//     })
+//     .then(() => {
+//         console.log('2')
+//     })
+
+const persistenceB = (num) => {
+    let count = 0
+    num = num.toString()
+    while (num.length > 1){
+        count++
+        num = num.split('').map(Number).reduce((a,b) => a*b).toString()
+    }
+    return count
+}
+
+console.log(persistenceB(25))
+
+
+// assert.strictEqual(persistence(39),3);
+// assert.strictEqual(persistence(4),0);
+// assert.strictEqual(persistence(25),2);
+// assert.strictEqual(persistence(999),4)
