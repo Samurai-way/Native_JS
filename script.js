@@ -727,13 +727,22 @@ const sumOfMinimums = (arr) => arr.reduce((a, b) => a + Math.min(...b), 0)
 const expandedForm = n => n.toString()
     .split("")
     .reverse()
-    .map( (a, i) => a * Math.pow(10, i))
+    .map((a, i) => a * Math.pow(10, i))
     .filter(a => a > 0)
     .reverse()
     .join(" + ");
 
-console.log(expandedForm(70304))
+// console.log(expandedForm(70304))
 
 // Test.assertEquals(expandedForm(12), '10 + 2');
 // Test.assertEquals(expandedForm(42), '40 + 2');
 // Test.assertEquals(expandedForm(70304), '70000 + 300 + 4');
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
+    return enteredCode === correctCode && Date.parse(expirationDate) >= Date.parse(currentDate)
+}
+
+
+// console.log(checkCoupon('123a','123','September 5, 2014','October 1, 2014'))
+// Test.assertEquals(checkCoupon('123','123','September 5, 2014','October 1, 2014'), true);
+// Test.assertEquals(checkCoupon('123a','123','September 5, 2014','October 1, 2014'), false);
