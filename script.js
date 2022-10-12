@@ -777,10 +777,16 @@ const persistenceB = (num) => {
     return count
 }
 
-console.log(persistenceB(25))
+// console.log(persistenceB(25))
 
 
 // assert.strictEqual(persistence(39),3);
 // assert.strictEqual(persistence(4),0);
 // assert.strictEqual(persistence(25),2);
 // assert.strictEqual(persistence(999),4)
+
+const angle = n => (n - 2) * 180
+
+console.log(angle(4))
+// assert.strictEqual(angle(3), 180);
+// assert.strictEqual(angle(4), 360);
