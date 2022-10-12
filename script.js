@@ -787,6 +787,19 @@ const persistenceB = (num) => {
 
 const angle = n => (n - 2) * 180
 
-console.log(angle(4))
+// console.log(angle(4))
 // assert.strictEqual(angle(3), 180);
 // assert.strictEqual(angle(4), 360);
+
+const pr = new Promise((res, rej) =>{
+    setTimeout(() => {
+        const newData = {
+            age: 20,
+            name: 'Dimas'
+        }
+    }, 2000)
+    return res('hello')
+})
+pr.then( data => {
+    console.log(data)
+})
