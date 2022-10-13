@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 6 kyu - reduce" />
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 7 kyu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +73,8 @@
       <workItem from="1665470531367" duration="2625000" />
       <workItem from="1665494964752" duration="5572000" />
       <workItem from="1665517272342" duration="1843000" />
-      <workItem from="1665579602921" duration="9491000" />
+      <workItem from="1665579602921" duration="9950000" />
+      <workItem from="1665690309117" duration="1743000" />
     </task>
     <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
       <created>1664478204867</created>
@@ -268,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665604880513</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="codewars 7 kyu">
+      <created>1665646024304</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665646024304</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +300,6 @@
     <MESSAGE value="codewars 7 kyu, new Set, sort, join" />
     <MESSAGE value="codewars 7 kyu, boolean, sort" />
     <MESSAGE value="codewars 7 kyu, for, push" />
-    <MESSAGE value="codewars 7 kyu" />
     <MESSAGE value="codewars 7 kyu, sort" />
     <MESSAGE value="codewars 7, 8 kyu" />
     <MESSAGE value="codewars 6 kyu - for (latter of string)" />
@@ -311,7 +321,8 @@
     <MESSAGE value="codewars 6 kyu split, while, map, reduce" />
     <MESSAGE value="codewars 7 kyu - sum of angle" />
     <MESSAGE value="codewars 6 kyu - reduce" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars 6 kyu - reduce" />
+    <MESSAGE value="codewars 7 kyu" />
+    <option name="LAST_COMMIT_MESSAGE" value="codewars 7 kyu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

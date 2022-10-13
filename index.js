@@ -167,8 +167,18 @@ const isAnagram = (test, original) => {
 //     return tRes == oRes ? true : false
 // };
 
-console.log(isAnagram("foefet", "toffee")) // анаграмма
+// console.log(isAnagram("foefet", "toffee")) // анаграмма
 
 // Test.assertEquals(isAnagram("foefet", "toffee"), true, 'The word foefet is an anagram of toffee')
 // Test.assertEquals(isAnagram("Buckethead", "DeathCubeK"), true, 'The word Buckethead is an anagram of DeathCubeK')
 // Test.assertEquals(isAnagram("Twoo", "WooT"), true, 'The word Twoo is an anagram of WooT')
+
+function count (string) {
+    let obj = {}
+    string.split('').map(o => obj[o] = obj[o]+1 || 1)
+    return obj
+}
+
+console.log(count("aba"))
+// assert.deepEqual(count(""), {});
+
