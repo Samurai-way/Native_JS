@@ -1,0 +1,174 @@
+//this
+
+//'use-strict' this -> undefined, null, 5, false ....
+//!'use-strict' this -> { ? }
+
+
+//1 Global scope -> global object (window, global)
+//2 Arrow functions
+//3 Functions (not arrow) -> watch how function called
+// - like constructor -> new Function()
+// - .call() .bind() .apply()
+// someObject <--- . function()
+// function() // !use-strict this -> window | in use strict this -> undefined
+
+
+// ==================== GLOBAL SCOPE ====================
+
+// console.log(this)
+//
+// console.log(this === window)
+//
+// this.age = 23
+//
+// console.log(window.age)
+
+
+// ==================== ARROW FUNCTIONS  ====================
+
+// const foo = () => {
+//     console.log(this) // -> Window
+// }
+//
+//
+// this.age = 40 //window.age = 40
+//
+//
+// const user = {
+//     name: "Alex",
+//     age: 26,
+//
+//     showAge: () => {
+//         console.log(this.age)
+//     }
+// }
+//
+// user.showAge()
+
+
+// ==================== FUNCTIONS  ====================
+
+// const user = {
+//     name: "Alex",
+//     showName() {
+//         console.log(this)
+//     }
+// }
+//
+// user.showName()
+//
+// const foo = user.showName
+// foo()
+//
+//
+// const hanna = {
+//     name: 'Hanna',
+//     showName: user.showName
+// }
+//
+// hanna.showName()
+//
+//
+// const car = {
+//     run() {
+//         console.log(`By ${this}`)
+//     }
+// }
+
+
+// ======================= CONSTRUCTORS ===================
+
+
+// function User() {
+//     console.log(this)
+// }
+//
+// const alex = new User()
+//
+// console.log(alex)
+
+//'use strict';
+
+
+// const group = {
+//     name: 'KMB-40',
+//     users: ["Alex", 'Hanna'],
+//
+//     showUsers() {
+//         this.users.forEach(function (user) {
+//             console.log(`${this.name}: ${user}`)
+//         })
+//     }
+// }
+//
+// group.showUsers()
+//
+//
+// const forEach = (cb, thisArgs) => {
+//     cb.call(undefined)
+// }
+
+
+//                  Прототипы след урок
+
+
+
+// console.log('start')
+//
+// setTimeout(() => {
+//     console.log('setTimeout')
+// })
+//
+// Promise.resolve().then(() => {
+//     console.log('resolve')
+// })
+//
+// console.log('end')
+
+
+function findOdd(A) {
+    return A.reduce((a, b) => a ^ b)
+}
+
+// console.log(findOdd([1,1,2,-2,5,2,4,4,-1,-2,5]))
+
+const sumNum = (s) => { // // максимальное число в массиве //
+    let res = s[0]
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] > res) {
+            res = s[i]
+        }
+    }
+    return res
+}
+
+const sumMax = (max) => max.reduce((a, b) => a < b ? b : a) // максимальное число в массиве
+
+// console.log(sumMax([1, 2, 3, 4, 5, 0, 1, 3]))
+
+
+const isAnagram = (test, original) => {
+    let t = test.split('').sort().join('')
+    let o = original.split('').sort().join('')
+    return t == o ? true : false
+};
+
+// const isAnagram = (test, original) => {
+//     let tArr = []
+//     let oArr = []
+//     for (let i = 0; i < test.length; i++) {
+//         tArr.push(test[i])
+//     }
+//     for (let i = 0; i < original.length; i++) {
+//         oArr.push(original[i])
+//     }
+//     const tRes = tArr.sort().join('')
+//     const oRes = oArr.sort().join('')
+//     return tRes == oRes ? true : false
+// };
+
+console.log(isAnagram("foefet", "toffee")) // анаграмма
+
+// Test.assertEquals(isAnagram("foefet", "toffee"), true, 'The word foefet is an anagram of toffee')
+// Test.assertEquals(isAnagram("Buckethead", "DeathCubeK"), true, 'The word Buckethead is an anagram of DeathCubeK')
+// Test.assertEquals(isAnagram("Twoo", "WooT"), true, 'The word Twoo is an anagram of WooT')

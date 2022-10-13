@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 6 kyu - reduce" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FRuuzquDZeCSgUcvta2vr5vmwU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="" />
+      <created>1664467457264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664467457264</updated>
+      <workItem from="1664467462520" duration="1267000" />
+      <workItem from="1664475577100" duration="164000" />
+      <workItem from="1664477077877" duration="1126000" />
+      <workItem from="1664521002019" duration="1868000" />
+      <workItem from="1664569830244" duration="3209000" />
+      <workItem from="1664655026317" duration="3304000" />
+      <workItem from="1664742102961" duration="257000" />
+      <workItem from="1664780673586" duration="2778000" />
+      <workItem from="1664825488012" duration="1216000" />
+      <workItem from="1664866068128" duration="3275000" />
+      <workItem from="1664912061460" duration="1608000" />
+      <workItem from="1664952997586" duration="2759000" />
+      <workItem from="1664997777782" duration="574000" />
+      <workItem from="1665036166687" duration="871000" />
+      <workItem from="1665042443614" duration="3706000" />
+      <workItem from="1665084073020" duration="1688000" />
+      <workItem from="1665124323757" duration="2484000" />
+      <workItem from="1665168208177" duration="3337000" />
+      <workItem from="1665211475716" duration="2010000" />
+      <workItem from="1665256288302" duration="1262000" />
+      <workItem from="1665303069422" duration="2370000" />
+      <workItem from="1665342214483" duration="2652000" />
+      <workItem from="1665383528398" duration="4398000" />
+      <workItem from="1665429732832" duration="1863000" />
+      <workItem from="1665470531367" duration="2625000" />
+      <workItem from="1665494964752" duration="5572000" />
+      <workItem from="1665517272342" duration="1843000" />
+      <workItem from="1665579602921" duration="9491000" />
+    </task>
+    <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
+      <created>1664478204867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664478204867</updated>
+    </task>
+    <task id="LOCAL-00002" summary="codewars 7 kyu, new Set, sort, join">
+      <created>1664522854847</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664522854847</updated>
+    </task>
+    <task id="LOCAL-00003" summary="codewars 7 kyu, new Set, sort, join">
+      <created>1664522873968</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664522873968</updated>
+    </task>
+    <task id="LOCAL-00004" summary="codewars 7 kyu, boolean, sort">
+      <created>1664571776359</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664571776359</updated>
+    </task>
+    <task id="LOCAL-00005" summary="codewars 7 kyu, for, push">
+      <created>1664613078401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664613078401</updated>
+    </task>
+    <task id="LOCAL-00006" summary="codewars 7 kyu">
+      <created>1664656439737</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664656439737</updated>
+    </task>
+    <task id="LOCAL-00007" summary="codewars 7 kyu, sort">
+      <created>1664742352335</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664742352335</updated>
+    </task>
+    <task id="LOCAL-00008" summary="codewars 7, 8 kyu">
+      <created>1664783436767</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664783436767</updated>
+    </task>
+    <task id="LOCAL-00009" summary="codewars 6 kyu - for (latter of string)">
+      <created>1664826706108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664826706108</updated>
+    </task>
+    <task id="LOCAL-00010" summary="codewars 7 kyu (replace)">
+      <created>1664869360469</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664869360469</updated>
+    </task>
+    <task id="LOCAL-00011" summary="codewars 7 kyu (flat, sort)">
+      <created>1664913754390</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664913754390</updated>
+    </task>
+    <task id="LOCAL-00012" summary="codewars 7 kyu (for)">
+      <created>1664955765102</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664955765102</updated>
+    </task>
+    <task id="LOCAL-00013" summary="codewars 7 kyu (replace)">
+      <created>1664998344617</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664998344617</updated>
+    </task>
+    <task id="LOCAL-00014" summary="codewars 7 kyu (split, reverse,join)">
+      <created>1665036996080</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665036996080</updated>
+    </task>
+    <task id="LOCAL-00015" summary="codewars 7 kyu (split, for)">
+      <created>1665085770123</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665085770123</updated>
+    </task>
+    <task id="LOCAL-00016" summary="codewars 7 kyu (toString)">
+      <created>1665137272690</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665137272690</updated>
+    </task>
+    <task id="LOCAL-00017" summary="codewars 6 kyu (match, regex)">
+      <created>1665171568744</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665171568744</updated>
+    </task>
+    <task id="LOCAL-00018" summary="codewars 7 kyu (map, Math.max, Math.min)">
+      <created>1665213470594</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665213470594</updated>
+    </task>
+    <task id="LOCAL-00019" summary="codewars 6 kyu (map, split, reduce)">
+      <created>1665257546179</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665257546179</updated>
+    </task>
+    <task id="LOCAL-00020" summary="codewars 7 kyu (if, while)">
+      <created>1665305999778</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665305999778</updated>
+    </task>
+    <task id="LOCAL-00021" summary="codewars 6 kyu (push, for)">
+      <created>1665344882572</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665344882572</updated>
+    </task>
+    <task id="LOCAL-00022" summary="codewars 7 kyu - sumOfMinimums">
+      <created>1665387126420</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1665387126420</updated>
+    </task>
+    <task id="LOCAL-00023" summary="codewars 7 kyu - sumOfMinimums, reduce">
+      <created>1665387471911</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1665387471911</updated>
+    </task>
+    <task id="LOCAL-00024" summary="codewars 6 kyu">
+      <created>1665431958706</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665431958706</updated>
+    </task>
+    <task id="LOCAL-00025" summary="codewars 7 kyu DateParse">
+      <created>1665472569315</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1665472569316</updated>
+    </task>
+    <task id="LOCAL-00026" summary="codewars 6 kyu split, while, map, reduce">
+      <created>1665517205635</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665517205635</updated>
+    </task>
+    <task id="LOCAL-00027" summary="codewars 7 kyu - sum of angle">
+      <created>1665556929939</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665556929939</updated>
+    </task>
+    <task id="LOCAL-00028" summary="codewars 6 kyu - reduce">
+      <created>1665604880513</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1665604880513</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="codewars 7 kyu, new Set, sort, join" />
+    <MESSAGE value="codewars 7 kyu, boolean, sort" />
+    <MESSAGE value="codewars 7 kyu, for, push" />
+    <MESSAGE value="codewars 7 kyu" />
+    <MESSAGE value="codewars 7 kyu, sort" />
+    <MESSAGE value="codewars 7, 8 kyu" />
+    <MESSAGE value="codewars 6 kyu - for (latter of string)" />
+    <MESSAGE value="codewars 7 kyu (flat, sort)" />
+    <MESSAGE value="codewars 7 kyu (for)" />
+    <MESSAGE value="codewars 7 kyu (replace)" />
+    <MESSAGE value="codewars 7 kyu (split, reverse,join)" />
+    <MESSAGE value="codewars 7 kyu (split, for)" />
+    <MESSAGE value="codewars 7 kyu (toString)" />
+    <MESSAGE value="codewars 6 kyu (match, regex)" />
+    <MESSAGE value="codewars 7 kyu (map, Math.max, Math.min)" />
+    <MESSAGE value="codewars 6 kyu (map, split, reduce)" />
+    <MESSAGE value="codewars 7 kyu (if, while)" />
+    <MESSAGE value="codewars 6 kyu (push, for)" />
+    <MESSAGE value="codewars 7 kyu - sumOfMinimums" />
+    <MESSAGE value="codewars 7 kyu - sumOfMinimums, reduce" />
+    <MESSAGE value="codewars 6 kyu" />
+    <MESSAGE value="codewars 7 kyu DateParse" />
+    <MESSAGE value="codewars 6 kyu split, while, map, reduce" />
+    <MESSAGE value="codewars 7 kyu - sum of angle" />
+    <MESSAGE value="codewars 6 kyu - reduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="codewars 6 kyu - reduce" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/script.js</url>
+          <line>353</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
