@@ -199,27 +199,44 @@ function findNextSquare(sq) {
 // Test.assertEquals(findNextSquare(625), 676, "Wrong output for 625");
 // Test.assertEquals(findNextSquare(319225), 320356, "Wrong output for 319225");
 // Test.assertEquals(findNextSquare(15241383936), 15241630849, "Wrong output for 15241383936");
+//
+// function duplicateEncode(word) {
+//     let newString = ''
+//     word = word.toLowerCase()
+//     word.split('').filter((x, index) => {
+//         if(word.indexOf(x) !== index){
+//             newString += ')'
+//         }else if(word.lastIndexOf(x) !== index){
+//             newString += ')'
+//         }else{
+//             newString += '('
+//         }
+//     })
+//     return newString
+// }
+
+
 
 function duplicateEncode(word) {
-    let newString = ''
-    word = word.toLowerCase() || word
-    word.split('').filter((x, index) => {
-        if(word.indexOf(x) !== index){
-            newString += ')'
-        }else if(word.lastIndexOf(x) !== index){
-            newString += ')'
+    let string = ''
+    word = word.split('').filter((a,b) => {
+        if(word.indexOf(a) !== b){
+            string += ')'
+        }else if(word.lastIndexOf(a) !== b){
+            string += ')'
         }else{
-            newString += '('
+            string += '('
         }
     })
-    return newString
+    return string
 }
+
 
 // "din"      =>  "((("
 // "recede"   =>  "()()()"
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))(("
-// console.log(duplicateEncode("recede"))
+console.log(duplicateEncode("Success"))
 // assert.strictEqual(duplicateEncode("din"),"(((");
 // assert.strictEqual(duplicateEncode("recede"),"()()()");
 // assert.strictEqual(duplicateEncode("Success"),")())())","should ignore case");
