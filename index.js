@@ -112,7 +112,6 @@
 //                  Прототипы след урок
 
 
-
 // console.log('start')
 //
 // setTimeout(() => {
@@ -173,30 +172,55 @@ const isAnagram = (test, original) => {
 // Test.assertEquals(isAnagram("Buckethead", "DeathCubeK"), true, 'The word Buckethead is an anagram of DeathCubeK')
 // Test.assertEquals(isAnagram("Twoo", "WooT"), true, 'The word Twoo is an anagram of WooT')
 
-function count (string) {
+function count(string) {
     let obj = {}
-    string.split('').map(o => obj[o] = obj[o]+1 || 1)
+    string.split('').map(o => obj[o] = obj[o] + 1 || 1)
     return obj
 }
 
 // console.log(count("aba"))
 // assert.deepEqual(count(""), {});
 
-function findNextSquare(sq){
+function findNextSquare(sq) {
     let root1
     let nextroot
-    if(Math.sqrt(sq)%1 ===0){
-        root1=Math.sqrt(sq)
-        nextroot=root1+1
-    }else{
+    if (Math.sqrt(sq) % 1 === 0) {
+        root1 = Math.sqrt(sq)
+        nextroot = root1 + 1
+    } else {
         return -1;
     }
-    return nextroot*nextroot;
+    return nextroot * nextroot;
 }
 
-console.log(findNextSquare(121))
+// console.log(findNextSquare(121))
 
 // Test.assertEquals(findNextSquare(121), 144, "Wrong output for 121");
 // Test.assertEquals(findNextSquare(625), 676, "Wrong output for 625");
 // Test.assertEquals(findNextSquare(319225), 320356, "Wrong output for 319225");
 // Test.assertEquals(findNextSquare(15241383936), 15241630849, "Wrong output for 15241383936");
+
+function duplicateEncode(word) {
+    let newString = ''
+    word = word.toLowerCase() || word
+    word.split('').filter((x, index) => {
+        if(word.indexOf(x) !== index){
+            newString += ')'
+        }else if(word.lastIndexOf(x) !== index){
+            newString += ')'
+        }else{
+            newString += '('
+        }
+    })
+    return newString
+}
+
+// "din"      =>  "((("
+// "recede"   =>  "()()()"
+// "Success"  =>  ")())())"
+// "(( @"     =>  "))(("
+// console.log(duplicateEncode("recede"))
+// assert.strictEqual(duplicateEncode("din"),"(((");
+// assert.strictEqual(duplicateEncode("recede"),"()()()");
+// assert.strictEqual(duplicateEncode("Success"),")())())","should ignore case");
+// assert.strictEqual(duplicateEncode("(( @"),"))((");
