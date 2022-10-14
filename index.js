@@ -179,6 +179,24 @@ function count (string) {
     return obj
 }
 
-console.log(count("aba"))
+// console.log(count("aba"))
 // assert.deepEqual(count(""), {});
 
+function findNextSquare(sq){
+    let root1
+    let nextroot
+    if(Math.sqrt(sq)%1 ===0){
+        root1=Math.sqrt(sq)
+        nextroot=root1+1
+    }else{
+        return -1;
+    }
+    return nextroot*nextroot;
+}
+
+console.log(findNextSquare(121))
+
+// Test.assertEquals(findNextSquare(121), 144, "Wrong output for 121");
+// Test.assertEquals(findNextSquare(625), 676, "Wrong output for 625");
+// Test.assertEquals(findNextSquare(319225), 320356, "Wrong output for 319225");
+// Test.assertEquals(findNextSquare(15241383936), 15241630849, "Wrong output for 15241383936");
