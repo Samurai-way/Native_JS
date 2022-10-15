@@ -75,7 +75,7 @@
       <workItem from="1665517272342" duration="1843000" />
       <workItem from="1665579602921" duration="9950000" />
       <workItem from="1665690309117" duration="3861000" />
-      <workItem from="1665776048882" duration="2588000" />
+      <workItem from="1665776048882" duration="4792000" />
     </task>
     <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
       <created>1664478204867</created>
@@ -301,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665778400596</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="codewars 6 kyu">
+      <created>1665778744799</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1665778744799</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

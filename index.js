@@ -236,8 +236,26 @@ function duplicateEncode(word) {
 // "recede"   =>  "()()()"
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))(("
-console.log(duplicateEncode("Success"))
+// console.log(duplicateEncode("Success"))
 // assert.strictEqual(duplicateEncode("din"),"(((");
 // assert.strictEqual(duplicateEncode("recede"),"()()()");
 // assert.strictEqual(duplicateEncode("Success"),")())())","should ignore case");
 // assert.strictEqual(duplicateEncode("(( @"),"))((");
+
+function factorial(n) {
+    if(n > 12 || n < 0){
+        throw new RangeError
+    }
+    if (n == 0 || n == 1)
+        return 1;
+    if (factorial[n] > 0)
+        return factorial[n];
+    return factorial[n] = factorial(n-1) * n;
+}
+
+console.log(factorial(0))
+
+// Test.assertEquals(factorial(0), 1, "factorial for 0 is 1");
+// Test.assertEquals(factorial(1), 1, "factorial for 1 is 1");
+// Test.assertEquals(factorial(2), 2, "factorial for 2 is 2");
+// Test.assertEquals(factorial(3), 6, "factorial for 3 is 6");
