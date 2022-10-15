@@ -253,9 +253,25 @@ function factorial(n) {
     return factorial[n] = factorial(n-1) * n;
 }
 
-console.log(factorial(0))
+// console.log(factorial(0))
 
 // Test.assertEquals(factorial(0), 1, "factorial for 0 is 1");
 // Test.assertEquals(factorial(1), 1, "factorial for 1 is 1");
 // Test.assertEquals(factorial(2), 2, "factorial for 2 is 2");
 // Test.assertEquals(factorial(3), 6, "factorial for 3 is 6");
+
+function wave(str){
+    let arr1 = []
+    for (let i = 0; i < str.length; i++) {
+        let letter = str[i]
+        if(letter === ''){
+            continue
+        }else{
+            arr1.push(str.slice(0, i) + letter.toUpperCase() + str.slice(i + 1))
+        }
+    }
+    return arr1
+}
+
+console.log(wave("hello"))
+// let result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"];
