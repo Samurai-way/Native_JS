@@ -350,24 +350,38 @@ function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
 // })
 
 
-function doAfter(num) {
-    let newPr = new Promise((res, reject) => {
-        setTimeout(() => {
-            const random = Math.random()
-            res(random)
-        }, num * 1000)
-    })
-    return newPr
+// function doAfter(num) {
+//     let newPr = new Promise((res, reject) => {
+//         setTimeout(() => {
+//             const random = Math.random()
+//             res(random)
+//         }, num * 1000)
+//     })
+//     return newPr
+// }
+//
+// doAfter(5).then((res) => {
+//     console.log('я 1: ' + res)
+//     return res
+//     })
+//     .then((res) => {
+//         console.log('я 2: ' + res)
+//         return res
+//     })
+//     .then((res) => {
+//         console.log('я 3: ' + res)
+//     })
+
+function isPangram(string){
+    return /(?=.*a)(?=.*b)(?=.*c)(?=.*d)(?=.*e)(?=.*f)(?=.*g)(?=.*h)(?=.*i)(?=.*j)(?=.*k)(?=.*l)(?=.*m)(?=.*n)(?=.*o)(?=.*p)(?=.*q)(?=.*r)(?=.*s)(?=.*t)(?=.*u)(?=.*v)(?=.*w)(?=.*x)(?=.*y)(?=.*z)./i.test(string)
 }
 
-doAfter(5).then((res) => {
-    console.log('я 1: ' + res)
-    return res
-    })
-    .then((res) => {
-        console.log('я 2: ' + res)
-        return res
-    })
-    .then((res) => {
-        console.log('я 3: ' + res)
-    })
+// console.log(isPangram('The quick brown fox jumps over the lazy dog.'))
+// var string = "The quick brown fox jumps over the lazy dog."
+
+function asPangram(string){
+    string = string.toLowerCase();
+    return "abcdefghijklmnopqrstuvwxyz".split("").every((x) => string.indexOf(x) !== -1);
+}
+
+console.log(asPangram('The quick brown fox jumps over the lazy dog'))

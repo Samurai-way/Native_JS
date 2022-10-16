@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 7 kyu">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promises">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,8 @@
       <workItem from="1665690309117" duration="3861000" />
       <workItem from="1665776048882" duration="4811000" />
       <workItem from="1665860147225" duration="1815000" />
-      <workItem from="1665862969221" duration="9551000" />
+      <workItem from="1665862969221" duration="9572000" />
+      <workItem from="1665949361646" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
       <created>1664478204867</created>
@@ -332,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665904733913</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Promises">
+      <created>1665934727310</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1665934727310</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +357,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu, boolean, sort" />
     <MESSAGE value="codewars 7 kyu, for, push" />
     <MESSAGE value="codewars 7 kyu, sort" />
     <MESSAGE value="codewars 7, 8 kyu" />
@@ -375,7 +381,8 @@
     <MESSAGE value="codewars 6 kyu map, split" />
     <MESSAGE value="codewars 6 kyu" />
     <MESSAGE value="codewars 7 kyu" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars 7 kyu" />
+    <MESSAGE value="Promises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promises" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
