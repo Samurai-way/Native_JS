@@ -216,15 +216,14 @@ function findNextSquare(sq) {
 // }
 
 
-
 function duplicateEncode(word) {
     let string = ''
-    word = word.split('').filter((a,b) => {
-        if(word.indexOf(a) !== b){
+    word = word.split('').filter((a, b) => {
+        if (word.indexOf(a) !== b) {
             string += ')'
-        }else if(word.lastIndexOf(a) !== b){
+        } else if (word.lastIndexOf(a) !== b) {
             string += ')'
-        }else{
+        } else {
             string += '('
         }
     })
@@ -243,14 +242,14 @@ function duplicateEncode(word) {
 // assert.strictEqual(duplicateEncode("(( @"),"))((");
 
 function factorial(n) {
-    if(n > 12 || n < 0){
+    if (n > 12 || n < 0) {
         throw new RangeError
     }
     if (n == 0 || n == 1)
         return 1;
     if (factorial[n] > 0)
         return factorial[n];
-    return factorial[n] = factorial(n-1) * n;
+    return factorial[n] = factorial(n - 1) * n;
 }
 
 // console.log(factorial(0))
@@ -260,13 +259,13 @@ function factorial(n) {
 // Test.assertEquals(factorial(2), 2, "factorial for 2 is 2");
 // Test.assertEquals(factorial(3), 6, "factorial for 3 is 6");
 
-function wave(str){
+function wave(str) {
     let arr1 = []
     for (let i = 0; i < str.length; i++) {
         let letter = str[i]
-        if(letter === ''){
+        if (letter === '') {
             continue
-        }else{
+        } else {
             arr1.push(str.slice(0, i) + letter.toUpperCase() + str.slice(i + 1))
         }
     }
@@ -276,7 +275,7 @@ function wave(str){
 // console.log(wave("hello"))
 // let result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"];
 
-function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
     let a = age1 * age1
     let b = age2 * age2
     let c = age3 * age3
@@ -293,3 +292,82 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
 
 // predictAge(65, 60, 75, 55, 60, 63, 64, 45) === 86
 // console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45))
+
+// let promise = new Promise((res, rej) => {
+//     res()
+// })
+// .then((message) => {
+//     console.log('finally', message)
+// })
+// .catch((err) => {
+//     console.log('err', err)
+// })
+// .finally(() => {
+//     console.log('завершился')
+// })
+
+// let promise = new Promise((res) => {
+//     setTimeout(() => {
+//         let random = Math.random()
+//         res(random)
+//     }, 2000)
+// })
+// promise.then(random => {
+//     console.log('завершился и вижу: ' + random)
+// })
+// promise.then(random => {
+//     console.log('2: ' + random)
+// })
+// console.log('1')
+
+// let pr = new Promise( (resolve) => {
+//     let data = {
+//         cities: [{title: "Minsk"}, {title: "Kiev"}],
+//         website: "it-kamasutra.com"
+//     };
+//     resolve(data);
+// });
+//
+// pr.then( data => {
+//     let n = data
+//     console.log(n);
+// })
+// pr.then( website => {
+//         let w = website
+//         console.log(w.website);
+//     })
+
+// let promise = new Promise((res, rej) => {
+//     setInterval(() => {
+//         let a = 1
+//         console.log(a)
+//         rej(a)
+//     }, 1000)
+// })
+// .then(a => {
+//     a = 150
+//     console.log(a)
+// })
+
+
+function doAfter(num) {
+    let newPr = new Promise((res, reject) => {
+        setTimeout(() => {
+            const random = Math.random()
+            res(random)
+        }, num * 1000)
+    })
+    return newPr
+}
+
+doAfter(5).then((res) => {
+    console.log('я 1: ' + res)
+    return res
+    })
+    .then((res) => {
+        console.log('я 2: ' + res)
+        return res
+    })
+    .then((res) => {
+        console.log('я 3: ' + res)
+    })
