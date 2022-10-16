@@ -273,5 +273,23 @@ function wave(str){
     return arr1
 }
 
-console.log(wave("hello"))
+// console.log(wave("hello"))
 // let result = ["Hello", "hEllo", "heLlo", "helLo", "hellO"];
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+    let a = age1 * age1
+    let b = age2 * age2
+    let c = age3 * age3
+    let d = age4 * age4
+    let e = age5 * age5
+    let f = age6 * age6
+    let j = age7 * age7
+    let h = age8 * age8
+    let sum = a + b + c + d + e + f + j + h
+    let math = Math.sqrt(sum)
+    let res = math / 2
+    return Math.floor(res)
+}
+
+// predictAge(65, 60, 75, 55, 60, 63, 64, 45) === 86
+// console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45))
