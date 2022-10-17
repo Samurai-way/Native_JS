@@ -394,6 +394,11 @@ let number=function(array){
     return arr
 }
 
+function sum(array) {
+    return array.map((el,index) => `${index + 1}: ` + el)
+}
+
+// console.log(sum(["a", "b", "c", "d", "e", "f"]))
 // console.log(number(["a", "b", "c", "d", "e", "f"]))
 
 // assert.deepEqual(number([]), [], 'Empty array should return empty array');
