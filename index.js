@@ -384,4 +384,17 @@ function asPangram(string){
     return "abcdefghijklmnopqrstuvwxyz".split("").every((x) => string.indexOf(x) !== -1);
 }
 
-console.log(asPangram('The quick brown fox jumps over the lazy dog'))
+// console.log(asPangram('The quick brown fox jumps over the lazy dog'))
+
+let number=function(array){
+    let arr = []
+    for (let i = 0; i < array.length; i++) {
+        arr.push( i+1+": "+ array[i])
+    }
+    return arr
+}
+
+// console.log(number(["a", "b", "c", "d", "e", "f"]))
+
+// assert.deepEqual(number([]), [], 'Empty array should return empty array');
+// assert.deepEqual(number(["a", "b", "c"]), ["1: a", "2: b", "3: c"], 'Return the correct line numbers');
