@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 6 kyu, every">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 7 kyu 2 version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -78,7 +78,8 @@
       <workItem from="1665776048882" duration="4811000" />
       <workItem from="1665860147225" duration="1815000" />
       <workItem from="1665862969221" duration="9572000" />
-      <workItem from="1665949361646" duration="1797000" />
+      <workItem from="1665949361646" duration="2085000" />
+      <workItem from="1666037536088" duration="4536000" />
     </task>
     <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
       <created>1664478204867</created>
@@ -346,7 +347,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665950169809</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="codewars 7 kyu">
+      <created>1665988919867</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1665988919867</updated>
+    </task>
+    <task id="LOCAL-00040" summary="codewars 7 kyu 2 version">
+      <created>1665989100370</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1665989100370</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu, sort" />
     <MESSAGE value="codewars 7, 8 kyu" />
     <MESSAGE value="codewars 6 kyu - for (latter of string)" />
     <MESSAGE value="codewars 7 kyu (flat, sort)" />
@@ -386,10 +400,11 @@
     <MESSAGE value="codewars 6 kyu - reduce" />
     <MESSAGE value="codewars 6 kyu map, split" />
     <MESSAGE value="codewars 6 kyu" />
-    <MESSAGE value="codewars 7 kyu" />
     <MESSAGE value="Promises" />
     <MESSAGE value="codewars 6 kyu, every" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars 6 kyu, every" />
+    <MESSAGE value="codewars 7 kyu" />
+    <MESSAGE value="codewars 7 kyu 2 version" />
+    <option name="LAST_COMMIT_MESSAGE" value="codewars 7 kyu 2 version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

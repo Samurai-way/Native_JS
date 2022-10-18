@@ -372,30 +372,30 @@ function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
 //         console.log('я 3: ' + res)
 //     })
 
-function isPangram(string){
+function isPangram(string) {
     return /(?=.*a)(?=.*b)(?=.*c)(?=.*d)(?=.*e)(?=.*f)(?=.*g)(?=.*h)(?=.*i)(?=.*j)(?=.*k)(?=.*l)(?=.*m)(?=.*n)(?=.*o)(?=.*p)(?=.*q)(?=.*r)(?=.*s)(?=.*t)(?=.*u)(?=.*v)(?=.*w)(?=.*x)(?=.*y)(?=.*z)./i.test(string)
 }
 
 // console.log(isPangram('The quick brown fox jumps over the lazy dog.'))
 // var string = "The quick brown fox jumps over the lazy dog."
 
-function asPangram(string){
+function asPangram(string) {
     string = string.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".split("").every((x) => string.indexOf(x) !== -1);
 }
 
 // console.log(asPangram('The quick brown fox jumps over the lazy dog'))
 
-let number=function(array){
+let number = function (array) {
     let arr = []
     for (let i = 0; i < array.length; i++) {
-        arr.push( i+1+": "+ array[i])
+        arr.push(i + 1 + ": " + array[i])
     }
     return arr
 }
 
 function sum(array) {
-    return array.map((el,index) => `${index + 1}: ` + el)
+    return array.map((el, index) => `${index + 1}: ` + el)
 }
 
 // console.log(sum(["a", "b", "c", "d", "e", "f"]))
@@ -403,3 +403,26 @@ function sum(array) {
 
 // assert.deepEqual(number([]), [], 'Empty array should return empty array');
 // assert.deepEqual(number(["a", "b", "c"]), ["1: a", "2: b", "3: c"], 'Return the correct line numbers');
+
+const alphabetPosition = (text) =>
+    text.toLowerCase().split('')
+    .filter(a => a >= 'a' & a <= 'z')
+    .map(a => a.charCodeAt(0) - 'a'.charCodeAt(0) +1)
+    .join(' ')
+
+
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."))
+// Test.assertEquals(alphabetPosition("The sunset sets at twelve o' clock."), "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11");
+// Test.assertEquals(alphabetPosition("The narwhal bacons at midnight."), "20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20");
+
+function squareDigits(num){
+    let arr = ''
+    let array = (""+num).split('').map(Number)
+    for (let i = 0; i < array.length; i++) {
+        arr += array[i] * array[i]
+    }
+    return parseInt(arr)
+}
+
+console.log(squareDigits(2112))
+// assert.strictEqual(squareDigits(3212), 9414);
