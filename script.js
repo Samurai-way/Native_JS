@@ -770,9 +770,9 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
 const persistenceB = (num) => {
     let count = 0
     num = num.toString()
-    while (num.length > 1){
+    while (num.length > 1) {
         count++
-        num = num.split('').map(Number).reduce((a,b) => a*b).toString()
+        num = num.split('').map(Number).reduce((a, b) => a * b).toString()
     }
     return count
 }
@@ -791,15 +791,65 @@ const angle = n => (n - 2) * 180
 // assert.strictEqual(angle(3), 180);
 // assert.strictEqual(angle(4), 360);
 
-const pr = new Promise((res, rej) =>{
+// const pr = new Promise((res, rej) =>{
+//     setTimeout(() => {
+//         const newData = {
+//             age: 20,
+//             name: 'Dimas'
+//         }
+//     }, 2000)
+//     return res('hello')
+// })
+// pr.then( data => {
+//     console.log(data)
+// })
+
+
+// console.log('first')
+//
+// let axios = {
+//     get() {
+//         let promise = new Promise((res, rej) => {
+//             setTimeout(() => {
+//                 console.log('yoyo')
+//                 // rej(10)
+//                 res(10)
+//             }, 2000)
+//         })
+//         return promise
+//     }
+// }
+// axios.get(10)
+//     .then(data => console.log(data))
+//     .then(() => console.log('hey'))
+//     .then(() => console.log('lol'))
+// .catch((d) => console.log(d))
+
+// let a = {
+//     sum(a, b) {
+//         console.log(a + b)
+//         return this
+//     }
+// }
+// a.sum(5, 5).sum(15,12).sum(20,25)
+
+let pr = new Promise((res, rej) => {
     setTimeout(() => {
-        const newData = {
-            age: 20,
-            name: 'Dimas'
-        }
+            res({
+                a: 10,
+                b: 15,
+                name: 'Dima'
+            })
+        return pr
     }, 2000)
-    return res('hello')
 })
-pr.then( data => {
-    console.log(data)
+
+.then((data) => {
+    return data
+})
+.then((name) => {
+    return name
+})
+.then( (name) => {
+    console.log(name.b)
 })
