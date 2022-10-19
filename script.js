@@ -833,23 +833,47 @@ const angle = n => (n - 2) * 180
 // }
 // a.sum(5, 5).sum(15,12).sum(20,25)
 
-let pr = new Promise((res, rej) => {
-    setTimeout(() => {
-            res({
-                a: 10,
-                b: 15,
-                name: 'Dima'
-            })
-        return pr
-    }, 2000)
-})
+// let pr = new Promise((res, rej) => {
+//     setTimeout(() => {
+//             res({
+//                 a: 10,
+//                 b: 15,
+//                 name: 'Dima'
+//             })
+//         return pr
+//     }, 2000)
+// })
+//
+// .then((data) => {
+//     return data
+// })
+// .then((name) => {
+//     return name
+// })
+// .then( (name) => {
+//     console.log(name.b)
+// })
 
-.then((data) => {
-    return data
-})
-.then((name) => {
-    return name
-})
-.then( (name) => {
-    console.log(name.b)
-})
+// console.log(typeof pr)
+
+function duplicateCount(text){
+    text = text.toLowerCase().split("")
+    const countedletters = text.reduce((allLetters, letter) => {
+        if(letter in allLetters) {
+            allLetters[letter]++
+        }
+        else {
+            allLetters[letter] = 1
+        }
+        return allLetters
+    }, {})
+    const filterDup = Object.values(countedletters).filter((duplicate) => duplicate >=2)
+    return filterDup.length
+}
+
+// Test.assertEquals(duplicateCount(""), 0);
+// Test.assertEquals(duplicateCount("abcde"), 0);
+// Test.assertEquals(duplicateCount("aabbcde"), 2);
+// Test.assertEquals(duplicateCount("aabBcde"), 2,"should ignore case");
+// Test.assertEquals(duplicateCount("Indivisibility"), 1)
+// Test.assertEquals(duplicateCount("Indivisibilities"), 2, "characters may not be adjacent")

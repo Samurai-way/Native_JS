@@ -447,11 +447,59 @@ var encryptThis = function (text) {
 // assert.strictEqual(encryptThis("Thank you Piotr for all your help"), "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple");
 
 function isSortedAndHow(array) {
-    return array.every((x, i) => i == 0 || array[i] >= array[i - 1]) ? 'yes, ascending' :
-        array.every((x, i) => i == 0 || array[i] <= array[i - 1]) ? 'yes, descending' : 'no'
+    return array.
+    every((x, i) => i == 0 || array[i] >= array[i - 1]) ? 'yes, ascending' :
+        array.
+    every((x, i) => i == 0 || array[i] <= array[i - 1]) ? 'yes, descending' : 'no'
 }
 
-console.log(isSortedAndHow([4, 2, 30]))
+// console.log(isSortedAndHow([4, 2, 30]))
 // est.assertEquals(isSortedAndHow([1, 2]), 'yes, ascending');
 // Test.assertEquals(isSortedAndHow([15, 7, 3, -8]), 'yes, descending');
 // Test.assertEquals(isSortedAndHow([4, 2, 30]), 'no');
+
+// function User(name) {
+//     this.name = name
+// }
+//
+// User.prototype.showName = function (){
+//     console.log(this.name)
+// }
+//
+// const alex = new User('Alex')
+//
+// alex.showName()
+
+function BaseUser() {
+
+}
+
+BaseUser.prototype.showName = function () {
+    console.log(this.name)
+}
+
+function User(name){
+    this.name = name
+}
+Object.setPrototypeOf(User.prototype, BaseUser.prototype)
+const alex = new User('Alex')
+
+alex.showName()
+
+// класс - некий синтаксический сахар
+
+
+
+                                                // наследование
+
+class User {
+   constructor(name) {
+       this.name = name
+   }
+}
+
+class BaseUser extends User{
+    constructor(age, name) {
+        super();
+    }
+}
