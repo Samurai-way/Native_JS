@@ -406,18 +406,18 @@ function sum(array) {
 
 const alphabetPosition = (text) =>
     text.toLowerCase().split('')
-    .filter(a => a >= 'a' & a <= 'z')
-    .map(a => a.charCodeAt(0) - 'a'.charCodeAt(0) +1)
-    .join(' ')
+        .filter(a => a >= 'a' & a <= 'z')
+        .map(a => a.charCodeAt(0) - 'a'.charCodeAt(0) + 1)
+        .join(' ')
 
 
 // console.log(alphabetPosition("The sunset sets at twelve o' clock."))
 // Test.assertEquals(alphabetPosition("The sunset sets at twelve o' clock."), "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11");
 // Test.assertEquals(alphabetPosition("The narwhal bacons at midnight."), "20 8 5 14 1 18 23 8 1 12 2 1 3 15 14 19 1 20 13 9 4 14 9 7 8 20");
 
-function squareDigits(num){
+function squareDigits(num) {
     let arr = ''
-    let array = (""+num).split('').map(Number)
+    let array = ("" + num).split('').map(Number)
     for (let i = 0; i < array.length; i++) {
         arr += array[i] * array[i]
     }
@@ -427,7 +427,7 @@ function squareDigits(num){
 // console.log(squareDigits(2112))
 // assert.strictEqual(squareDigits(3212), 9414);
 
-var encryptThis = function(text) {
+var encryptThis = function (text) {
     return text
         .split(' ')
         .map(e => {
@@ -438,10 +438,20 @@ var encryptThis = function(text) {
         })
         .join(' ');
 }
-console.log(encryptThis("A"))
+// console.log(encryptThis("A"))
 // assert.strictEqual(encryptThis("A"), "65");
 // assert.strictEqual(encryptThis("A wise old owl lived in an oak"), "65 119esi 111dl 111lw 108dvei 105n 97n 111ka");
 // assert.strictEqual(encryptThis("The more he saw the less he spoke"), "84eh 109ero 104e 115wa 116eh 108sse 104e 115eokp");
 // assert.strictEqual(encryptThis("The less he spoke the more he heard"), "84eh 108sse 104e 115eokp 116eh 109ero 104e 104dare");
 // assert.strictEqual(encryptThis("Why can we not all be like that wise old bird"), "87yh 99na 119e 110to 97ll 98e 108eki 116tah 119esi 111dl 98dri");
 // assert.strictEqual(encryptThis("Thank you Piotr for all your help"), "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple");
+
+function isSortedAndHow(array) {
+    return array.every((x, i) => i == 0 || array[i] >= array[i - 1]) ? 'yes, ascending' :
+        array.every((x, i) => i == 0 || array[i] <= array[i - 1]) ? 'yes, descending' : 'no'
+}
+
+console.log(isSortedAndHow([4, 2, 30]))
+// est.assertEquals(isSortedAndHow([1, 2]), 'yes, ascending');
+// Test.assertEquals(isSortedAndHow([15, 7, 3, -8]), 'yes, descending');
+// Test.assertEquals(isSortedAndHow([4, 2, 30]), 'no');
