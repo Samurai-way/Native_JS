@@ -492,14 +492,20 @@ alex.showName()
 
                                                 // наследование
 
-class User {
-   constructor(name) {
-       this.name = name
-   }
+// class User {
+//    constructor(name) {
+//        this.name = name
+//    }
+// }
+//
+// class BaseUser extends User{
+//     constructor(age, name) {
+//         super();
+//     }
+// }
+
+function gimme (triplet) {
+    return triplet.indexOf([...triplet].sort((a,b) => a - b)[1])
 }
 
-class BaseUser extends User{
-    constructor(age, name) {
-        super();
-    }
-}
+console.log(gimme([2, 3, 1]))
