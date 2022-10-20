@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 6 kyu">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 7 kyu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -81,7 +81,8 @@
       <workItem from="1665949361646" duration="2085000" />
       <workItem from="1666037536088" duration="5434000" />
       <workItem from="1666093386263" duration="7191000" />
-      <workItem from="1666124189379" duration="10729000" />
+      <workItem from="1666124189379" duration="10744000" />
+      <workItem from="1666295565344" duration="2640000" />
     </task>
     <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
       <created>1664478204867</created>
@@ -398,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666211665908</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="codewars 7 kyu">
+      <created>1666247811784</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1666247811784</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,13 +443,13 @@
     <MESSAGE value="codewars 6 kyu map, split" />
     <MESSAGE value="Promises" />
     <MESSAGE value="codewars 6 kyu, every" />
-    <MESSAGE value="codewars 7 kyu" />
     <MESSAGE value="codewars 7 kyu 2 version" />
     <MESSAGE value="codewars 7 kyu split, map, parseInt" />
     <MESSAGE value="code wars, 6 kyu" />
     <MESSAGE value="code wars, 7 kyu" />
     <MESSAGE value="codewars 6 kyu" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars 6 kyu" />
+    <MESSAGE value="codewars 7 kyu" />
+    <option name="LAST_COMMIT_MESSAGE" value="codewars 7 kyu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

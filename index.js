@@ -447,10 +447,8 @@ var encryptThis = function (text) {
 // assert.strictEqual(encryptThis("Thank you Piotr for all your help"), "84kanh 121uo 80roti 102ro 97ll 121ruo 104ple");
 
 function isSortedAndHow(array) {
-    return array.
-    every((x, i) => i == 0 || array[i] >= array[i - 1]) ? 'yes, ascending' :
-        array.
-    every((x, i) => i == 0 || array[i] <= array[i - 1]) ? 'yes, descending' : 'no'
+    return array.every((x, i) => i == 0 || array[i] >= array[i - 1]) ? 'yes, ascending' :
+        array.every((x, i) => i == 0 || array[i] <= array[i - 1]) ? 'yes, descending' : 'no'
 }
 
 // console.log(isSortedAndHow([4, 2, 30]))
@@ -478,9 +476,10 @@ BaseUser.prototype.showName = function () {
     console.log(this.name)
 }
 
-function User(name){
+function User(name) {
     this.name = name
 }
+
 Object.setPrototypeOf(User.prototype, BaseUser.prototype)
 const alex = new User('Alex')
 
@@ -489,8 +488,7 @@ alex.showName()
 // класс - некий синтаксический сахар
 
 
-
-                                                // наследование
+// наследование
 
 // class User {
 //    constructor(name) {
@@ -504,8 +502,13 @@ alex.showName()
 //     }
 // }
 
-function gimme (triplet) {
-    return triplet.indexOf([...triplet].sort((a,b) => a - b)[1])
+function gimme(triplet) {
+    return triplet.indexOf([...triplet].sort((a, b) => a - b)[1])
 }
 
-console.log(gimme([2, 3, 1]))
+// console.log(gimme([2, 3, 1]))
+
+function meeting(s) {
+    return s.replace(/;/gi,' ').split(' ').map(v=>v.split(':').reverse().join(', ').toUpperCase()).sort()
+        .map(v=>'('+v+')').join('')
+}
