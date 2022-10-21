@@ -512,3 +512,18 @@ function meeting(s) {
     return s.replace(/;/gi,' ').split(' ').map(v=>v.split(':').reverse().join(', ').toUpperCase()).sort()
         .map(v=>'('+v+')').join('')
 }
+
+
+const foo = (busStops) => {
+    let res = 0
+    for (let i = 0; i < busStops.length; i++) {
+        res += busStops[i][0] - busStops[i][1]
+        // console.log(busStops[i][0] - busStops[i][1])
+    }
+    return res
+}
+console.log(foo([[10,0],[3,5],[5,8]]))
+// assert.strictEqual(number([[10,0],[3,5],[5,8]]),5);
+// assert.strictEqual(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]),17);
+// assert.strictEqual(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]),21);
+// assert.strictEqual(number([[0,0]]),0);
