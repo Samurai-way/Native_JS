@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars 7 kyu">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="OOP 3 princeps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop.js" beforeDir="false" afterPath="$PROJECT_DIR$/oop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,14 +93,8 @@
       <workItem from="1666295565344" duration="2821000" />
       <workItem from="1666333980044" duration="2315000" />
       <workItem from="1666374733734" duration="690000" />
-      <workItem from="1666423858931" duration="7891000" />
-    </task>
-    <task id="LOCAL-00001" summary="codewars 7 kyu, reverse, replace, join">
-      <created>1664478204867</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1664478204867</updated>
+      <workItem from="1666423858931" duration="8317000" />
+      <workItem from="1666556041035" duration="1446000" />
     </task>
     <task id="LOCAL-00002" summary="codewars 7 kyu, new Set, sort, join">
       <created>1664522854847</created>
@@ -437,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666424917314</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="OOP 3 princeps">
+      <created>1666434967686</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1666434967686</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +457,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu (for)" />
     <MESSAGE value="codewars 7 kyu (replace)" />
     <MESSAGE value="codewars 7 kyu (split, reverse,join)" />
     <MESSAGE value="codewars 7 kyu (split, for)" />
@@ -480,7 +481,8 @@
     <MESSAGE value="code wars, 7 kyu" />
     <MESSAGE value="codewars 6 kyu" />
     <MESSAGE value="codewars 7 kyu" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars 7 kyu" />
+    <MESSAGE value="OOP 3 princeps" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOP 3 princeps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -856,18 +856,17 @@ const angle = n => (n - 2) * 180
 
 // console.log(typeof pr)
 
-function duplicateCount(text){
+function duplicateCount(text) {
     text = text.toLowerCase().split("")
     const countedletters = text.reduce((allLetters, letter) => {
-        if(letter in allLetters) {
+        if (letter in allLetters) {
             allLetters[letter]++
-        }
-        else {
+        } else {
             allLetters[letter] = 1
         }
         return allLetters
     }, {})
-    const filterDup = Object.values(countedletters).filter((duplicate) => duplicate >=2)
+    const filterDup = Object.values(countedletters).filter((duplicate) => duplicate >= 2)
     return filterDup.length
 }
 
@@ -877,3 +876,24 @@ function duplicateCount(text){
 // Test.assertEquals(duplicateCount("aabBcde"), 2,"should ignore case");
 // Test.assertEquals(duplicateCount("Indivisibility"), 1)
 // Test.assertEquals(duplicateCount("Indivisibilities"), 2, "characters may not be adjacent")
+
+// function openOrSenior(data) {
+//     let arr = []
+//     for (let i = 0; i < data.length; i++) {
+//         arr[i] = (data[i][0] >= 55 && data[i][1] > 7) ? 'Senior' : 'Open'
+//     }
+//     return arr
+// }
+
+function openOrSenior(data) {
+    function foo(member) {
+        return (member[0] >= 55 && member[1] > 7) ? 'Senior' : 'Open'
+    }
+    return data.map(foo)
+}
+
+console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
+// assert.deepEqual(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]),['Open', 'Senior', 'Open', 'Senior'])
+// assert.deepEqual(openOrSenior([[3, 12],[55,1],[91, -2],[53, 23]]),['Open', 'Open', 'Open', 'Open'])
+// assert.deepEqual(openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]]),['Senior', 'Open', 'Open', 'Open'])
+
