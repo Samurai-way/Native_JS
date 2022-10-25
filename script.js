@@ -892,8 +892,43 @@ function openOrSenior(data) {
     return data.map(foo)
 }
 
-console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
+// console.log(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]))
 // assert.deepEqual(openOrSenior([[45, 12],[55,21],[19, -2],[104, 20]]),['Open', 'Senior', 'Open', 'Senior'])
 // assert.deepEqual(openOrSenior([[3, 12],[55,1],[91, -2],[53, 23]]),['Open', 'Open', 'Open', 'Open'])
 // assert.deepEqual(openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]]),['Senior', 'Open', 'Open', 'Open'])
 
+function isValidWalk(walk) {
+    let dx = 0
+    let dy = 0
+    let dt = walk.length
+
+    for (let i = 0; i < walk.length; i++) {
+        switch (walk[i]) {
+            case 'n': dy--; break
+            case 's': dy++; break
+            case 'w': dx--; break
+            case 'e': dx++; break
+        }
+    }
+    return dt === 10 && dx === 0 && dy === 0
+}
+
+// console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']))
+// assert.isTrue(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), 'should return true');
+// assert.isFalse(isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return false');
+// assert.isFalse(isValidWalk(['w']), 'should return false');
+// assert.isFalse(isValidWalk(['n','n','n','s','n','s','n','s','n','s']), 'should return false');
+
+function minSum(arr) {
+    const sorted = arr.sort((a,b) => a-b)
+    let sum = 0
+    for (let i = 0; i < sorted.length/2; i++) {
+        sum+=sorted[i] * sorted[sorted.length - 1 - i]
+    }
+    return sum
+}
+
+console.log(minSum([12,6,10,26,3,24]))
+// Test.assertEquals(minSum([5,4,2,3]), 22);
+// Test.assertEquals(minSum([12,6,10,26,3,24]), 342);
+// Test.assertEquals(minSum([9,2,8,7,5,4,0,6]), 74);
