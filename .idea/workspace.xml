@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="codewars">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop.js" beforeDir="false" afterPath="$PROJECT_DIR$/oop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +98,8 @@
       <workItem from="1666423858931" duration="8317000" />
       <workItem from="1666556041035" duration="1580000" />
       <workItem from="1666557669559" duration="666000" />
-      <workItem from="1666641118186" duration="5319000" />
-    </task>
-    <task id="LOCAL-00003" summary="codewars 7 kyu, new Set, sort, join">
-      <created>1664522873968</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1664522873968</updated>
+      <workItem from="1666641118186" duration="5928000" />
+      <workItem from="1666714464489" duration="6046000" />
     </task>
     <task id="LOCAL-00004" summary="codewars 7 kyu, boolean, sort">
       <created>1664571776359</created>
@@ -441,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666557618199</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="codewars">
+      <created>1666691383524</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1666691383524</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,16 +488,5 @@
     <MESSAGE value="OOP 3 princeps" />
     <MESSAGE value="codewars" />
     <option name="LAST_COMMIT_MESSAGE" value="codewars" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/script.js</url>
-          <line>353</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
