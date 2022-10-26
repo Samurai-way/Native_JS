@@ -119,3 +119,84 @@
 // a.first()
 // a.second()
 // a.third()
+// const group = {
+//     name: 'Samurai',
+//     users: ['Alex', 'Hanna'],
+//
+//     showUsersWithGroup(){
+//         this.users.forEach(function (user){
+//             console.log(`${this.name}: ${user}`)
+//         })
+//     }
+// }
+//
+// group.showUsersWithGroup()
+// const user = {
+//     sleep(){
+//         this.isSleeping = true
+//     }
+// }
+//
+// const john = {}
+//
+// john.__proto__ = user
+//
+// john.sleep()
+//
+// console.log(john.isSleeping)
+// console.log(
+//     [].__proto__.__proto__.__proto__ == null
+// )
+// console.log(
+//     (()=>{}).__proto__.__proto__ === Object.prototype
+// )
+//
+// console.log(
+//     Object.__proto__ === (()=>{}).__proto__
+// )
+
+// function Rabbit() {}
+//
+// const rabbit1 = Rabbit()
+//
+// Rabbit.prototype = {}
+//
+// const rabbit2 = new Rabbit()
+//
+// console.log(
+//     rabbit1.constructor === Rabbit
+// )
+//
+// console.log(
+//     rabbit2.constructor === Object
+// )
+
+//true, true
+
+
+setTimeout(()=>{
+    console.log(1)
+},30)
+
+setTimeout(()=>{
+    console.log(2)
+},10)
+
+new Promise((res) => {
+    console.log(3)
+    res()
+    console.log(4)
+}).then(()=>{
+    console.log(5)
+})
+
+async function test1(){
+    console.log(6)
+    await test2()
+    console.log(9)
+}
+
+async function test2(){
+    console.log(8)
+}
+test1()
