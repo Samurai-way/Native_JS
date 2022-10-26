@@ -363,12 +363,28 @@
 // for (const k in user) {
 //     console.log(k)
 // }
-
-let user = {
-    age: 10
-}
-Object.preventExtensions(user)
-user.name = 'Dima'
-console.log(user)
-
+// let user = {
+//     age: 10
+// }
+//
+// Object.preventExtensions(user)
+// user.name = 'Dima'
+// console.log(user)
 //Object.preventExtensions, Object.seal - запечатывает обьект, Object.freeze - writable - false
+
+                                    //Event loop//
+
+//Поток бегает по петле
+
+console.log(1)
+console.log(2)
+
+let pr = new Promise((res) => {
+    console.log(3)
+    res()
+    console.log(4)
+})
+pr.then(()=>{
+    console.log(5)
+})
+console.log(6)
