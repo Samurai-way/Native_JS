@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="native js">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Object.preventExtensions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -97,14 +97,7 @@
       <workItem from="1666557669559" duration="666000" />
       <workItem from="1666641118186" duration="5928000" />
       <workItem from="1666714464489" duration="7825000" />
-      <workItem from="1666790844107" duration="6840000" />
-    </task>
-    <task id="LOCAL-00007" summary="codewars 7 kyu, sort">
-      <created>1664742352335</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1664742352335</updated>
+      <workItem from="1666790844107" duration="9120000" />
     </task>
     <task id="LOCAL-00008" summary="codewars 7, 8 kyu">
       <created>1664783436767</created>
@@ -442,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666796828141</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Object.preventExtensions">
+      <created>1666798081380</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1666798081380</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu (split, for)" />
     <MESSAGE value="codewars 7 kyu (toString)" />
     <MESSAGE value="codewars 6 kyu (match, regex)" />
     <MESSAGE value="codewars 7 kyu (map, Math.max, Math.min)" />
@@ -485,6 +484,7 @@
     <MESSAGE value="OOP 3 princeps" />
     <MESSAGE value="codewars" />
     <MESSAGE value="native js" />
-    <option name="LAST_COMMIT_MESSAGE" value="native js" />
+    <MESSAGE value="Object.preventExtensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Object.preventExtensions" />
   </component>
 </project>

@@ -370,3 +370,5 @@ let user = {
 Object.preventExtensions(user)
 user.name = 'Dima'
 console.log(user)
+
+//Object.preventExtensions, Object.seal - запечатывает обьект, Object.freeze - writable - false
