@@ -463,12 +463,59 @@
 // pr.then((res)=>{})
 // pr.catch(() => console.log('Oleh'))
 
-let pr = new Promise((res, rej) => {
-    rej('Oleg')
+// let pr = new Promise((res, rej) => {
+//     rej('Oleg')
+// })
+//     .then(() => {
+//         console.log('hello')
+//     })
+//     .catch(() => {
+//         console.log('Oleg')
+//     })
+
+// let pr = new Promise((res, rej) => {
+//     // res(10)
+//     rej('error')
+// })
+//     .then(() => {
+//         console.log('then')
+//     })
+//     .catch(() => {
+//         console.log('error')
+//     })
+//     .finally(()=>{
+//         console.log('finally')
+//     })
+// let pr = new Promise((res, rej) => {
+//     res('Oy')
+//     rej('Yes')
+// })
+// .then(()=>{
+//     console.log('Oy')
+// })
+//     .catch(()=>{
+//     console.log('Yes')
+// })
+
+// let pr = new Promise((res, rej) => {
+//     rej('Sasha')
+// })
+// (async function () {
+//     let res = await pr
+//     console.log(res)
+// }())
+console.log(15)
+let pr = new Promise((res)=>{
+    console.log(2)
+    res()
+    console.log('1')
+    setTimeout(()=>{
+        pr.then(()=>{
+            console.log(12)
+        })
+        console.log('hello world')
+    },2000)
+}).then(()=>{
+    console.log(26)
 })
-    .then(() => {
-        console.log('hello')
-    })
-    .catch(() => {
-        console.log('Oleg')
-    })
+console.log(5)
