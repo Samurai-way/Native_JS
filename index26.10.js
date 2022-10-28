@@ -504,18 +504,37 @@
 //     let res = await pr
 //     console.log(res)
 // }())
-console.log(15)
-let pr = new Promise((res)=>{
-    console.log(2)
-    res()
-    console.log('1')
-    setTimeout(()=>{
-        pr.then(()=>{
-            console.log(12)
-        })
-        console.log('hello world')
-    },2000)
-}).then(()=>{
-    console.log(26)
-})
-console.log(5)
+// console.log(15)
+// let pr = new Promise((res)=>{
+//     console.log(2)
+//     res()
+//     console.log('1')
+//     setTimeout(()=>{
+//         pr.then(()=>{
+//             console.log(12)
+//         })
+//         console.log('hello world')
+//     },2000)
+// }).then(()=>{
+//     console.log(26)
+// })
+// console.log(5)
+//
+// let pr1 = new Promise((res) => {
+//     setTimeout(() => {
+//         res({
+//             age: 10,
+//             name: 'Dima'
+//         })
+//         console.log(1)
+//     }, 5000)
+// }).then((value)=>console.log(value))
+// let pr2 = new Promise((res) => {
+//     res('Artur')
+//     setTimeout(() => {
+//         console.log(2)
+//     }, 1000)
+// })
+//
+// let pr3 = Promise.all([pr1, pr2]).then(values => console.log(values[0], values[1]))
+

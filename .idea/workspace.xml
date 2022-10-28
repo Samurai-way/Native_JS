@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promise, then,catch">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promise, then,catch, finally">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index26.10.js" beforeDir="false" afterPath="$PROJECT_DIR$/index26.10.js" afterDir="false" />
     </list>
@@ -98,14 +98,7 @@
       <workItem from="1666641118186" duration="5928000" />
       <workItem from="1666714464489" duration="7825000" />
       <workItem from="1666790844107" duration="12453000" />
-      <workItem from="1666942361153" duration="5399000" />
-    </task>
-    <task id="LOCAL-00011" summary="codewars 7 kyu (flat, sort)">
-      <created>1664913754390</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1664913754390</updated>
+      <workItem from="1666942361153" duration="6055000" />
     </task>
     <task id="LOCAL-00012" summary="codewars 7 kyu (for)">
       <created>1664955765102</created>
@@ -443,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666946496696</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Promise, then,catch, finally">
+      <created>1666948647397</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1666948647397</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 6 kyu (map, split, reduce)" />
     <MESSAGE value="codewars 7 kyu (if, while)" />
     <MESSAGE value="codewars 6 kyu (push, for)" />
     <MESSAGE value="codewars 7 kyu - sumOfMinimums" />
@@ -486,6 +485,7 @@
     <MESSAGE value="Object.preventExtensions, Object.seal, Object.freeze" />
     <MESSAGE value="Event loop" />
     <MESSAGE value="Promise, then,catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promise, then,catch" />
+    <MESSAGE value="Promise, then,catch, finally" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promise, then,catch, finally" />
   </component>
 </project>
