@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Object.preventExtensions">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Event loop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index26.10.js" beforeDir="false" afterPath="$PROJECT_DIR$/index26.10.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,21 +98,8 @@
       <workItem from="1666557669559" duration="666000" />
       <workItem from="1666641118186" duration="5928000" />
       <workItem from="1666714464489" duration="7825000" />
-      <workItem from="1666790844107" duration="9120000" />
-    </task>
-    <task id="LOCAL-00008" summary="codewars 7, 8 kyu">
-      <created>1664783436767</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1664783436767</updated>
-    </task>
-    <task id="LOCAL-00009" summary="codewars 6 kyu - for (latter of string)">
-      <created>1664826706108</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1664826706108</updated>
+      <workItem from="1666790844107" duration="12453000" />
+      <workItem from="1666942361153" duration="3549000" />
     </task>
     <task id="LOCAL-00010" summary="codewars 7 kyu (replace)">
       <created>1664869360469</created>
@@ -442,7 +430,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666798081380</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Object.preventExtensions, Object.seal, Object.freeze">
+      <created>1666808081631</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1666808081632</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Event loop">
+      <created>1666812550298</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1666812550298</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,8 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu (toString)" />
-    <MESSAGE value="codewars 6 kyu (match, regex)" />
     <MESSAGE value="codewars 7 kyu (map, Math.max, Math.min)" />
     <MESSAGE value="codewars 6 kyu (map, split, reduce)" />
     <MESSAGE value="codewars 7 kyu (if, while)" />
@@ -485,6 +485,8 @@
     <MESSAGE value="codewars" />
     <MESSAGE value="native js" />
     <MESSAGE value="Object.preventExtensions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Object.preventExtensions" />
+    <MESSAGE value="Object.preventExtensions, Object.seal, Object.freeze" />
+    <MESSAGE value="Event loop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Event loop" />
   </component>
 </project>

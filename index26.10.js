@@ -372,19 +372,103 @@
 // console.log(user)
 //Object.preventExtensions, Object.seal - запечатывает обьект, Object.freeze - writable - false
 
-                                    //Event loop//
+//Event loop//
 
 //Поток бегает по петле
 
-console.log(1)
-console.log(2)
+// console.log(1)
+// console.log(2)
+//
+// let pr = new Promise((res) => {
+//     console.log(3)
+//     res()
+//     console.log(4)
+// })
+// pr.then(()=>{
+//     console.log(5)
+// })
+// console.log(6)
 
-let pr = new Promise((res) => {
-    console.log(3)
-    res()
-    console.log(4)
+//Promises
+//
+//
+// let promise = new Promise((res, rej) => res('Oleg'))
+// promise.then(value => value)
+// promise.then(value => console.log(value))
+//
+// let pr = new Promise((res, rej) => res('Oleg')).then(value => value)
+//     .then(value => console.log(value))
+// console.log(1)
+// let pr = new Promise((res,rej) => {
+//     res()
+//     console.log(2)
+// })
+// pr.then(value => console.log(3))
+// pr.then(value => console.log(4))
+// console.log(5)
+//
+// Promise.all(Promise.resolve(3), Promise.resolve(5))
+// let p1 = Promise.resolve(3);
+// let p2 = 1337;
+// let p3 = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 100, "foo");
+// });
+//
+// Promise.all([p1, p2, p3]).then(values => {
+//     console.log(values);
+// });
+
+// let pr1 = Promise.resolve(1)
+// let pr2 = 10
+// let pr3 = new Promise((res,rej) => {
+//     res('15')
+//     console.log('kyyy')
+// })
+//
+// Promise.all([pr1,pr2,pr3])
+// .then(res => console.log(res))
+//
+// let pr = new Promise((res, rej) => {
+//     rej('Haha')
+// })
+// .then((res)=> console.log(res))
+// .catch(err => console.log(2))
+// .catch(err => console.log(3))
+// .then(()=>console.log(4))
+//
+// async function foo(){
+//     return 'tooo'
+// }
+//
+//
+// (async function doo(){
+//    let res = await foo()
+//     console.log(res)
+// })()
+
+
+// let pr = new Promise((res, rej) => {
+//     res(10)
+//     console.log()
+// })
+//     .then((res) => 1)
+//     .then(res => Promise.resolve(res + 2))
+//     .then(res => Promise.resolve(res - 1))
+//     .then(res => res + 2)
+//     .then(res => console.log(res))
+//
+// let dr = new Promise((res,rej) => {
+//     rej('Oleg')
+// })
+// pr.then((res)=>{})
+// pr.catch(() => console.log('Oleh'))
+
+let pr = new Promise((res, rej) => {
+    rej('Oleg')
 })
-pr.then(()=>{
-    console.log(5)
-})
-console.log(6)
+    .then(() => {
+        console.log('hello')
+    })
+    .catch(() => {
+        console.log('Oleg')
+    })
