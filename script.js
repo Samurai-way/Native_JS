@@ -1,5 +1,7 @@
-let regex = /358\d{7}/;
-let regexText = /@gmail.\w{3}/;
+const regex = /358\d{7}/;
+const regexText = /@gmail.\w{3}/;
+const emailName = /^[a-z]+@gmail.com$/ // начало от a до z, а конец @gmail.com
 
 // console.log(regex.test(358111111))
-console.log(regexText.test('oleg@gmail.cm'))
+// console.log(regexText.test('oleg@gmail.cm'))
+console.log(emailName.test('aassasaz@gmail.com'))

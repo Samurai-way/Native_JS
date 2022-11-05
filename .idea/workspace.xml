@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promise, then,catch, finally">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="regex text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index26.10.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,21 +101,7 @@
       <workItem from="1666942361153" duration="6090000" />
       <workItem from="1666983619322" duration="789000" />
       <workItem from="1667415679549" duration="823000" />
-      <workItem from="1667671106861" duration="897000" />
-    </task>
-    <task id="LOCAL-00013" summary="codewars 7 kyu (replace)">
-      <created>1664998344617</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1664998344617</updated>
-    </task>
-    <task id="LOCAL-00014" summary="codewars 7 kyu (split, reverse,join)">
-      <created>1665036996080</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1665036996080</updated>
+      <workItem from="1667671106861" duration="2331000" />
     </task>
     <task id="LOCAL-00015" summary="codewars 7 kyu (split, for)">
       <created>1665085770123</created>
@@ -448,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666949308310</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="regex expression">
+      <created>1667672102752</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1667672102752</updated>
+    </task>
+    <task id="LOCAL-00063" summary="regex text">
+      <created>1667672290287</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1667672290287</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,8 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu (if, while)" />
-    <MESSAGE value="codewars 6 kyu (push, for)" />
     <MESSAGE value="codewars 7 kyu - sumOfMinimums" />
     <MESSAGE value="codewars 7 kyu - sumOfMinimums, reduce" />
     <MESSAGE value="codewars 7 kyu DateParse" />
@@ -491,6 +487,8 @@
     <MESSAGE value="Event loop" />
     <MESSAGE value="Promise, then,catch" />
     <MESSAGE value="Promise, then,catch, finally" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promise, then,catch, finally" />
+    <MESSAGE value="regex expression" />
+    <MESSAGE value="regex text" />
+    <option name="LAST_COMMIT_MESSAGE" value="regex text" />
   </component>
 </project>
