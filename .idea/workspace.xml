@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promise, then,catch, finally">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index26.10.js" beforeDir="false" afterPath="$PROJECT_DIR$/index26.10.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index26.10.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +100,10 @@
       <workItem from="1666641118186" duration="5928000" />
       <workItem from="1666714464489" duration="7825000" />
       <workItem from="1666790844107" duration="12453000" />
-      <workItem from="1666942361153" duration="6055000" />
-    </task>
-    <task id="LOCAL-00012" summary="codewars 7 kyu (for)">
-      <created>1664955765102</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1664955765102</updated>
+      <workItem from="1666942361153" duration="6090000" />
+      <workItem from="1666983619322" duration="789000" />
+      <workItem from="1667415679549" duration="823000" />
+      <workItem from="1667671106861" duration="897000" />
     </task>
     <task id="LOCAL-00013" summary="codewars 7 kyu (replace)">
       <created>1664998344617</created>
@@ -443,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666948647397</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Promise, then,catch, finally">
+      <created>1666949308310</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1666949308310</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

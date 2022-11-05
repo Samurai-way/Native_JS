@@ -538,3 +538,22 @@
 //
 // let pr3 = Promise.all([pr1, pr2]).then(values => console.log(values[0], values[1]))
 
+// console.log(1)
+// let promise = new Promise((res,rej) => {
+//     setTimeout(()=>{
+//         res('res')
+//         console.log(3)
+//     },5000)
+// })
+//     // .then(res => console.log(res))
+//     .then(res => console.log(res))
+// console.log(2)
+
+// console.log(1)
+// setTimeout(()=>{
+//     console.log('soska')
+// },0)
+// console.log(2)
+// console.log(3)
+// console.log(4)
+
