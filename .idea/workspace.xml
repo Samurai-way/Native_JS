@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="regex text">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="^[a-z]+@gmail.com$">
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,14 +100,7 @@
       <workItem from="1666942361153" duration="6090000" />
       <workItem from="1666983619322" duration="789000" />
       <workItem from="1667415679549" duration="823000" />
-      <workItem from="1667671106861" duration="2331000" />
-    </task>
-    <task id="LOCAL-00015" summary="codewars 7 kyu (split, for)">
-      <created>1665085770123</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1665085770123</updated>
+      <workItem from="1667671106861" duration="3112000" />
     </task>
     <task id="LOCAL-00016" summary="codewars 7 kyu (toString)">
       <created>1665137272690</created>
@@ -446,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667672290287</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="^[a-z]+@gmail.com$">
+      <created>1667673663820</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1667673663820</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu - sumOfMinimums" />
     <MESSAGE value="codewars 7 kyu - sumOfMinimums, reduce" />
     <MESSAGE value="codewars 7 kyu DateParse" />
     <MESSAGE value="codewars 6 kyu split, while, map, reduce" />
@@ -489,6 +487,7 @@
     <MESSAGE value="Promise, then,catch, finally" />
     <MESSAGE value="regex expression" />
     <MESSAGE value="regex text" />
-    <option name="LAST_COMMIT_MESSAGE" value="regex text" />
+    <MESSAGE value="^[a-z]+@gmail.com$" />
+    <option name="LAST_COMMIT_MESSAGE" value="^[a-z]+@gmail.com$" />
   </component>
 </project>
