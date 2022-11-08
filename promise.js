@@ -756,3 +756,59 @@
 // john.sleep()
 //
 // console.log(john.isSleeping)
+
+// const arr = []
+// console.log(arr.constructor === Array)
+//
+// const a = () => {}
+//
+// console.log(a.__proto__.__proto__.constructor == Object)
+//
+// arr.__proto__ = []
+// console.log(arr.__proto__.__proto__ === Object.prototype)
+
+// class Promise {}
+//
+// class User extends Promise{
+//     constructor(name) {
+//         super()
+//         this.name = name
+//     }
+//
+//     getName(){
+//         return this.name
+//     }
+// }
+//
+// const user = new User('Alex')
+// console.log(user.__proto__ === User.prototype)
+//
+// console.log(typeof User)
+// console.log(User === User.prototype.constructor)
+// console.log(User.__proto__ === Function.prototype)
+// console.log(User.prototype.__proto__ === BaseUser.prototype)
+
+// class A {
+//     getName(){
+//         return this.name
+//     }
+// }
+//
+// const b = Object.create(A, {
+//     name: {
+//         value: 'b'
+//     }
+// })
+//
+// console.log(b.getName())
+
+Promise
+.resolve(10)
+.then(res => console.log(res))
+.then(res => Promise.resolve(res))
+.then(console.log)
+.then(res => {
+    if(!res) throw new Error('New error')
+})
+.then(res => console.log(res.message))
+.catch(res => console.log(res.message))
