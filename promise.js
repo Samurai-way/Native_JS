@@ -652,12 +652,107 @@
 //     console.log('new a')
 // }
 
-const a = {
-    msg: 'hello world',
-    get(){
-        const msg = 'hello getMsg'
-        console.log(this.msg)
-    }
-}
+// const a = {
+//     msg: 'hello world',
+//     get(){
+//         const msg = 'hello getMsg'
+//         console.log(this.msg)
+//     }
+// }
+//
+// a.get()
+//
+// this.name = 'global'
+//
+// const a = {
+//     name: 'a',
+//     logName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// setTimeout(a.logName, 100)
+//global
 
-a.get()
+// const a = {
+//     name: 'a',
+//     getName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// const b = {
+//     name: 'b'
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// a.getName()
+//
+// const foo = a.getName().bind(b)
+//
+// a.getName()
+//
+// a.getName().call(b)
+//
+// foo.call(c)
+
+
+// const a = Object.create(null, {
+//     name: {
+//         value: 'a'
+//     }
+// })
+//
+// const b = {
+//     showName(){
+//         console.log(this.name)
+//     }
+// }
+// a.__proto__ = b
+//
+// console.log(a)
+//
+// a.showName()
+
+// Object.prototype.name = 'Object'
+//
+// const a = {
+//     getName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// const b = {
+//     name: 'b'
+// }
+//
+// a.getName()
+//
+// b.__proto__ = a
+//
+// b.getName()
+//
+// const c = Object.create(a, {
+//     name: {
+//         value: 'c'
+//     }
+// })
+//
+// c.getName()
+
+// const user = {
+//     sleep(){
+//         this.isSleeping = true
+//     }
+// }
+//
+// const john = {}
+//
+// john.__proto__ = user
+//
+// john.sleep()
+//
+// console.log(john.isSleeping)
