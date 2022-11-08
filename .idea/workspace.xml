@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="^[a-z]+@gmail.com$">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="const trueName = /^oleg+@mail\.ru$/">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,21 +102,9 @@
       <workItem from="1666942361153" duration="6090000" />
       <workItem from="1666983619322" duration="789000" />
       <workItem from="1667415679549" duration="823000" />
-      <workItem from="1667671106861" duration="3112000" />
-    </task>
-    <task id="LOCAL-00016" summary="codewars 7 kyu (toString)">
-      <created>1665137272690</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1665137272690</updated>
-    </task>
-    <task id="LOCAL-00017" summary="codewars 6 kyu (match, regex)">
-      <created>1665171568744</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1665171568744</updated>
+      <workItem from="1667671106861" duration="5362000" />
+      <workItem from="1667677444935" duration="1190000" />
+      <workItem from="1667928358892" duration="3203000" />
     </task>
     <task id="LOCAL-00018" summary="codewars 7 kyu (map, Math.max, Math.min)">
       <created>1665213470594</created>
@@ -445,7 +435,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667673663820</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="const trueRes = /^\w+@gmail\.com$/">
+      <created>1667674258647</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1667674258647</updated>
+    </task>
+    <task id="LOCAL-00066" summary="const trueName = /^oleg+@mail\.ru$/">
+      <created>1667674357098</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1667674357098</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,8 +467,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu - sumOfMinimums, reduce" />
-    <MESSAGE value="codewars 7 kyu DateParse" />
     <MESSAGE value="codewars 6 kyu split, while, map, reduce" />
     <MESSAGE value="codewars 7 kyu - sum of angle" />
     <MESSAGE value="codewars 6 kyu - reduce" />
@@ -488,6 +490,8 @@
     <MESSAGE value="regex expression" />
     <MESSAGE value="regex text" />
     <MESSAGE value="^[a-z]+@gmail.com$" />
-    <option name="LAST_COMMIT_MESSAGE" value="^[a-z]+@gmail.com$" />
+    <MESSAGE value="const trueRes = /^\w+@gmail\.com$/" />
+    <MESSAGE value="const trueName = /^oleg+@mail\.ru$/" />
+    <option name="LAST_COMMIT_MESSAGE" value="const trueName = /^oleg+@mail\.ru$/" />
   </component>
 </project>

@@ -557,3 +557,79 @@
 // console.log(3)
 // console.log(4)
 
+// let promise = new Promise((res, rej) => {
+//     setTimeout(()=>{
+//         res('hello')
+//         console.log('12')
+//     },2000)
+// })
+// .then((res)=>{
+//     console.log(res)
+//     return res
+// })
+// .then((res)=>{
+//     console.log(res)
+// })
+
+// function add(value) {
+//     return 10 + value
+//     add(10)
+// }
+//
+// console.log(add(15)) замыкание 1
+
+// const a = 10
+//
+// function add(){
+//     console.log(a)
+// } замыкание 2
+
+// const obj = {
+//     name: 'dima',
+//     age: function add() {
+//         return this.name
+//     }
+// }
+// // console.log(obj.age())
+//
+// const obj2 = {
+//     name: 'Dima'
+// }
+// console.log(obj.age.call(obj2))
+
+// function Car(name) {
+//     this.name = name
+// }
+// const volvo = new Car('BMW')
+
+// const a = {
+//     name: 'Dima',
+// }
+//
+// const b = {
+//     age: 15
+// }
+//
+// Object.setPrototypeOf(a, b)
+// console.log(b)
+
+// class Promise {
+//     name = 'Dima'
+// }
+//
+// class B extends A {
+//     name (){
+//         this.name(this.name)
+//     }
+// }
+
+function Add(name) {
+    this.name = name
+}
+
+function Bdd() {
+
+}
+
+Bdd.__proto__ = Add
+Bdd.prototype.__proto__ = Add.prototype
