@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="const trueName = /^oleg+@mail\.ru$/">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="__proto__">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,14 +103,7 @@
       <workItem from="1667415679549" duration="823000" />
       <workItem from="1667671106861" duration="5362000" />
       <workItem from="1667677444935" duration="1190000" />
-      <workItem from="1667928358892" duration="3203000" />
-    </task>
-    <task id="LOCAL-00018" summary="codewars 7 kyu (map, Math.max, Math.min)">
-      <created>1665213470594</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1665213470594</updated>
+      <workItem from="1667928358892" duration="3836000" />
     </task>
     <task id="LOCAL-00019" summary="codewars 6 kyu (map, split, reduce)">
       <created>1665257546179</created>
@@ -449,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667674357098</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="__proto__">
+      <created>1667940672172</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1667940672174</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 6 kyu split, while, map, reduce" />
     <MESSAGE value="codewars 7 kyu - sum of angle" />
     <MESSAGE value="codewars 6 kyu - reduce" />
     <MESSAGE value="codewars 6 kyu map, split" />
@@ -492,6 +490,7 @@
     <MESSAGE value="^[a-z]+@gmail.com$" />
     <MESSAGE value="const trueRes = /^\w+@gmail\.com$/" />
     <MESSAGE value="const trueName = /^oleg+@mail\.ru$/" />
-    <option name="LAST_COMMIT_MESSAGE" value="const trueName = /^oleg+@mail\.ru$/" />
+    <MESSAGE value="__proto__" />
+    <option name="LAST_COMMIT_MESSAGE" value="__proto__" />
   </component>
 </project>

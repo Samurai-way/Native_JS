@@ -623,13 +623,41 @@
 //     }
 // }
 
-function Add(name) {
-    this.name = name
+// function Add(name) {
+//     this.name = name
+// }
+//
+// function Bdd() {
+//
+// }
+//
+// Add.name = 'Aaa'
+//
+// Bdd.__proto__ = Add
+// Bdd.prototype.__proto__ = Add.prototype
+//
+// console.log(Add.name)
+
+// let a = () => {
+//     console.log('a')
+// }
+//
+// const run = (cb) => {
+//     setTimeout(cb, 1000)
+// }
+//
+// run(a)
+//
+// a = () => {
+//     console.log('new a')
+// }
+
+const a = {
+    msg: 'hello world',
+    get(){
+        const msg = 'hello getMsg'
+        console.log(this.msg)
+    }
 }
 
-function Bdd() {
-
-}
-
-Bdd.__proto__ = Add
-Bdd.prototype.__proto__ = Add.prototype
+a.get()
