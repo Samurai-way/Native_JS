@@ -802,13 +802,38 @@
 //
 // console.log(b.getName())
 
-Promise
-.resolve(10)
-.then(res => console.log(res))
-.then(res => Promise.resolve(res))
-.then(console.log)
-.then(res => {
-    if(!res) throw new Error('New error')
-})
-.then(res => console.log(res.message))
-.catch(res => console.log(res.message))
+// Promise
+// .resolve(10)
+// .then(res => console.log(res))
+// .then(res => Promise.resolve(res))
+// .then(console.log)
+// .then(res => {
+//     if(!res) throw new Error('New error')
+// })
+// .then(res => console.log(res.message))
+// .catch(res => console.log(res.message))
+//
+// foo()
+// function foo() {
+//     console.log('foo')
+// }
+//
+// bar()
+// const bar = function () {
+//     console.log('bar')
+// }
+
+let a = () => {
+    console.log('a')
+}
+
+const run = (cb) => {
+    setTimeout(cb, 1000)
+}
+
+run(a)
+
+a = () => {
+    console.log('new a')
+}
+

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="msg">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -103,14 +103,7 @@
       <workItem from="1667415679549" duration="823000" />
       <workItem from="1667671106861" duration="5362000" />
       <workItem from="1667677444935" duration="1190000" />
-      <workItem from="1667928358892" duration="5805000" />
-    </task>
-    <task id="LOCAL-00021" summary="codewars 6 kyu (push, for)">
-      <created>1665344882572</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1665344882572</updated>
+      <workItem from="1667928358892" duration="6357000" />
     </task>
     <task id="LOCAL-00022" summary="codewars 7 kyu - sumOfMinimums">
       <created>1665387126420</created>
@@ -448,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667942381439</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Promis">
+      <created>1667943306487</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1667943306487</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 6 kyu - reduce" />
     <MESSAGE value="codewars 6 kyu map, split" />
     <MESSAGE value="Promises" />
     <MESSAGE value="codewars 6 kyu, every" />
@@ -491,6 +490,7 @@
     <MESSAGE value="const trueName = /^oleg+@mail\.ru$/" />
     <MESSAGE value="__proto__" />
     <MESSAGE value="msg" />
-    <option name="LAST_COMMIT_MESSAGE" value="msg" />
+    <MESSAGE value="Promis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promis" />
   </component>
 </project>
