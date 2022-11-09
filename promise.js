@@ -977,14 +977,147 @@
 
 // пример 6
 
-Promise
-    .resolve(10)
-    .then(res => console.log(res))
-    .then(res => Promise.resolve(res))
-    .then(console.log)
-    .then(res => {
-        if (!res) throw new Error('New error')
-    })
-    .then(res => console.log(res.message))
-    .catch(res => console.log(res.message))
-    .finally(res => console.log(15))
+// Promise
+//     .resolve(10)
+//     .then(res => console.log(res))
+//     .then(res => Promise.resolve(res))
+//     .then(console.log)
+//     .then(res => {
+//         if (!res) throw new Error('New error')
+//     })
+//     .then(res => console.log(res.message))
+//     .catch(res => console.log(res.message))
+//     .finally(res => console.log(15))
+
+//пример 7
+// console.log(null == undefined)
+// console.log(null === undefined)
+// console.log(null == null)
+// console.log(undefined == undefined)
+// console.log(undefined === undefined)
+// console.log('undefined' == undefined)
+
+// создание промиса
+
+// const promise = new Promise((res, rej) => {
+//     setTimeout(() => {
+//         res(10)
+//         rej(15)
+//     }, 1000)
+// })
+//     .then((res) => console.log(res))
+//     .then((res) => console.log(res))
+//     .catch(err => console.log(err))
+
+// пример замыкания
+
+// const a = 10
+// function copy() {
+//     console.log(this.a)
+// }
+// copy()
+
+// примеры this
+
+// class Promise {
+//     constructor(name, age) {
+//         this.name = name
+//         this.age = age
+//     }
+//
+//     getName() {
+//         console.log(this.name)
+//     }
+//
+//     getAge = () => {
+//         console.log(this.age)
+//     }
+// }
+//
+// const age = new Promise('Dima', 15)
+//
+// age.getName()
+//                                                  // пример наследования на классах
+//
+// class newClass extends Promise {
+//     constructor(name, age) {
+//         super();
+//     }
+// }
+
+// const A = function (){
+//
+// }
+// const B = function (){
+//
+// }
+//
+// A.prototype.__proto__ = B.prototype
+
+// что бы у всех массивов появился метод myMap
+
+// Array.prototype.myMap = function () {
+//
+// }
+
+//Обьяснение
+
+// console.log(1 + '2') // 12
+// console.log(1 * '2') // 2
+// console.log(1 * '2a') // NaN
+// console.log(
+//     {} + {
+//         toString(){
+//             return '{}'
+//         }
+//     }
+// )
+// Object Object
+
+// console.log([1,2] + [1,2,3]) // 1, 21, 2, 3
+// console.log([1,2] - [1,2,3]) // NaN
+
+// обьекты
+
+// const a = {
+//     name: 'a'
+// }
+//
+// const b = {
+//     name: 'b',
+//     hi(){
+//
+//         (()=>{
+//             console.log(this.name)
+//         }).call(a)
+//     }
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+// b.hi.call(c)  // c
+
+// пример 2
+
+// this.age = 40
+//
+// const a = {
+//     age: 10,
+//
+//     first() {
+//         console.log(this.age)
+//     },
+//     second() {
+//         (() => {
+//             console.log(this.age)
+//         })()
+//     },
+//     third: () => {
+//         console.log(this.age)
+//     }
+// }
+// a.first()
+// a.second()
+// a.third()       10, 10, 40
+

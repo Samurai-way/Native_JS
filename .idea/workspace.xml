@@ -103,14 +103,7 @@
       <workItem from="1667415679549" duration="823000" />
       <workItem from="1667671106861" duration="5362000" />
       <workItem from="1667677444935" duration="1190000" />
-      <workItem from="1667928358892" duration="8950000" />
-    </task>
-    <task id="LOCAL-00024" summary="codewars 6 kyu">
-      <created>1665431958706</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1665431958706</updated>
+      <workItem from="1667928358892" duration="14371000" />
     </task>
     <task id="LOCAL-00025" summary="codewars 7 kyu DateParse">
       <created>1665472569315</created>
@@ -448,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667979190272</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="native js">
+      <created>1667981539570</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1667981539570</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
