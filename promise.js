@@ -823,17 +823,37 @@
 //     console.log('bar')
 // }
 
-let a = () => {
-    console.log('a')
+// let a = () => {
+//     console.log('a')
+// }
+//
+// const run = (cb) => {
+//     setTimeout(cb, 1000)
+// }
+//
+// run(a)
+//
+// a = () => {
+//     console.log('new a')
+// }
+//
+// const a = {
+//     ms: 'hello world',
+//     getMs(){
+//         const ms = 'hello getMsg'
+//         console.log(this.ms)
+//     }
+// }
+//
+// a.getMs()
+
+this.name = 'global'
+
+const a = {
+    name: 'a',
+    logName(){
+        console.log(this.name)
+    }
 }
 
-const run = (cb) => {
-    setTimeout(cb, 1000)
-}
-
-run(a)
-
-a = () => {
-    console.log('new a')
-}
-
+setTimeout(a.logName, 100)
