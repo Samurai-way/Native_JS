@@ -847,13 +847,144 @@
 //
 // a.getMs()
 
-this.name = 'global'
+//
+// this.name = 'global'
+//
+// const a = {
+//     name: 'a',
+//     logName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// setTimeout(a.logName, 100)
 
-const a = {
-    name: 'a',
-    logName(){
-        console.log(this.name)
-    }
-}
+// const a = {
+//     name: 'a',
+//     getName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// const b = {
+//     name: 'b'
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// a.getName()
+//
+// const foo = a.getName.bind(b)
+//
+// a.getName()
+//
+// a.getName.call(b)
+//
+// foo.call(c)
 
-setTimeout(a.logName, 100)
+// const a = {
+//     name: 'a'
+// }
+// const b = {
+//     name: 'b',
+//     hi() {
+//         (() => {
+//             console.log(this.name)
+//         }).call(a)
+//     }
+// }
+// const c = {
+//     name: 'c'
+// }
+// b.hi.call(c)   ответ:  c
+
+//  пример 2
+
+// Object.prototype.name = 'Object'
+//
+// const a = {
+//     getName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// const b = {
+//     name: 'b'
+// }
+//
+// a.getName()
+// b.__proto__ = a
+//
+// b.getName()
+//
+// const c = Object.create(a, {
+//     name: {
+//         value: 'c'
+//     }
+// })
+//
+// c.getName()
+
+// пример 3
+
+// const user = {
+//     name: 'Dima',
+//     sleep(){
+//         this.isSleeping = true
+//     }
+// }
+//
+// const john = {}
+//
+// john.__proto__ = user
+//
+// john.sleep()
+//
+// console.log(john.isSleeping)
+
+// пример 4
+
+// const arr = []
+// console.log(arr.constructor === Array)
+//
+// const a = () => {}
+// console.log(a.__proto__.__proto__.constructor === Object)
+//
+// console.log(arr.__proto__.__proto__ === Object.prototype)
+
+
+//пример 5
+
+// class BaseUser {}
+// class User extends BaseUser{
+//     constructor(name) {
+//         super();
+//         this.name = name
+//     }
+//
+//     getName(){
+//         return this.name
+//     }
+// }
+// const user = new User('Alex')
+// console.log(user.__proto__ === User.prototype)
+// console.log(typeof User)
+// console.log(User === User.prototype.constructor)
+// console.log(User.__proto__ === Function.constructor)
+// console.log(User.prototype.__proto__ === BaseUser.prototype)
+
+// пример 6
+
+Promise
+    .resolve(10)
+    .then(res => console.log(res))
+    .then(res => Promise.resolve(res))
+    .then(console.log)
+    .then(res => {
+        if (!res) throw new Error('New error')
+    })
+    .then(res => console.log(res.message))
+    .catch(res => console.log(res.message))
+    .finally(res => console.log(15))

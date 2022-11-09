@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Promis">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="native js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -103,21 +103,7 @@
       <workItem from="1667415679549" duration="823000" />
       <workItem from="1667671106861" duration="5362000" />
       <workItem from="1667677444935" duration="1190000" />
-      <workItem from="1667928358892" duration="6357000" />
-    </task>
-    <task id="LOCAL-00022" summary="codewars 7 kyu - sumOfMinimums">
-      <created>1665387126420</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1665387126420</updated>
-    </task>
-    <task id="LOCAL-00023" summary="codewars 7 kyu - sumOfMinimums, reduce">
-      <created>1665387471911</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1665387471911</updated>
+      <workItem from="1667928358892" duration="8950000" />
     </task>
     <task id="LOCAL-00024" summary="codewars 6 kyu">
       <created>1665431958706</created>
@@ -448,7 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667943306487</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="native js">
+      <created>1667978908525</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1667978908525</updated>
+    </task>
+    <task id="LOCAL-00072" summary="native js">
+      <created>1667979190272</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1667979190272</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +477,6 @@
     <MESSAGE value="codewars 7 kyu" />
     <MESSAGE value="OOP 3 princeps" />
     <MESSAGE value="codewars" />
-    <MESSAGE value="native js" />
     <MESSAGE value="Object.preventExtensions" />
     <MESSAGE value="Object.preventExtensions, Object.seal, Object.freeze" />
     <MESSAGE value="Event loop" />
@@ -491,6 +490,7 @@
     <MESSAGE value="__proto__" />
     <MESSAGE value="msg" />
     <MESSAGE value="Promis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Promis" />
+    <MESSAGE value="native js" />
+    <option name="LAST_COMMIT_MESSAGE" value="native js" />
   </component>
 </project>
