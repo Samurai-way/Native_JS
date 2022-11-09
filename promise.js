@@ -1121,3 +1121,127 @@
 // a.second()
 // a.third()       10, 10, 40
 
+                                        // пример 3
+// //
+// const group = {
+//     name: 'Samurai',
+//     users: ['Alex', 'Hanna'],
+//
+//     showUsersWithGroup(){
+//         this.users.forEach(function (user){
+//             console.log(`${this.name}: ${user}`)
+//         })
+//     }
+// }
+// group.showUsersWithGroup()
+
+
+
+                                    // пример 4
+
+// console.log(
+//     [].__proto__.__proto__.__proto__ === null
+// )
+//
+// console.log(
+//     (()=>{}).__proto__.__proto__ === Object.prototype
+// )
+//
+// console.log(
+//     Object.__proto__ === (()=>{}).__proto__
+// )
+
+                                        // пример 5
+
+// function Rabbit(){}
+//
+// const rabbit1 = new Rabbit()
+//
+// Rabbit.prototype = {}
+//
+// const rabbit2 = new Rabbit()
+//
+// console.log(
+//     rabbit1.constructor === Rabbit
+// )
+//
+// console.log(
+//     rabbit2.constructor === Object
+// )
+
+
+// setTimeout(function () {
+//     console.log(1)
+// },20)
+//
+// setTimeout(function () {
+//     console.log(2)
+// },10)
+//
+// new Promise(function (res) {
+//     console.log(3)
+//     res()
+//     console.log(4)
+// }).then(function () {
+//     console.log(5)
+// })
+//
+// async function test1(){
+//     console.log(6)
+//     await test2()
+//     console.log(9)
+// }
+//
+// async function test2(){
+//     console.log(8)
+// }
+// test1()
+
+// privet()
+//
+// function privet() {
+//     console.log('privet')
+// }
+//
+//
+// privet()
+//
+// function privet() {
+//     console.log('privet buket')
+// }
+// privet()
+
+// const a = {
+//     name: 'a'
+// }
+//
+// const b = {
+//     name: 'b',
+//
+//     hi(){
+//
+//         (()=>{
+//             console.log(this.name)
+//         }).call(a)
+//     }
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// b.hi.call(c)
+
+
+function a(x,y) {
+    return x * y
+}
+
+const b = a.bind(null, 2)
+
+console.log(
+    b(2)
+)
+console.log(
+    b(3)
+)

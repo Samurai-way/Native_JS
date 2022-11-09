@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="native js">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="this">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -22,6 +22,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/promise.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/script.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -103,14 +108,8 @@
       <workItem from="1667415679549" duration="823000" />
       <workItem from="1667671106861" duration="5362000" />
       <workItem from="1667677444935" duration="1190000" />
-      <workItem from="1667928358892" duration="14371000" />
-    </task>
-    <task id="LOCAL-00025" summary="codewars 7 kyu DateParse">
-      <created>1665472569315</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1665472569316</updated>
+      <workItem from="1667928358892" duration="18390000" />
+      <workItem from="1668012971643" duration="1287000" />
     </task>
     <task id="LOCAL-00026" summary="codewars 6 kyu split, while, map, reduce">
       <created>1665517205635</created>
@@ -448,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667981539570</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="this">
+      <created>1667987178299</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1667987178299</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 6 kyu map, split" />
     <MESSAGE value="Promises" />
     <MESSAGE value="codewars 6 kyu, every" />
     <MESSAGE value="codewars 7 kyu 2 version" />
@@ -491,6 +496,7 @@
     <MESSAGE value="msg" />
     <MESSAGE value="Promis" />
     <MESSAGE value="native js" />
-    <option name="LAST_COMMIT_MESSAGE" value="native js" />
+    <MESSAGE value="this" />
+    <option name="LAST_COMMIT_MESSAGE" value="this" />
   </component>
 </project>
