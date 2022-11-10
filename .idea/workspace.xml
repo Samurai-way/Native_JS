@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Native js">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="var, let, const">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -110,14 +110,7 @@
       <workItem from="1667677444935" duration="1190000" />
       <workItem from="1667928358892" duration="18390000" />
       <workItem from="1668012971643" duration="2110000" />
-      <workItem from="1668090229757" duration="3727000" />
-    </task>
-    <task id="LOCAL-00028" summary="codewars 6 kyu - reduce">
-      <created>1665604880513</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1665604880513</updated>
+      <workItem from="1668090229757" duration="5985000" />
     </task>
     <task id="LOCAL-00029" summary="codewars 7 kyu">
       <created>1665646024304</created>
@@ -455,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668092235328</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="var, let, const">
+      <created>1668096039554</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1668096039554</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars 7 kyu 2 version" />
     <MESSAGE value="codewars 7 kyu split, map, parseInt" />
     <MESSAGE value="code wars, 6 kyu" />
     <MESSAGE value="code wars, 7 kyu" />
@@ -498,6 +497,7 @@
     <MESSAGE value="this" />
     <MESSAGE value="examples" />
     <MESSAGE value="Native js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Native js" />
+    <MESSAGE value="var, let, const" />
+    <option name="LAST_COMMIT_MESSAGE" value="var, let, const" />
   </component>
 </project>
