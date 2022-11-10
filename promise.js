@@ -1246,3 +1246,36 @@
 //     b(3)
 // )
 
+// foo()
+//
+// function foo() {
+//     console.log('foo')
+// }
+//
+// bar()
+// const bar = () => {
+//     console.log('bar')
+// }
+
+// bar()
+// {
+//     function bar() {
+//         console.log('bar')
+//     }
+// }
+
+// const foo = () => {
+//     let a = b = 10
+// }
+// foo()
+// console.log(typeof a === 'undefined')
+// console.log(typeof b === 'undefined')
+//
+// {{{{{{{
+//     if(true){{{{{
+//         // let b = 15 работает
+//         // const a = 10 не работает
+//     }}}}}
+// }}}}}}}
+// console.log(a)
+
