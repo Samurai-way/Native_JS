@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="this">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="examples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -109,14 +109,8 @@
       <workItem from="1667671106861" duration="5362000" />
       <workItem from="1667677444935" duration="1190000" />
       <workItem from="1667928358892" duration="18390000" />
-      <workItem from="1668012971643" duration="1287000" />
-    </task>
-    <task id="LOCAL-00026" summary="codewars 6 kyu split, while, map, reduce">
-      <created>1665517205635</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1665517205635</updated>
+      <workItem from="1668012971643" duration="2110000" />
+      <workItem from="1668090229757" duration="674000" />
     </task>
     <task id="LOCAL-00027" summary="codewars 7 kyu - sum of angle">
       <created>1665556929939</created>
@@ -454,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667987178299</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="examples">
+      <created>1668016751638</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1668016751638</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Promises" />
     <MESSAGE value="codewars 6 kyu, every" />
     <MESSAGE value="codewars 7 kyu 2 version" />
     <MESSAGE value="codewars 7 kyu split, map, parseInt" />
@@ -497,6 +497,7 @@
     <MESSAGE value="Promis" />
     <MESSAGE value="native js" />
     <MESSAGE value="this" />
-    <option name="LAST_COMMIT_MESSAGE" value="this" />
+    <MESSAGE value="examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="examples" />
   </component>
 </project>

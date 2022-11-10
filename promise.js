@@ -1233,15 +1233,16 @@
 // b.hi.call(c)
 
 
-function a(x,y) {
-    return x * y
-}
+// function a(x,y) {
+//     return x * y
+// }
+//
+// const b = a.bind(null, 2)
+//
+// console.log(
+//     b(2)
+// )
+// console.log(
+//     b(3)
+// )
 
-const b = a.bind(null, 2)
-
-console.log(
-    b(2)
-)
-console.log(
-    b(3)
-)
