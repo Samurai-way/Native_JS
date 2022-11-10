@@ -1286,16 +1286,70 @@
 // for (let j = 0; j < 10; j++) {}
 //
 // console.log(j)
+//
+// const counterCreator = () => {
+//     let count = 0
+//
+//     return ()=>{
+//         console.log(++count)
+//     }
+// }
+// const counter = counterCreator()
+//
+// counter()
+// counter()
+// counter()
+//
+// for (let i = 0; i < 10; i++) {
+//     setTimeout(()=>{
+//         console.log(i)
+//     },1000)
 
-const counterCreator = () => {
-    let count = 0
 
-    return ()=>{
-        console.log(++count)
+// function Counter() {
+//     let count = 0
+//
+//     this.up = function (){
+//         return ++count
+//     }
+//
+//     this.down = function () {
+//         return --count
+//     }
+// }
+//
+// let counter = new Counter()
+//
+// console.log(counter.up())
+// console.log(counter.up())
+// console.log(counter.down())
+
+// function makeArmy() {
+//     let shooters = []
+//
+//     let i = 0
+//     while (i < 10){
+//         let shooter = function () {
+//             console.log(i)
+//         }
+//         shooters.push(shooter)
+//         i++
+//     }
+//
+//     return shooters
+// }
+//
+// let army = makeArmy()
+//
+// army[0]()
+// army[3]()
+
+let user = {
+    name: 'Alex',
+    go: function (){
+        console.log(this.name)
     }
 }
-const counter = counterCreator()
 
-counter()
-counter()
-counter()
+user.go();
+((user.go))()
