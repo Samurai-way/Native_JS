@@ -1408,13 +1408,28 @@
 // console.log(hanna.name)
 // console.log(max.name)
 
-function User(name, age) {
-    return{
-        name,
-        age
-    }
+// function User(name, age) {
+//     return{
+//         name,
+//         age
+//     }
+// }
+//
+// const user = new User('Alex')
+//
+// console.log(user.constructor === User)
+
+function Rabbit(name) {
+    this.name = name;
 }
 
-const user = new User('Alex')
+Rabbit.prototype.sayHi = function (){
+    console.log(this.name)
+}
 
-console.log(user.constructor === User)
+let rabbit = new Rabbit('Rabbit')
+
+rabbit.sayHi();
+Rabbit.prototype.sayHi();
+Object.getPrototypeOf(rabbit).sayHi();
+rabbit.__proto__.sayHi();
