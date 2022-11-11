@@ -1419,17 +1419,37 @@
 //
 // console.log(user.constructor === User)
 
-function Rabbit(name) {
-    this.name = name;
-}
+// function Rabbit(name) {
+//     this.name = name;
+// }
+//
+// Rabbit.prototype.sayHi = function (){
+//     console.log(this.name)
+// }
+//
+// let rabbit = new Rabbit('Rabbit')
+//
+// rabbit.sayHi();
+// Rabbit.prototype.sayHi();
+// Object.getPrototypeOf(rabbit).sayHi();
+// rabbit.__proto__.sayHi();
 
-Rabbit.prototype.sayHi = function (){
-    console.log(this.name)
-}
+// const userProto = {
+//     showName() {
+//         console.log(this.name)
+//     }
+// }
+//
+// const user = Object.create(null)
+//
+// user.__proto__ = userProto
+// user.name = 'Alex'
+//
+// console.log(Object.getPrototypeOf(user) === userProto)
+// user.showName()
 
-let rabbit = new Rabbit('Rabbit')
-
-rabbit.sayHi();
-Rabbit.prototype.sayHi();
-Object.getPrototypeOf(rabbit).sayHi();
-rabbit.__proto__.sayHi();
+// console.log(({}).prototype === ({}).__proto__) false
+//
+// function f() {}
+//
+// console.log(f.prototype === f.__proto__) false
