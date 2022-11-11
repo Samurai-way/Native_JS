@@ -1121,7 +1121,7 @@
 // a.second()
 // a.third()       10, 10, 40
 
-                                        // пример 3
+// пример 3
 // //
 // const group = {
 //     name: 'Samurai',
@@ -1136,8 +1136,7 @@
 // group.showUsersWithGroup()
 
 
-
-                                    // пример 4
+// пример 4
 
 // console.log(
 //     [].__proto__.__proto__.__proto__ === null
@@ -1151,7 +1150,7 @@
 //     Object.__proto__ === (()=>{}).__proto__
 // )
 
-                                        // пример 5
+// пример 5
 
 // function Rabbit(){}
 //
@@ -1344,12 +1343,67 @@
 // army[0]()
 // army[3]()
 
-let user = {
-    name: 'Alex',
-    go: function (){
-        console.log(this.name)
-    }
+// let user = {
+//     name: 'Alex',
+//     go: function (){
+//         console.log(this.name)
+//     }
+// }
+//
+// user.go();
+// ((user.go))()
+
+// let user, go;
+//
+// user = {
+//     name: 'Alex',
+//     go: function (){
+//         console.log(this.name)
+//     }
+// }
+//
+// user.go();
+//
+// (user.go)();
+//
+// (go = user.go)();
+//
+// (user.go || user.stop)()
+//
+// const user = {
+//     age: 23,
+//     showAge: () => {
+//         (() => {
+//             console.log(this.age)
+//         })()
+//     }
+// }
+//
+// user.showAge.call({age: 20})
+
+//
+// function make() {
+//     return {
+//         model: 'Ford',
+//         ref: this
+//     }
+// }
+//
+// let car = make()
+//
+// console.log(car.ref.model)
+
+function User(name) {
+    this.name = name
 }
 
-user.go();
-((user.go))()
+const alex = new User('Alex')
+
+User.prototype = {}
+
+const hanna = new alex.constructor('Hanna')
+const max = new hanna.constructor('Max')
+
+console.log(alex.name)
+console.log(hanna.name)
+console.log(max.name)
