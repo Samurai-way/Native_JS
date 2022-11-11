@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="Native js">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="proto, prototype">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -111,13 +111,7 @@
       <workItem from="1667928358892" duration="18390000" />
       <workItem from="1668012971643" duration="2110000" />
       <workItem from="1668090229757" duration="14825000" />
-    </task>
-    <task id="LOCAL-00034" summary="codewars 7 kyu">
-      <created>1665820447761</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1665820447761</updated>
+      <workItem from="1668160206956" duration="2557000" />
     </task>
     <task id="LOCAL-00035" summary="codewars 6 kyu">
       <created>1665862906923</created>
@@ -455,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668155253121</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="proto, prototype">
+      <created>1668160312284</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1668160312285</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,9 +496,9 @@
     <MESSAGE value="var, let, const" />
     <MESSAGE value="замыкание" />
     <MESSAGE value="нативка" />
-    <MESSAGE value="proto, prototype" />
     <MESSAGE value="Class" />
     <MESSAGE value="Native js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Native js" />
+    <MESSAGE value="proto, prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="proto, prototype" />
   </component>
 </project>
