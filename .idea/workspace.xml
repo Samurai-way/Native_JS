@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="prototype">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="docs: proto, prototype">
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,14 +112,7 @@
       <workItem from="1668090229757" duration="14825000" />
       <workItem from="1668160206956" duration="5533000" />
       <workItem from="1668195989506" duration="2643000" />
-      <workItem from="1668284443703" duration="1864000" />
-    </task>
-    <task id="LOCAL-00036" summary="codewars 7 kyu">
-      <created>1665904733913</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1665904733913</updated>
+      <workItem from="1668284443703" duration="2169000" />
     </task>
     <task id="LOCAL-00037" summary="Promises">
       <created>1665934727310</created>
@@ -458,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668174095300</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="docs: proto, prototype">
+      <created>1668286370252</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1668286370252</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="OOP 3 princeps" />
     <MESSAGE value="codewars" />
     <MESSAGE value="Object.preventExtensions" />
     <MESSAGE value="Object.preventExtensions, Object.seal, Object.freeze" />
@@ -501,6 +499,7 @@
     <MESSAGE value="Native js" />
     <MESSAGE value="proto, prototype" />
     <MESSAGE value="prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="prototype" />
+    <MESSAGE value="docs: proto, prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: proto, prototype" />
   </component>
 </project>
