@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="docs: proto, prototype">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="fix: proto, prototype">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,14 +113,8 @@
       <workItem from="1668090229757" duration="14825000" />
       <workItem from="1668160206956" duration="5533000" />
       <workItem from="1668195989506" duration="2643000" />
-      <workItem from="1668284443703" duration="2169000" />
-    </task>
-    <task id="LOCAL-00037" summary="Promises">
-      <created>1665934727310</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1665934727310</updated>
+      <workItem from="1668284443703" duration="2873000" />
+      <workItem from="1668342886441" duration="1375000" />
     </task>
     <task id="LOCAL-00038" summary="codewars 6 kyu, every">
       <created>1665950169809</created>
@@ -457,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668286370252</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="fix: proto, prototype">
+      <created>1668286859553</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1668286859553</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="codewars" />
     <MESSAGE value="Object.preventExtensions" />
     <MESSAGE value="Object.preventExtensions, Object.seal, Object.freeze" />
     <MESSAGE value="Event loop" />
@@ -500,6 +501,7 @@
     <MESSAGE value="proto, prototype" />
     <MESSAGE value="prototype" />
     <MESSAGE value="docs: proto, prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: proto, prototype" />
+    <MESSAGE value="fix: proto, prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: proto, prototype" />
   </component>
 </project>
