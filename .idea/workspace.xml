@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: this">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: this, and other">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -117,14 +122,7 @@
       <workItem from="1668342886441" duration="2711000" />
       <workItem from="1668356618256" duration="619000" />
       <workItem from="1668358232017" duration="2536000" />
-      <workItem from="1668365720045" duration="1133000" />
-    </task>
-    <task id="LOCAL-00039" summary="codewars 7 kyu">
-      <created>1665988919867</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1665988919867</updated>
+      <workItem from="1668365720045" duration="4580000" />
     </task>
     <task id="LOCAL-00040" summary="codewars 7 kyu 2 version">
       <created>1665989100370</created>
@@ -462,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668344536429</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="learn: this, and other">
+      <created>1668367175605</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1668367175606</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Object.preventExtensions, Object.seal, Object.freeze" />
     <MESSAGE value="Event loop" />
     <MESSAGE value="Promise, then,catch" />
     <MESSAGE value="Promise, then,catch, finally" />
@@ -505,6 +509,7 @@
     <MESSAGE value="docs: proto, prototype" />
     <MESSAGE value="fix: proto, prototype" />
     <MESSAGE value="learn: this" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: this" />
+    <MESSAGE value="learn: this, and other" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: this, and other" />
   </component>
 </project>
