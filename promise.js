@@ -278,24 +278,56 @@
 // const user = new User.prototype.constructor()
 //
 // console.log(user.constructor === User)
+//
+// let obj = Object.create(Object.prototype,{
+//     name: {
+//         value: 'Alex',
+//         enumerable: true
+//     }
+// })
+//
+// Object.defineProperty(obj, 'name', {
+//     value: 'Alex',
+//     enumerable: true,
+//     writable: true,
+//     configurable: false
+// })
+//
+// Object.defineProperty(obj, 'name', {
+//     value: 'Alex',
+//     enumerable: false
+// })
+//
+// console.log(obj)
+//
+// console.log('log')
+//
+// while(true){
+//     // console.log('in loop')
+// }
+// // setTimeout(console.log,0,'setTimeout')
+// Promise.resolve('promise')
 
-let obj = Object.create(Object.prototype,{
-    name: {
-        value: 'Alex',
-        enumerable: true
-    }
+// console.log('6' / '2a') // NaN
+// console.log('6' * '2') // 12
+// console.log('6' + '2') //62
+// console.log('6' - '2') //4
+// console.log('2' + true) //2true
+// console.log(null === undefined) // false
+// console.log(null === null) // true
+// console.log(undefined === undefined) //true
+
+const a = {}
+const b = {}
+
+a[b] = 'b'
+console.log(a)
+
+const arr = [
+    {id: 1, name: 'Dima'}
+]
+
+const arr2 = arr.map(e => {
+    return ({...e, name: 'Sosa'})
 })
-
-Object.defineProperty(obj, 'name', {
-    value: 'Alex',
-    enumerable: true,
-    writable: true,
-    configurable: false
-})
-
-Object.defineProperty(obj, 'name', {
-    value: 'Alex',
-    enumerable: false
-})
-
-console.log(obj)
+console.log(arr2)
