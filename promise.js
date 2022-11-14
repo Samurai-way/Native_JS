@@ -229,11 +229,73 @@
 // [user.name, user.surname] = 'Name Surname'.split('')
 // console.log(user.name)
 
-let num = 'a'
+// let num = 'a'
+//
+// function logName() {
+//     console.log(num)
+// }
+//
+// num = 'b'
+// logName.bind({num: 'c'})()
+//
+// function User(name) {
+//     this.name = 'default'
+//     this.sayHi = ()=>{
+//         console.log(name)
+//     }
+// }
+//
+// const user = new User('John')
+// // user.sayHi()
+//
+// console.log([].__proto__.__proto__ === null)
+//
+// console.log(
+//     (()=>{}).__proto__.__proto__ === Object.prototype)
 
-function logName() {
-    console.log(num)
-}
 
-num = 'b'
-logName.bind({num: 'c'})()
+// const a = {
+//     name: 'a',
+//     logName: () => {
+//         console.log(this.name)
+//     }
+// }
+//
+// setTimeout(a.logName, 100)
+
+// const arr = [1,2,3,4,5]
+//
+// const [a,b, ...c] = arr
+//
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// function User() {}
+//
+// User.prototype = {}
+//
+// const user = new User.prototype.constructor()
+//
+// console.log(user.constructor === User)
+
+let obj = Object.create(Object.prototype,{
+    name: {
+        value: 'Alex',
+        enumerable: true
+    }
+})
+
+Object.defineProperty(obj, 'name', {
+    value: 'Alex',
+    enumerable: true,
+    writable: true,
+    configurable: false
+})
+
+Object.defineProperty(obj, 'name', {
+    value: 'Alex',
+    enumerable: false
+})
+
+console.log(obj)

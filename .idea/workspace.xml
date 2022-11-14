@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Promise">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: bind">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -122,14 +122,7 @@
       <workItem from="1668342886441" duration="2711000" />
       <workItem from="1668356618256" duration="619000" />
       <workItem from="1668358232017" duration="2536000" />
-      <workItem from="1668365720045" duration="5880000" />
-    </task>
-    <task id="LOCAL-00042" summary="codewars 7 kyu split, map, parseInt">
-      <created>1666077674367</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1666077674367</updated>
+      <workItem from="1668365720045" duration="10838000" />
     </task>
     <task id="LOCAL-00043" summary="code wars, 6 kyu">
       <created>1666124150827</created>
@@ -467,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668411176683</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="learn: bind">
+      <created>1668412213702</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1668412213702</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +485,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Promise, then,catch" />
     <MESSAGE value="Promise, then,catch, finally" />
     <MESSAGE value="regex expression" />
     <MESSAGE value="regex text" />
@@ -510,6 +509,7 @@
     <MESSAGE value="learn: this" />
     <MESSAGE value="learn: this, and other" />
     <MESSAGE value="learn: Promise" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Promise" />
+    <MESSAGE value="learn: bind" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: bind" />
   </component>
 </project>
