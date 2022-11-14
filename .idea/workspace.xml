@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: this, and other">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,14 +121,7 @@
       <workItem from="1668342886441" duration="2711000" />
       <workItem from="1668356618256" duration="619000" />
       <workItem from="1668358232017" duration="2536000" />
-      <workItem from="1668365720045" duration="4580000" />
-    </task>
-    <task id="LOCAL-00040" summary="codewars 7 kyu 2 version">
-      <created>1665989100370</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1665989100370</updated>
+      <workItem from="1668365720045" duration="5117000" />
     </task>
     <task id="LOCAL-00041" summary="codewars 7 kyu split, map, parseInt">
       <created>1666074064868</created>
@@ -467,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668367175606</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="learn: this, and other">
+      <created>1668410832549</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1668410832549</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

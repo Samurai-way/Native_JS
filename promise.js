@@ -188,16 +188,26 @@
 // console.log(t.__proto__ === tl.__proto__)
 
 
-function Test() {
-    this.name = name
-    if(!name){
-        return {name: 'No test name!'}
-    }
-}
+// function Test() {
+//     this.name = name
+//     if(!name){
+//         return {name: 'No test name!'}
+//     }
+// }
+//
+// const t = new Test()
+//
+// const tl = new Test('Should return undefined!')
+//
+// console.log(t.__proto__ === tl.__proto__)
 
-const t = new Test()
-
-const tl = new Test('Should return undefined!')
-
-console.log(t.__proto__ === tl.__proto__)
-
+Promise
+    .resolve(10)
+    .then(res => console.log(res))
+    .then(res => Promise.resolve(res))
+    .then(console.log)
+    .then(res => {
+        if(!res) throw new Error('New error')
+    })
+    .then(res => console.log(res.message))
+    .catch(res => console.log(res.message))
