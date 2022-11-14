@@ -200,14 +200,40 @@
 // const tl = new Test('Should return undefined!')
 //
 // console.log(t.__proto__ === tl.__proto__)
+//
+// Promise
+//     .resolve(10)
+//     .then(res => console.log(res))
+//     .then(res => Promise.resolve(res))
+//     .then(console.log)
+//     .then(res => {
+//         if(!res) throw new Error('New error')
+//     })
+//     .then(res => console.log(res.message))
+//     .catch(res => console.log(res.message))
 
-Promise
-    .resolve(10)
-    .then(res => console.log(res))
-    .then(res => Promise.resolve(res))
-    .then(console.log)
-    .then(res => {
-        if(!res) throw new Error('New error')
-    })
-    .then(res => console.log(res.message))
-    .catch(res => console.log(res.message))
+// const arr = [1,2,3,4,5]
+//
+// const [a,b, ...c] = arr
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// let [a,b,c] = 'abs ccc';
+// console.log(a,b,c)
+//
+// let user = {
+//     name: 'Default Name'
+// }
+//
+// [user.name, user.surname] = 'Name Surname'.split('')
+// console.log(user.name)
+
+let num = 'a'
+
+function logName() {
+    console.log(num)
+}
+
+num = 'b'
+logName.bind({num: 'c'})()
