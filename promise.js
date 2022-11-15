@@ -607,8 +607,70 @@
 // man.getName()
 
 
-function a() {
-    console.log(this.name)
-}
+// function a() {
+//     console.log(this.name)
+// }
+//
+// a.apply({name: 'Dima'})
 
-a.apply({name: 'Dima'})
+// let i = 0
+//
+// function foo() {
+//     i += 1
+// }
+// foo()
+
+// const promise = new Promise((res, rej) => {
+//      res('12')
+// }).then((res)=>{
+//     console.log(res)
+// })
+
+// console.log(this)
+//
+// function foo() {
+//     console.log(`hello ${this}`)
+// }
+// foo()
+//
+// const obj = {
+//     name: 'Dima'
+// }
+// obj.f = foo()
+
+// const foo = () => {
+//     console.log(this)
+// }
+// foo()
+// const a = 10
+//
+// function foo() {
+//     console.log(a)
+// }
+// foo()
+
+// const man = {
+//     name: 'Dima', // <-----
+//     age: 10,
+//     getName(){
+//         console.log(this.age)
+//     }
+// }
+//
+// man.getName()
+//
+// // 'use strict'
+//
+// function f() {
+//     console.log(this.name)
+// }
+// f.bind({name: 'Okey'})()
+
+let a = 19
+
+function f() {
+    a += 1
+}
+f()
+
+console.log(a)
