@@ -578,13 +578,37 @@
 //     },2000)
 // })
 
-const promise2 = new Promise((res, rej)=>{
-    setTimeout(()=>{
-        res('Alexey')
-    },2000)
-    rej('Error')
-}).catch(e => {
-    console.log(e)
-})
+// const promise2 = new Promise((res, rej)=>{
+//     setTimeout(()=>{
+//         res('Alexey')
+//     },2000)
+//     rej('Error')
+// }).catch(e => {
+//     console.log(e)
+// })
 
 // const promise3 = Promise.all([promise, promise2]).then(res => console.log(res))
+
+// let num = 10
+//
+// function add() {
+//     this.num = 12
+// }
+// add()
+
+
+// const man = {
+//     name: 'Dima',
+//     age: 10,
+//     getName(){
+//         console.log(this.age)
+//     }
+// }
+// man.getName()
+
+
+function a() {
+    console.log(this.name)
+}
+
+a.apply({name: 'Dima'})

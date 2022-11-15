@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: setInterval">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Promise">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -124,14 +124,7 @@
       <workItem from="1668358232017" duration="2536000" />
       <workItem from="1668365720045" duration="11461000" />
       <workItem from="1668459223111" duration="2127000" />
-      <workItem from="1668497164477" duration="9490000" />
-    </task>
-    <task id="LOCAL-00047" summary="codewars 6 kyu">
-      <created>1666299712199</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1666299712199</updated>
+      <workItem from="1668497164477" duration="10690000" />
     </task>
     <task id="LOCAL-00048" summary="codewars 7 kyu">
       <created>1666335707333</created>
@@ -469,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668506690091</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="learn: Promise">
+      <created>1668521286184</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1668521286184</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,12 +506,12 @@
     <MESSAGE value="fix: proto, prototype" />
     <MESSAGE value="learn: this" />
     <MESSAGE value="learn: this, and other" />
-    <MESSAGE value="learn: Promise" />
     <MESSAGE value="learn: bind" />
     <MESSAGE value="learn: Object create and other" />
     <MESSAGE value="learn: map and other" />
     <MESSAGE value="learn: this, Class" />
     <MESSAGE value="learn: setInterval" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: setInterval" />
+    <MESSAGE value="learn: Promise" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Promise" />
   </component>
 </project>
