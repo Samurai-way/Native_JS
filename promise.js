@@ -549,14 +549,42 @@
 // a, b,d, Promise 1, Promise 3, timer 0, Promise 2, timer 10, timer 20
 
 // let arr = [1,125,14,22,7,3,2]
+//
+// for (let i = 0; i < 10; i++) {
+//     setTimeout(function () {
+//         console.log(i)
+//     },100)
+// }
+// console.log('hi')
+//
+// setTimeout(()=> console.log('there'), 5000)
+//
+//console.log('you')
 
-for (let i = 0; i < 10; i++) {
-    setTimeout(function () {
-        console.log(i)
-    },100)
-}
-console.log('hi')
+// function Rabbit() {}
+//
+// const rabbit = new Rabbit()
+//
+// Rabbit.prototype = {}
+//
+// const rabbit2 = new Rabbit()
+//
+// console.log(rabbit.constructor === Rabbit)
+// console.log(rabbit2.constructor === Rabbit)
 
-setTimeout(()=> console.log('there'), 5000)
+// const promise = new Promise((res, rej) => {
+//     setTimeout(()=>{
+//         res('hello')
+//     },2000)
+// })
 
-console.log('you')
+const promise2 = new Promise((res, rej)=>{
+    setTimeout(()=>{
+        res('Alexey')
+    },2000)
+    rej('Error')
+}).catch(e => {
+    console.log(e)
+})
+
+// const promise3 = Promise.all([promise, promise2]).then(res => console.log(res))
