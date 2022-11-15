@@ -396,19 +396,167 @@
 //     .call(b)
 // )
 
+//
+// function User(name) {
+//     this.name = name
+//     return 'User'
+// }
+//
+// function Car(engine) {
+//     this.engine = engine
+//     return {}
+// }
+//
+// const user = new User('Alex')
+// const car = new Car('b8')
+//
+// console.log(user.name)
+// console.log(car.engine)
+//
+// const watchBalance = function (cb) {
+//     let count = 0
+//
+//     return function () {
+//         cb()
+//         console.log(`Balance ${++count} times`)
+//     }
+// }
+//
+// const wallet = {
+//     money: 100,
+//     currency: 'USA',
+//     watchBalance(){
+//         console.log(`${this.money} ${this.currency}`)
+//     }
+// }
+//
+// wallet.watchBalance = watchBalance(wallet.watchBalance)
+//
+// wallet.watchBalance()
+// wallet.watchBalance()
+// wallet.watchBalance()
 
-function User(name) {
-    this.name = name
-    return 'User'
+// console.log([1,2,3] + true)
+// console.log('2' * 3 + true + true + false)
+// console.log('2' + 3)
+// console.log({} + {})
+
+// const a = {
+//     name: 'a'
+// }
+// let b = {
+//     name: 'b'
+// }
+//
+// let c = {
+//     name: 'c'
+// }
+//
+// c = b
+// b = a
+//
+// c.name = 'new c'
+// b.name = 'new b'
+//
+// console.log(a.name)
+// console.log(b.name)
+// console.log(c.name)
+
+// const a = {
+//     name: 'a'
+// }
+//
+// const b = {
+//     name: 'b',
+//     getName: () =>{
+//         (()=>{
+//             console.log(this.name)
+//         }).call(a)
+//     }
+// }
+//
+// b.getName()
+
+// Object.prototype.name = 'Object'
+//
+// Object.prototype.showName = function () {
+//     console.log(this.name)
+// }
+//
+// const a = {
+//     name: 'a'
+// }
+//
+// const b = Object.create(a)
+// b.showName()
+//
+// Object.setPrototypeOf(b, {})
+//
+// b.showName()
+
+// const arr = []
+// console.log(arr.constructor === Array)
+//
+// const a = () => {
+//     console.log(a.__proto__.__proto__.constructor === Object)
+// }
+//
+// arr.__proto__ = []
+// console.log(arr.__proto__.__proto__ === Object.prototype)
+
+
+// function Person(name, age) {
+//     this.name = name
+//     this.age = age
+//
+//
+//     this.getInfo = function () {
+//         return this.name;
+//     };
+// }
+//
+//
+//     Person.prototype.getInfo() = function () {
+//         return `${this.name} ${this.age}`;
+//  };
+//
+// const java = new Person('JS', 24)
+// console.log(java.getInfo());
+
+// console.log('a')
+//
+// console.log('b')
+//
+// setTimeout(()=>{
+//     console.log('timer 10')
+// },10)
+//
+// setTimeout(()=>{
+//     console.log('timer 20')
+// },20)
+//
+// Promise.resolve('Promise 1').then((res) => console.log(res))
+// Promise.resolve(setTimeout(()=> (console.log('Promise 2')), 5))
+//
+// Promise.resolve('Promise 3').then(console.log)
+//
+// setTimeout(()=>{
+//     console.log('timer 0')
+// }, 0)
+//
+// console.log('d')
+
+// a, b,d, Promise 1, Promise 3, timer 0, Promise 2, timer 10, timer 20
+
+// let arr = [1,125,14,22,7,3,2]
+
+for (let i = 0; i < 10; i++) {
+    setTimeout(function () {
+        console.log(i)
+    },100)
 }
+console.log('hi')
 
-function Car(engine) {
-    this.engine = engine
-    return {}
-}
+setTimeout(()=> console.log('there'), 5000)
 
-const user = new User('Alex')
-const car = new Car('b8')
-
-console.log(user.name)
-console.log(car.engine)
+console.log('you')
