@@ -317,17 +317,98 @@
 // console.log(null === null) // true
 // console.log(undefined === undefined) //true
 
-const a = {}
-const b = {}
+// const a = {}
+// const b = {}
+//
+// a[b] = 'b'
+// console.log(a)
+//
+// const arr = [
+//     {id: 1, name: 'Dima'}
+// ]
+//
+// const arr2 = arr.map(e => {
+//     return ({...e, name: 'Sosa'})
+// })
+// console.log(arr2)
 
-a[b] = 'b'
-console.log(a)
+// (()=>{
+//     let a = b = 45
+// })()
+//
+// // console.log(a)
+// console.log(b)
 
-const arr = [
-    {id: 1, name: 'Dima'}
-]
+// const a = {
+//     name: 'a',
+//     logName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// setTimeout(a.logName, 100)
 
-const arr2 = arr.map(e => {
-    return ({...e, name: 'Sosa'})
-})
-console.log(arr2)
+// const a = {
+//     isMale: true,
+//     age: 20,
+//
+//     getIsMale:() => {
+//         return this.getIsMale
+//     },
+//
+//     getAge: function () {
+//         const age = 24
+//         return this.age
+//     }
+// }
+//
+// console.log(
+//     a.getIsMale()
+// )
+//
+// console.log(
+//     a.getAge()
+// )
+
+// Object.prototype.getName = function () {
+//     return this.name
+// }
+//
+// const a = {
+//     name: 'a'
+// }
+//
+// const b = {
+//     name: 'b'
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// console.log(
+//     a.getName.bind(b)
+//         .bind(c)()
+// )
+//
+// console.log(a.getName()
+//     .bind(c)
+//     .call(b)
+// )
+
+
+function User(name) {
+    this.name = name
+    return 'User'
+}
+
+function Car(engine) {
+    this.engine = engine
+    return {}
+}
+
+const user = new User('Alex')
+const car = new Car('b8')
+
+console.log(user.name)
+console.log(car.engine)
