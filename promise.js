@@ -666,11 +666,66 @@
 // }
 // f.bind({name: 'Okey'})()
 
-let a = 19
+// let a = 19
+//
+// function f() {
+//     a += 1
+// }
+// f()
+//
+// console.log(a)
+//
+// let man = {
+//     // name: 'Dima',
+//     age: 10,
+//     getName:() =>{
+//         (()=>{
+//             console.log(this.name)
+//         })()
+//     }
+// }
+//
+// man.getName.bind({name: 'Dama'})()
 
-function f() {
-    a += 1
-}
-f()
 
-console.log(a)
+// function User(name) {
+//     this.name = name
+// }
+//
+// const user = new (User.bind({age: 25}))()
+// console.log(user)
+//
+// const promise = new Promise((res, rej) => {
+//     rej(10)
+// })
+//     .then((res) => {
+//         console.log(res)
+//     })
+//     .catch((e) => {
+//         console.log(`first: ${e}`)
+//     })
+//     .then((res)=>console.log(`second: ${res}`))
+//     .finally((f) => {
+//         console.log(f)
+//     })
+
+// setTimeout(()=>{
+//     console.log(1) //5
+// },3000)
+//
+// const p = new Promise((res)=>{
+//     console.log(2) //1
+//     res()
+// }).then(()=>{
+//     console.log(3) //3
+// })
+//
+// setTimeout(()=>{
+//     console.log(4) //4
+// },1000)
+//
+// console.log(5)// 2
+
+let a = 10
+
+console.log(a.__proto__ === Number.prototype)
