@@ -792,18 +792,111 @@
 //
 // console.log(getCount())
 
-function Rabbit() {}
+// function Rabbit() {}
+//
+// const whiteRabbit = new Rabbit()
+//
+// Rabbit.prototype = {
+//     jumps: true
+// }
+//
+// const blackRabbit = new whiteRabbit.constructor()
+//
+// console.log(whiteRabbit.constructor === Rabbit) // true
+// console.log(whiteRabbit.jumps) // undifined
+//
+// console.log(blackRabbit.jumps) // true
+// console.log(blackRabbit.constructor === Rabbit) // false
 
-const whiteRabbit = new Rabbit()
+// setTimeout(() => {
+//     console.log(1)
+// }, 30)
+//
+// setTimeout(() => {
+//     console.log(2)
+// }, 20)
+//
+// setTimeout(() => {
+//     console.log(3)
+// }, 10)
+//
+//
+// const p = new Promise((res) => {
+//     console.log(4)
+//
+//     setTimeout(() => {
+//         res(5)
+//     }, 50)
+// })
+//
+// p.then(res => console.log(res))
+//
+// Promise.resolve(6)
+//     .then(res => console.log(res))
 
-Rabbit.prototype = {
-    jumps: true
+// 4,6,3,2,1,5
+
+
+// class Promise {
+//     constructor(name) {
+//         this.name = name
+//     }
+// }
+//
+// class B {
+//     constructor(name) {
+//         this.name = name
+//         return 'D'
+//     }
+// }
+//
+// class C {
+//     constructor(name) {
+//         this.name = name
+//         return {a: 1, b: 2, c: 3}
+//     }
+// }
+//
+// const a = new Promise('A')
+// const b = new B('B')
+// const c = new C('C')
+//
+// console.log(a.name)
+// console.log(b.name)
+// console.log(c.name)
+
+
+class Car {
+    name = 'car'
 }
 
-const blackRabbit = new whiteRabbit.constructor()
+class User {
+    name = 'user'
+}
 
-console.log(whiteRabbit.constructor === Rabbit) // true
-console.log(whiteRabbit.jumps) // undifined
+class Road {
+    name = 'road'
+}
 
-console.log(blackRabbit.jumps) // true
-console.log(blackRabbit.constructor === Rabbit) // false
+const aggregate = (classes) => {
+    const res = {}
+
+    Object.defineProperty(res, 'showName', {
+        value: function () {
+            console.log(this.name)
+        },
+        enumerable: false
+    })
+
+    for (let i = 0; i < classes.length; i++) {
+        const instance = new classes[i]
+        res[instance.name] = instance
+    }
+
+    return res
+}
+
+const a = aggregate([Car, User, Road])
+
+Object.values(a)
+    .forEach(k => a.showName.call(k))
