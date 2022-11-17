@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Class, Object.defineProperty">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Promise, this, prototype">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -126,14 +126,7 @@
       <workItem from="1668459223111" duration="2127000" />
       <workItem from="1668497164477" duration="15440000" />
       <workItem from="1668593602046" duration="3298000" />
-      <workItem from="1668625391941" duration="7837000" />
-    </task>
-    <task id="LOCAL-00053" summary="native js">
-      <created>1666777460496</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1666777460497</updated>
+      <workItem from="1668625391941" duration="10518000" />
     </task>
     <task id="LOCAL-00054" summary="native js">
       <created>1666779209050</created>
@@ -471,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668670279841</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="learn: Promise, this, prototype">
+      <created>1668676834895</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1668676834895</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Promis" />
     <MESSAGE value="native js" />
     <MESSAGE value="this" />
     <MESSAGE value="examples" />
@@ -514,6 +513,7 @@
     <MESSAGE value="learn: Promise, __proto__, prototype, constructor" />
     <MESSAGE value="learn: prototype, __proto__, constructor" />
     <MESSAGE value="learn: Class, Object.defineProperty" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Class, Object.defineProperty" />
+    <MESSAGE value="learn: Promise, this, prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Promise, this, prototype" />
   </component>
 </project>
