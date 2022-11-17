@@ -866,37 +866,162 @@
 // console.log(c.name)
 
 
-class Car {
-    name = 'car'
-}
+// class Car {
+//     name = 'car'
+// }
+//
+// class User {
+//     name = 'user'
+// }
+//
+// class Road {
+//     name = 'road'
+// }
+//
+// const aggregate = (classes) => {
+//     const res = {}
+//
+//     Object.defineProperty(res, 'showName', {
+//         value: function () {
+//             console.log(this.name)
+//         },
+//         enumerable: false
+//     })
+//
+//     for (let i = 0; i < classes.length; i++) {
+//         const instance = new classes[i]
+//         res[instance.name] = instance
+//     }
+//
+//     return res
+// }
+//
+// const a = aggregate([Car, User, Road])
+//
+// Object.values(a)
+//     .forEach(k => a.showName.call(k))
 
-class User {
-    name = 'user'
-}
+// console.log([].__proto__ === Array.prototype )
+//
+// console.log('1' + true)
+// console.log([1] + true)
+// console.log('2' * 3 * true)
 
-class Road {
-    name = 'road'
-}
+// console.log(null == undefined)
+// console.log(null === null)
+// console.log({} + {})
 
-const aggregate = (classes) => {
-    const res = {}
+// const a = {
+//     name: 'a'
+// }
+//
+// let b = {
+//     name: 'b'
+// }
+//
+// let c = {
+//     name: 'c'
+// }
+//
+// c = b
+// b = a
+//
+// c.name = 'new c'
+// b.name = 'new b'
+//
+// console.log(a.name)
+// console.log(b.name)
+// console.log(c.name)
 
-    Object.defineProperty(res, 'showName', {
-        value: function () {
-            console.log(this.name)
-        },
-        enumerable: false
-    })
+// const b = {
+//     name: 'b',
+//     getName: function () {
+//         return (() => this.name)()
+//     }
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// Object.setPrototypeOf(c,b)
+// console.log(c.getName())
 
-    for (let i = 0; i < classes.length; i++) {
-        const instance = new classes[i]
-        res[instance.name] = instance
-    }
+// const a = {
+//     age: 25
+// }
+//
+// const b = {
+//     age: 23,
+//
+//     hi: () => {
+//         console.log(this.age)
+//     },
+//
+//     hi2(){
+//         (()=>{
+//             console.log(this.age)
+//         }).call(a)
+//     }
+// }
+//
+// b.hi()
+// b.hi2()
 
-    return res
-}
+// Object.prototype.name = 'Object'
+//
+// Object.prototype.showName = function () {
+//     console.log(this.name)
+// }
+//
+// const a = {
+//     name: 'a'
+// }
+//
+// const b = Object.create(a)
+// b.showName()
+//
+// Object.setPrototypeOf(b,{})
+//
+// b.showName()
+//
+// const arr = []
+//
+// console.log(arr.constructor === Array)
+//
+// const a = () => {}
+// console.log(a.__proto__.__proto__.constructor === Object)
+//
+// arr.__proto__ = []
+// console.log(arr.__proto__.__proto__ === Object.prototype)
+//
+// let i;
+// for (i = 0; i < 10; i++) {
+//     setTimeout(() => {
+//         console.log(i)
+//     }, 0)
+// }
 
-const a = aggregate([Car, User, Road])
+// console.log('a')
+// console.log('b')
+//
+// setTimeout(()=>{
+//     console.log('timer 10')
+// },10)
+//
+// setTimeout(()=>{
+//     console.log('timer 20')
+// },20)
+//
+// Promise.resolve('Promise 1').then((res)=> console.log(res))
+// Promise.resolve(setTimeout(()=> (console.log('Promise 2')),5))
+//
+// Promise.resolve('Promise 3').then(console.log)
+//
+// setTimeout(()=>{
+//     console.log('timer 0')
+// },0)
+//
+// console.log('d')
 
-Object.values(a)
-    .forEach(k => a.showName.call(k))
+// a b d Promise 1, Promise 3, timer 0, Promise 2, timer 10, timer 20
