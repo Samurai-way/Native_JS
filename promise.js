@@ -1136,3 +1136,28 @@
 // console.log([1] + true)
 // console.log('2' * 3 + true)
 //1true, 1true, 7
+//
+// console.log(null == undefined)
+// console.log(null === null)
+// console.log([{}] + [{}])
+//
+// const a = {
+//     name: 'a'
+// }
+//
+// let b = {
+//     name: 'b'
+// }
+//
+// let c = {
+//     name: 'c'
+// }
+//
+// c = b
+// b = a
+// c.name = 'new c'
+// b.name = 'new b'
+//
+// console.log(a.name)
+// console.log(b.name)
+// console.log(c.name)

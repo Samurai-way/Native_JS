@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Promise, this, prototype">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS exm">
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,14 +125,7 @@
       <workItem from="1668459223111" duration="2127000" />
       <workItem from="1668497164477" duration="15440000" />
       <workItem from="1668593602046" duration="3298000" />
-      <workItem from="1668625391941" duration="10518000" />
-    </task>
-    <task id="LOCAL-00054" summary="native js">
-      <created>1666779209050</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1666779209050</updated>
+      <workItem from="1668625391941" duration="10840000" />
     </task>
     <task id="LOCAL-00055" summary="native js">
       <created>1666796828141</created>
@@ -471,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668676834895</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="learn: Native JS exm">
+      <created>1668679806142</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1668679806142</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="native js" />
     <MESSAGE value="this" />
     <MESSAGE value="examples" />
     <MESSAGE value="var, let, const" />
@@ -514,6 +512,7 @@
     <MESSAGE value="learn: prototype, __proto__, constructor" />
     <MESSAGE value="learn: Class, Object.defineProperty" />
     <MESSAGE value="learn: Promise, this, prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Promise, this, prototype" />
+    <MESSAGE value="learn: Native JS exm" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS exm" />
   </component>
 </project>
