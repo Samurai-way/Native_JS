@@ -725,7 +725,85 @@
 // },1000)
 //
 // console.log(5)// 2
+//
+// let a = 10
+//
+// console.log(a.__proto__ === Number.prototype)
 
-let a = 10
+// function Car() {}
+// Car.prototype.engine = 'default'
+//
+// function Ford(){}
+// const ford = new Ford()
+//
+// Ford.prototype.__proto__ = Car.prototype
+// console.log(ford.engine)
 
-console.log(a.__proto__ === Number.prototype)
+
+// const group = {
+//     name: 'Samurai',
+//     users: ['Alex', 'Hanna'],
+//
+//     showUsersWithGroup(){
+//         const handler = function (user) {
+//             console.log(`${this.name}: ${user}`)
+//         }
+//
+//         group.users.forEach(handler)
+//     }
+// }
+//
+// group.showUsersWithGroup()
+
+
+// function a(x,y) {
+//     return x * y
+// }
+//
+// const b = a.bind(null,2)
+//
+// console.log(b(2))
+// console.log(b(3))
+
+
+// const callCount = (fn) => {
+//     let count = 0;
+//
+//     return [
+//         (...args) => {
+//             count += 1
+//             fn(...args)
+//         },
+//         () => {
+//             return count
+//         }
+//     ]
+// }
+//
+// const add = (a,b) => {
+//     return a + b
+// }
+//
+// const [addCount, getCount] = callCount(add)
+//
+// addCount(1,2)
+// addCount(1,3)
+// addCount(2,5)
+//
+// console.log(getCount())
+
+function Rabbit() {}
+
+const whiteRabbit = new Rabbit()
+
+Rabbit.prototype = {
+    jumps: true
+}
+
+const blackRabbit = new whiteRabbit.constructor()
+
+console.log(whiteRabbit.constructor === Rabbit) // true
+console.log(whiteRabbit.jumps) // undifined
+
+console.log(blackRabbit.jumps) // true
+console.log(blackRabbit.constructor === Rabbit) // false

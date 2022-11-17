@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: this, call, apply">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Promise, __proto__, prototype, constructor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -125,14 +125,8 @@
       <workItem from="1668365720045" duration="11461000" />
       <workItem from="1668459223111" duration="2127000" />
       <workItem from="1668497164477" duration="15440000" />
-      <workItem from="1668593602046" duration="2671000" />
-    </task>
-    <task id="LOCAL-00050" summary="OOP 3 princeps">
-      <created>1666434967686</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1666434967686</updated>
+      <workItem from="1668593602046" duration="3298000" />
+      <workItem from="1668625391941" duration="2340000" />
     </task>
     <task id="LOCAL-00051" summary="codewars">
       <created>1666557618199</created>
@@ -470,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668535398020</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="learn: Promise, __proto__, prototype, constructor">
+      <created>1668596322515</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1668596322515</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="const trueName = /^oleg+@mail\.ru$/" />
     <MESSAGE value="__proto__" />
     <MESSAGE value="msg" />
     <MESSAGE value="Promis" />
@@ -513,6 +513,7 @@
     <MESSAGE value="learn: setInterval" />
     <MESSAGE value="learn: Promise" />
     <MESSAGE value="learn: this, call, apply" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: this, call, apply" />
+    <MESSAGE value="learn: Promise, __proto__, prototype, constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Promise, __proto__, prototype, constructor" />
   </component>
 </project>
