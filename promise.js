@@ -1340,27 +1340,88 @@
 //         console.log(i)
 //     },1)
 // }
-
-console.log('a')
-
-console.log('b')
-
-setTimeout(() => {
-    console.log('timer 10')
-}, 10)
-
-setTimeout(() => {
-    console.log('timer 20')
-}, 20)
-
-Promise.resolve('Promise 1').then((res) => console.log(res))
-Promise.resolve(setTimeout(() => (console.log('Promise2')), 5))
-Promise.resolve('Promise 3').then(console.log)
-
-setTimeout(() => {
-    console.log('timer 0')
-}, 0)
-
-console.log('d')
+//
+// console.log('a')
+//
+// console.log('b')
+//
+// setTimeout(() => {
+//     console.log('timer 10')
+// }, 10)
+//
+// setTimeout(() => {
+//     console.log('timer 20')
+// }, 20)
+//
+// Promise.resolve('Promise 1').then((res) => console.log(res))
+// Promise.resolve(setTimeout(() => (console.log('Promise2')), 5))
+// Promise.resolve('Promise 3').then(console.log)
+//
+// setTimeout(() => {
+//     console.log('timer 0')
+// }, 0)
+//
+// console.log('d')
 
 //a,b,d, Pro1, Pro3, timer0, Pro2, timer10, timer20
+
+// console.log('1' + true)
+// console.log([1] + true)
+// console.log('2' * 3 + true)
+// 1true
+// 1true
+// 7
+
+// const b = {
+//     name: 'b',
+//     getName: function(){
+//         return (
+//             () => this.name
+//         )()
+//     }
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// Object.setPrototypeOf(c,b)
+//
+// console.log(c.getName())
+
+// const a = {
+//     age: 25
+// }
+//
+// const b = {
+//     age: 23,
+//
+//     hi: () => {
+//         console.log(this.age)
+//     },
+//
+//     hi2(){
+//         (()=>{
+//             console.log(this.age)
+//         }).call(a)
+//     }
+// }
+//
+// b.hi()
+// b.hi2()
+
+Object.prototype.name = 'Object'
+
+Object.prototype.showName = function () {
+    console.log(this.name)
+}
+
+const a = {
+    name: 'a'
+}
+
+const b = Object.create(a)
+b.showName()
+
+Object.setPrototypeOf(b, {})
+b.showName()

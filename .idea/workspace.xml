@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS exm">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS Promise, then, catch, res">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -127,14 +127,8 @@
       <workItem from="1668497164477" duration="15440000" />
       <workItem from="1668593602046" duration="3298000" />
       <workItem from="1668625391941" duration="12635000" />
-      <workItem from="1668709095558" duration="3270000" />
-    </task>
-    <task id="LOCAL-00056" summary="Object.preventExtensions">
-      <created>1666798081380</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1666798081380</updated>
+      <workItem from="1668709095558" duration="4016000" />
+      <workItem from="1668799688639" duration="1236000" />
     </task>
     <task id="LOCAL-00057" summary="Object.preventExtensions, Object.seal, Object.freeze">
       <created>1666808081631</created>
@@ -472,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668679973683</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="learn: Native JS Promise, then, catch, res">
+      <created>1668767233855</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1668767233856</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="this" />
     <MESSAGE value="examples" />
     <MESSAGE value="var, let, const" />
     <MESSAGE value="замыкание" />
@@ -515,6 +515,7 @@
     <MESSAGE value="learn: Class, Object.defineProperty" />
     <MESSAGE value="learn: Promise, this, prototype" />
     <MESSAGE value="learn: Native JS exm" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS exm" />
+    <MESSAGE value="learn: Native JS Promise, then, catch, res" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS Promise, then, catch, res" />
   </component>
 </project>
