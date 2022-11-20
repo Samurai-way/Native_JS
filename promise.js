@@ -17,16 +17,52 @@
 // test.add()
 // console.log(test.tests)
 
-function User(name) {
-    this.name = name
+// function User(name) {
+//     this.name = name
+// }
+//
+// const user = new User('Alex')
+//
+// console.log(user.isActive)
+//
+// User.prototype = {
+//     isActive: true
+// }
+//
+// console.log(user.isActive)
+
+// function User(name) {
+//     this.name = name
+// }
+//
+// const user = new User('Alex')
+//
+// console.log(
+//     user.constructor === User
+// )
+//
+// User.prototype = {
+//     isActive: true
+// }
+//
+// console.log(
+//     user.constructor === User
+// )
+
+// new Promise(() => {
+//     setTimeout(() => {
+//         return 'hello'
+//     }, 1000)
+// }).then((res) => `${res} world`)
+//     .then((res) => `${res}!`)
+//     .then(console.log)
+
+let a = 5
+
+Number.prototype.add = function () {
+    return a += 1
 }
 
-const user = new User('Alex')
+a = a.add()
 
-console.log(user.isActive)
-
-User.prototype = {
-    isActive: true
-}
-
-console.log(user.isActive)
+console.log(a)
