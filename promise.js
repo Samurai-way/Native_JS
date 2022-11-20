@@ -1572,5 +1572,50 @@
 //         console.log(i)
 //     },1)
 // }
+//
+// console.log('1' + 2)
+// //12
+// console.log(2 + '1')
+// //21
+// console.log(2 - '1')
+// //1
+// console.log([1,2,3] + {})
+//1,2,3ObjObj
 
+// Object.prototype.toString = function () {
+//     return 'custom string'
+// }
+//
+// const a = Object.create(null, {})
+// console.log(a + '')
+// console.log(a)
+// {
+//     const a = 5
+// }
 
+// test()
+//
+// {
+//     function test() {
+//         console.log('test')
+//     }
+// }
+//
+// for (var i = 0; i < 10; i++) {
+//     (function (j) {
+//         setTimeout(() => console.log(j), 10)
+//     })(i)
+// }
+
+const test = {
+    prefix: '_',
+    tests: ['1','2','3'],
+    addPrefixToTest(){
+        this.tests = this.tests.map(function (testName) {
+            return `${this.prefix} ${testName}`
+        })
+    }
+}
+
+test.addPrefixToTest()
+console.log(test.tests)
