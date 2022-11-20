@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS setPrototypeOf, create, prototype">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: this, prefix, tests, addPrefixToTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -129,14 +129,8 @@
       <workItem from="1668625391941" duration="12635000" />
       <workItem from="1668709095558" duration="4016000" />
       <workItem from="1668799688639" duration="4914000" />
-      <workItem from="1668945163651" duration="1064000" />
-    </task>
-    <task id="LOCAL-00059" summary="Promise, then,catch">
-      <created>1666946496696</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1666946496696</updated>
+      <workItem from="1668945163651" duration="3025000" />
+      <workItem from="1668971079229" duration="1165000" />
     </task>
     <task id="LOCAL-00060" summary="Promise, then,catch, finally">
       <created>1666948647397</created>
@@ -474,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668805485445</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="learn: Native JS: this, prefix, tests, addPrefixToTest">
+      <created>1668955011387</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1668955011388</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="var, let, const" />
     <MESSAGE value="замыкание" />
     <MESSAGE value="нативка" />
     <MESSAGE value="Class" />
@@ -517,6 +517,7 @@
     <MESSAGE value="learn: Native JS exm" />
     <MESSAGE value="learn: Native JS Promise, then, catch, res" />
     <MESSAGE value="learn: Native JS setPrototypeOf, create, prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS setPrototypeOf, create, prototype" />
+    <MESSAGE value="learn: Native JS: this, prefix, tests, addPrefixToTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: this, prefix, tests, addPrefixToTest" />
   </component>
 </project>
