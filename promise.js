@@ -56,13 +56,80 @@
 // }).then((res) => `${res} world`)
 //     .then((res) => `${res}!`)
 //     .then(console.log)
+//
+// let a = 5
+//
+// Number.prototype.add = function () {
+//     return a += 1
+// }
+//
+// a = a.add()
+//
+// console.log(a)
 
-let a = 5
+// Object.prototype.toString = function () {
+//     return 'custom'
+// }
+//
+// const a = Object.create(null, {})
+//
+// console.log(a + '')
 
-Number.prototype.add = function () {
-    return a += 1
-}
+// console.log(a)
+//
+// {
+//     var a = 6
+// }
 
-a = a.add()
+// {
+//     let b = 6
+// }
+// console.log(b)
 
-console.log(a)
+// test()
+// {
+//     function test() {
+//         console.log('test')
+//     }
+// }
+
+// for (var i = 0; i < 10; i++) {
+//     (function (j) {
+//         setTimeout(() => {
+//             console.log(j)
+//         }, 10)
+//     })(i)
+// }
+
+// let a = 10
+// function f() {
+//     console.log(a)
+// }
+// f()
+
+
+// let a = {
+//     age: 15,
+//     foo(){
+//         console.log(this.age)
+//     }
+// }
+// a.foo()
+
+// const a = {
+//     name: 'Dima',
+//     pr: new Promise((res, rej)=>{
+//         rej('Hello')
+//     })
+//         .then((res)=>console.log(res))
+//         .catch(res => console.log(res))
+//         .then(res => console.log(res))
+//         .then(res => console.log(res))
+// }
+
+// const pr = new Promise((res,rej)=>{
+//     setTimeout(()=>{
+//         res('Hello')
+//     },2000)
+// }).then(res => console.log(res))
+
