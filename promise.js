@@ -204,8 +204,30 @@
 //     res(data)
 // }).then(res => console.log(res))
 
-let a = 10
+// let a = 10
+//
+// const b = 15
+// a = 15
+// b = 1
 
-const b = 15
-a = 15
-b = 1
+// function f() {
+//     let a = 15
+//     function f1() {
+//         console.log(a)
+//     }
+// }
+// f()
+
+let a = {
+    name: 'Dima',
+    age: 15,
+    getName(){
+        console.log(this)
+    }
+}
+
+const b = {
+     name: 'Sasha'
+
+}
+a.getName.bind(b)()

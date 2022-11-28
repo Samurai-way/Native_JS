@@ -132,14 +132,7 @@
       <workItem from="1668945163651" duration="3025000" />
       <workItem from="1668971079229" duration="3284000" />
       <workItem from="1669319028616" duration="4475000" />
-      <workItem from="1669660661483" duration="675000" />
-    </task>
-    <task id="LOCAL-00063" summary="regex text">
-      <created>1667672290287</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1667672290287</updated>
+      <workItem from="1669660661483" duration="1339000" />
     </task>
     <task id="LOCAL-00064" summary="^[a-z]+@gmail.com$">
       <created>1667673663820</created>
@@ -477,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669321154782</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="learn: Native JS: this, prototype, proto, prototype">
+      <created>1669661449245</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1669661449245</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
