@@ -133,3 +133,79 @@
 //     },2000)
 // }).then(res => console.log(res))
 
+// let pr = new Promise((res, rej) => {
+//     setTimeout(()=>{
+//         rej('hello')
+//     },2000)
+// }).then(res => console.log(res)).catch(res => console.log(res)).then(res => console.log(res))
+//     .finally(res => console.log(res))
+
+// function foo() {
+//     let a = 3
+//     function f() {
+//         console.log(a)
+//     }
+// }
+// foo()
+
+// let obj = {
+//     name: 'Dimas',
+//     age: 10,
+//     getName(){
+//         console.log(this.name)
+//     }
+// }
+// obj.getName()
+
+// let obj = {
+//     name: 'Dima',
+//     f: function f() {
+//         console.log(this.name)
+//     }
+// }
+//
+// const obj2 = {
+//     f: obj.f
+// }
+//
+// let og = {
+//     name: 'Sasha',
+//     f(){
+//         console.log(this.name)
+//     }
+// }
+//
+// obj2.f.bind(og)()
+//
+// function User(f, n) {
+//     this.f = f
+//     this.n = n
+// }
+// let user2 = new (User.bind(obj))('hello', 'okey')
+// console.log(user2)
+
+
+// const object = {}
+//
+// function User(name, age) {
+//     this.name = name
+//     this.age = age
+// }
+//
+// let pr = new (User.bind(object))('Dima', 10)
+// console.log(pr)
+
+// let a = 10
+//
+// console.log(a.__proto__.prototype === Number.__proto__.prototype)
+//
+// let pr = new Promise((res, rej) => {
+//     let data = {name: 'Sasha', age: 12}
+//     res(data)
+// }).then(res => console.log(res))
+
+let a = 10
+
+const b = 15
+a = 15
+b = 1

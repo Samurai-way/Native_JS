@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: this, prototype">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: this, prototype, proto, prototype">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -131,14 +131,8 @@
       <workItem from="1668799688639" duration="4914000" />
       <workItem from="1668945163651" duration="3025000" />
       <workItem from="1668971079229" duration="3284000" />
-      <workItem from="1669319028616" duration="1943000" />
-    </task>
-    <task id="LOCAL-00062" summary="regex expression">
-      <created>1667672102752</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1667672102752</updated>
+      <workItem from="1669319028616" duration="4475000" />
+      <workItem from="1669660661483" duration="675000" />
     </task>
     <task id="LOCAL-00063" summary="regex text">
       <created>1667672290287</created>
@@ -476,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668973122679</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="learn: Native JS: this, prototype, proto, prototype">
+      <created>1669321154782</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1669321154782</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="нативка" />
     <MESSAGE value="Class" />
     <MESSAGE value="Native js" />
     <MESSAGE value="proto, prototype" />
@@ -519,6 +519,7 @@
     <MESSAGE value="learn: Native JS setPrototypeOf, create, prototype" />
     <MESSAGE value="learn: Native JS: this, prefix, tests, addPrefixToTest" />
     <MESSAGE value="learn: Native JS: this, prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: this, prototype" />
+    <MESSAGE value="learn: Native JS: this, prototype, proto, prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: this, prototype, proto, prototype" />
   </component>
 </project>
