@@ -276,19 +276,60 @@
 // })
 // .then((res)=>console.log(res))
 
-                                            // singleton
+// singleton
 
-class Promise {
-    getUsers(){
-        // wait - make request
-        console.log('get')
+// class Promise {
+//     getUsers(){
+//         // wait - make request
+//         console.log('get')
+//     }
+//     createUser(){
+//         // wait - make request
+//         console.log('set')
+//     }
+// }
+//
+// let api = new Promise()
+// api.createUser()
+// api.getUsers()
+
+// 3 Pattern
+
+// class MapManager {
+//
+//     constructor(props) {
+//         this.props = props
+//     }
+//
+//
+//     load(){
+//
+//     }
+//
+//     getShops(){
+//
+//     }
+//
+//     drawMap(){
+//         return 'canvas'
+//     }
+//
+//     drawMap(){
+//
+//     }
+// }
+
+// proxy
+
+let a = {
+    yo(message) {
+        console.log(message)
     }
-    createUser(){
-        // wait - make request
-        console.log('set')
+}
+let proxyA = {
+    yo(message){
+        a.yo(message)
     }
 }
 
-let api = new Promise()
-api.createUser()
-api.getUsers()
+proxyA.yo('hello')
