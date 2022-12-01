@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: this, prototype, proto, prototype">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: call, apply">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -132,14 +132,9 @@
       <workItem from="1668945163651" duration="3025000" />
       <workItem from="1668971079229" duration="3284000" />
       <workItem from="1669319028616" duration="4475000" />
-      <workItem from="1669660661483" duration="1339000" />
-    </task>
-    <task id="LOCAL-00064" summary="^[a-z]+@gmail.com$">
-      <created>1667673663820</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1667673663820</updated>
+      <workItem from="1669660661483" duration="3624000" />
+      <workItem from="1669735069240" duration="4074000" />
+      <workItem from="1669885529227" duration="385000" />
     </task>
     <task id="LOCAL-00065" summary="const trueRes = /^\w+@gmail\.com$/">
       <created>1667674258647</created>
@@ -477,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669661449245</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="learn: Native JS: call, apply">
+      <created>1669662214702</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1669662214702</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Class" />
     <MESSAGE value="Native js" />
     <MESSAGE value="proto, prototype" />
     <MESSAGE value="prototype" />
@@ -520,6 +521,7 @@
     <MESSAGE value="learn: Native JS: this, prefix, tests, addPrefixToTest" />
     <MESSAGE value="learn: Native JS: this, prototype" />
     <MESSAGE value="learn: Native JS: this, prototype, proto, prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: this, prototype, proto, prototype" />
+    <MESSAGE value="learn: Native JS: call, apply" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: call, apply" />
   </component>
 </project>

@@ -218,16 +218,61 @@
 // }
 // f()
 
-let a = {
-    name: 'Dima',
-    age: 15,
-    getName(){
-        console.log(this)
-    }
-}
+// let a = {
+//     name: 'Dima',
+//     age: 15,
+//     getName(){
+//         console.log(this)
+//     }
+// }
+//
+// const b = {
+//      name: 'Sasha'
+//
+// }
+// a.getName.bind(b)()
+//
+// let a = 11
+//
+// function f() {
+//     console.log(a)
+// }
+// f()
+//
+// function f(name) {
+//     this.name = name
+// }
+// const aa = new f('Dima')
+// console.log(aa)
+//
+// class Promise {
+//
+// }
+//
+// console.log(Promise.__proto__ === Function.prototype)
 
-const b = {
-     name: 'Sasha'
+// class Promise {
+//     constructor(name) {
+//         this.name = name
+//     }
+//
+//     showName(){
+//         console.log(this.name)
+//     }
+// }
+//
+//
+// const p = new Promise('Dima')
+// const p2 = new Promise('Sasha')
+// console.log(p)
+//
+// p.showName()
+// p2.showName()
 
-}
-a.getName.bind(b)()
+// let pr = new Promise((res,rej)=>{
+//     let data = [1,2,3]
+//
+//     res(data)
+// })
+// .then((res)=>console.log(res))
+
