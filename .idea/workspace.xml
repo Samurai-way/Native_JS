@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: singleton, patterns">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: proxy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
@@ -134,14 +134,7 @@
       <workItem from="1669319028616" duration="4475000" />
       <workItem from="1669660661483" duration="3624000" />
       <workItem from="1669735069240" duration="4074000" />
-      <workItem from="1669885529227" duration="3418000" />
-    </task>
-    <task id="LOCAL-00067" summary="__proto__">
-      <created>1667940672172</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1667940672174</updated>
+      <workItem from="1669885529227" duration="4792000" />
     </task>
     <task id="LOCAL-00068" summary="msg">
       <created>1667941329226</created>
@@ -479,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669886646676</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="learn: Native JS: proxy">
+      <created>1669892896985</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1669892896985</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="proto, prototype" />
     <MESSAGE value="prototype" />
     <MESSAGE value="docs: proto, prototype" />
     <MESSAGE value="fix: proto, prototype" />
@@ -522,6 +521,7 @@
     <MESSAGE value="learn: Native JS: this, prototype, proto, prototype" />
     <MESSAGE value="learn: Native JS: call, apply" />
     <MESSAGE value="learn: Native JS: singleton, patterns" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: singleton, patterns" />
+    <MESSAGE value="learn: Native JS: proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: proxy" />
   </component>
 </project>

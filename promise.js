@@ -319,7 +319,7 @@
 //     }
 // }
 
-// proxy
+                        // proxy
 
 let a = {
     yo(message) {
@@ -328,8 +328,11 @@ let a = {
 }
 let proxyA = {
     yo(message){
+        if(message !== 'hello'){
+            message = 'hey))'
+        }
         a.yo(message)
     }
 }
 
-proxyA.yo('hello')
+proxyA.yo('fuck')
