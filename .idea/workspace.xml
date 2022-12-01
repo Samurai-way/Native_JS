@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: call, apply">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/promise.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,14 +133,7 @@
       <workItem from="1669319028616" duration="4475000" />
       <workItem from="1669660661483" duration="3624000" />
       <workItem from="1669735069240" duration="4074000" />
-      <workItem from="1669885529227" duration="385000" />
-    </task>
-    <task id="LOCAL-00065" summary="const trueRes = /^\w+@gmail\.com$/">
-      <created>1667674258647</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1667674258647</updated>
+      <workItem from="1669885529227" duration="1045000" />
     </task>
     <task id="LOCAL-00066" summary="const trueName = /^oleg+@mail\.ru$/">
       <created>1667674357098</created>
@@ -479,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669662214702</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="learn: Native JS: call, apply">
+      <created>1669885924389</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1669885924390</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

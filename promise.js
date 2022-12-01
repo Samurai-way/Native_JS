@@ -276,3 +276,19 @@
 // })
 // .then((res)=>console.log(res))
 
+                                            // singleton
+
+class Promise {
+    getUsers(){
+        // wait - make request
+        console.log('get')
+    }
+    createUser(){
+        // wait - make request
+        console.log('set')
+    }
+}
+
+let api = new Promise()
+api.createUser()
+api.getUsers()
