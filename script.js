@@ -13,27 +13,34 @@
 // // console.log(trueRes.test('oleg@gmail.com'))
 
 
-let obj1 = {
-    title: "title",
-    items: [
-        {
-            id: "id20029",
-            likeList:
-                [
-                    {
-                        likeCount: '22',
-                        dislikeCount: '23'
-                    }
-                ]
-        }
-    ]
-}
+// let obj1 = {
+//     title: "title",
+//     items: [
+//         {
+//             id: "id20029",
+//             likeList:
+//                 [
+//                     {
+//                         likeCount: '22',
+//                         dislikeCount: '23'
+//                     }
+//                 ]
+//         }
+//     ]
+// }
+//
+// const copyObj = {
+//     ...obj1,
+//     items: obj1.items.map((item) => ({
+//         ...item,
+//         likeList: item.likeList.map(like => ({ ...like }))
+//     })),
+// }
+//
+// const a = JSON.parse(JSON.stringify(obj1))
+// console.log(a)
 
-const copyObj = {
-    ...obj1,
-    items: obj1.items.map((item) => ({
-        ...item,
-        likeList: item.likeList.map(like => ({ ...like }))
-    })),
-}
-console.log(copyObj.items[0].likeList[0].likeCount)
+// let arr = [1,2,3,4,5,11,2,3,4,5,1111,222]
+//
+// let filt = arr.filter(el => el !== 2)
+// console.log(filt)

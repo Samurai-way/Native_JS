@@ -181,34 +181,58 @@
 
                                                 // decoration
 
-class Server {
-    constructor(ip, port) {
-        this.ip = ip
-        this.port = port
-    }
-    getUrl(){
-        return `https://${this.ip}:${this.port}`
-    }
+// class Server {
+//     constructor(ip, port) {
+//         this.ip = ip
+//         this.port = port
+//     }
+//     getUrl(){
+//         return `https://${this.ip}:${this.port}`
+//     }
+// }
+//
+// function aws(server) {
+//     server.isAws = this
+//     server.awsInfo = function (){
+//         return server.url
+//     }
+//     return server
+// }
+//
+// const s1 = aws(new Server('12.34.52.11', 9010))
+// console.log(s1.isAws)
+// console.log(s1.awsInfo())
+//
+// function azure(server) {
+//     server.isAsure = true
+//     server.port += 500
+//     return server
+// }
+//
+// const s2 = azure(new Server('98.87.76', 1000))
+// console.log(s2.isAsure)
+// console.log(s2.url)
+
+//                          proxy
+
+function networkFetch(url) {
+    return `${url} - ответ с сервера`
 }
 
-function aws(server) {
-    server.isAws = this
-    server.awsInfo = function (){
-        return server.url
+const cache = new Set()
+
+const proxiedFetch = new Proxy(networkFetch, {
+    apply(target, thisArg, argArray) {
+        const url = argArray[0]
+        if(cache.has(url)){
+            return `${url} - ответ из кеша`
+        }else{
+            cache.add(url)
+            return  Reflect.apply(target, thisArg, argArray)
+        }
     }
-    return server
-}
+})
 
-const s1 = aws(new Server('12.34.52.11', 9010))
-console.log(s1.isAws)
-console.log(s1.awsInfo())
-
-function azure(server) {
-    server.isAsure = true
-    server.port += 500
-    return server
-}
-
-const s2 = azure(new Server('98.87.76', 1000))
-console.log(s2.isAsure)
-console.log(s2.url)
+console.log(proxiedFetch('react'))
+console.log(proxiedFetch('redux'))
+console.log(proxiedFetch('ts'))
