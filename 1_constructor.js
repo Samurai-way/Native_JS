@@ -132,7 +132,7 @@
 // console.log(mongo.getData())
 // console.log(mySQL.getData())
 
-                                                // 5_adapter
+// 5_adapter
 
 // class OldCalc {
 //     operations(t1, t2, operation) {
@@ -179,7 +179,7 @@
 // const adapter = new CalcAdapter()
 // console.log(adapter.operation(25,10,'sub'))
 
-                                                // decoration
+// decoration
 
 // class Server {
 //     constructor(ip, port) {
@@ -224,11 +224,11 @@ const cache = new Set()
 const proxiedFetch = new Proxy(networkFetch, {
     apply(target, thisArg, argArray) {
         const url = argArray[0]
-        if(cache.has(url)){
+        if (cache.has(url)) {
             return `${url} - ответ из кеша`
-        }else{
+        } else {
             cache.add(url)
-            return  Reflect.apply(target, thisArg, argArray)
+            return Reflect.apply(target, thisArg, argArray)
         }
     }
 })
@@ -236,3 +236,23 @@ const proxiedFetch = new Proxy(networkFetch, {
 console.log(proxiedFetch('react'))
 console.log(proxiedFetch('redux'))
 console.log(proxiedFetch('ts'))
+
+                                    // change of responsibility
+
+class MySum {
+    constructor(initialValue = 42) {
+        this.sum = initialValue
+    }
+
+    add(value) {
+        this.sum += value
+        return this
+    }
+}
+
+const sum1 = new MySum()
+console.log(sum1.add(9).add(10).add(2).sum)
+
+const sum2 = new MySum(0)
+
+console.log(sum2.add(2).add(2).add(15))
