@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: proxy">
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: patterns">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/promise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/React/Native_JS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/React/Native_JS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\React\Native_JS" />
@@ -141,21 +141,9 @@
       <workItem from="1669660661483" duration="3624000" />
       <workItem from="1669735069240" duration="4074000" />
       <workItem from="1669885529227" duration="4826000" />
-      <workItem from="1669924520653" duration="2276000" />
-    </task>
-    <task id="LOCAL-00069" summary="msg">
-      <created>1667942381439</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1667942381439</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Promis">
-      <created>1667943306487</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1667943306487</updated>
+      <workItem from="1669924520653" duration="7162000" />
+      <workItem from="1670011122960" duration="793000" />
+      <workItem from="1670171883761" duration="1910000" />
     </task>
     <task id="LOCAL-00071" summary="native js">
       <created>1667978908525</created>
@@ -486,7 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669894177113</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="learn: Native JS: pattern, 1_ constructor">
+      <created>1669927494014</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1669927494014</updated>
+    </task>
+    <task id="LOCAL-00119" summary="learn: Native JS: patterns">
+      <created>1669991333328</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1669991333328</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,8 +506,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="prototype" />
-    <MESSAGE value="docs: proto, prototype" />
     <MESSAGE value="fix: proto, prototype" />
     <MESSAGE value="learn: this" />
     <MESSAGE value="learn: this, and other" />
@@ -529,6 +529,8 @@
     <MESSAGE value="learn: Native JS: call, apply" />
     <MESSAGE value="learn: Native JS: singleton, patterns" />
     <MESSAGE value="learn: Native JS: proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: proxy" />
+    <MESSAGE value="learn: Native JS: pattern, 1_ constructor" />
+    <MESSAGE value="learn: Native JS: patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: patterns" />
   </component>
 </project>
