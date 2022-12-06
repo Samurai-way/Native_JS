@@ -109,11 +109,20 @@
 
                                             // 5
 
-console.log('6' / '2') // 3
-console.log('6' * '2') // 12 Number
-console.log('6' + '2') // 62 strung
-console.log('6' + 2) // str 62
-console.log('6' - 2) // 4 number
-console.log(null == undefined) // true
-console.log(null === null) // true
-console.log(undefined === undefined) // true
+// console.log('6' / '2')
+// console.log('6' * '2')
+// console.log('6' + '2')
+// console.log('6' + 2)
+// console.log('6' - 2)
+// console.log(null == undefined)
+// console.log(null === null)
+// console.log(undefined === undefined)
+// console.log('2' + true)
+
+                                            // 6
+
+const a = {}
+const b = {}
+
+a[b] = 'b'
+console.log(a)
