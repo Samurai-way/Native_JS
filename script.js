@@ -44,3 +44,11 @@
 //
 // let filt = arr.filter(el => el !== 2)
 // console.log(filt)
+
+                                                // js sobes
+
+console.log(5 + '2')                // 52
+console.log(5 - '2')                // 3
+console.log(5 * '2')                // 10
+console.log(true + true)            // true
+console.log([12,2,3] + {toString() {return 'a'}})          // 12,2,3ObjObj
