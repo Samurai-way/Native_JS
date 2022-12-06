@@ -52,3 +52,15 @@ console.log(5 - '2')                // 3
 console.log(5 * '2')                // 10
 console.log(true + true)            // true
 console.log([12,2,3] + {toString() {return 'a'}})          // 12,2,3ObjObj
+
+
+                                            // 2
+
+const user = {
+    name: 'Dima',
+    hello: function () {
+        const name = 'Hanna'
+        console.log(`hello', ${this.name}`)
+    }
+}
+setTimeout(user.hello, 1000)
