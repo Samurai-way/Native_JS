@@ -47,20 +47,62 @@
 
                                                 // js sobes
 
-console.log(5 + '2')                // 52
-console.log(5 - '2')                // 3
-console.log(5 * '2')                // 10
-console.log(true + true)            // true
-console.log([12,2,3] + {toString() {return 'a'}})          // 12,2,3ObjObj
+// console.log(5 + '2')
+// console.log(5 - '2')
+// console.log(5 * '2')
+// console.log(true + true)
+// console.log([12,2,3] + {toString() {return 'a'}})
 
 
                                             // 2
 
-const user = {
-    name: 'Dima',
-    hello: function () {
-        const name = 'Hanna'
-        console.log(`hello', ${this.name}`)
-    }
-}
-setTimeout(user.hello, 1000)
+// const user = {
+//     name: 'Dima',
+//     hello: function () {
+//         const name = 'Hanna'
+//         console.log(`hello', ${this.name}`)
+//     }
+// }
+//
+// setTimeout(user.hello, 1000)
+
+                                            // 3
+//
+// const  a = {
+//     toString() {
+//         return 'a'
+//     },
+//
+//     go: function () {
+//         console.log(this.toString())
+//     },
+//
+//     run: () => {
+//         console.log(this)
+//     },
+//
+//     stop: function () {
+//         (() => {
+//             console.log(this)
+//         })()
+//     }
+// }
+//
+// a.go()
+// a.run()
+// a.stop()
+
+                                            // 4
+
+// function User(name) {
+//     this.name = name
+//     return this
+// }
+//
+// const admin = new User('Alex')
+// const developer = User('Hanna')
+//
+// name = 'John'
+//
+// console.log(admin.name)
+// console.log(developer.name)
