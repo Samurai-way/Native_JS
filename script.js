@@ -1,3 +1,4 @@
+
 // const regex = /358\d{7}/;
 // const regexText = /@gmail.\w{3}/;
 // const emailName = /^[a-z]+@gmail\.com$/ // начало от a до z, а конец @gmail.com и только точка и ничего другого
@@ -47,28 +48,31 @@
 
                                                 // js sobes
 
-// console.log(5 + '2')
-// console.log(5 - '2')
-// console.log(5 * '2')
-// console.log(true + true)
-// console.log([12,2,3] + {toString() {return 'a'}})
+// console.log(5 + '2') // '52'
+// console.log(5 - '2') // 3
+// console.log(5 * '2') // 10
+// console.log(true + true) // 2
+// console.log([12,2,3] + {}) // 12,2,3ObjObj
 
 
-                                            // 2
+
+                                               // 2
 
 // const user = {
 //     name: 'Dima',
-//     hello: function () {
+//     hello() {
 //         const name = 'Hanna'
 //         console.log(`hello', ${this.name}`)
 //     }
 // }
 //
-// setTimeout(user.hello, 1000)
+// setTimeout(()=>user.hello(), 1000)
 
                                             // 3
-//
+
+
 // const  a = {
+//     name: 'DIma',
 //     toString() {
 //         return 'a'
 //     },
@@ -78,7 +82,7 @@
 //     },
 //
 //     run: () => {
-//         console.log(this)
+//         console.log(this.name)
 //     },
 //
 //     stop: function () {
@@ -88,10 +92,9 @@
 //     }
 // }
 //
-// a.go()
-// a.run()
-// a.stop()
-
+// a.go() // a
+// a.run() // und
+// a.stop() // Obj
                                             // 4
 
 // function User(name) {
@@ -109,20 +112,79 @@
 
                                             // 5
 
-// console.log('6' / '2')
-// console.log('6' * '2')
-// console.log('6' + '2')
-// console.log('6' + 2)
-// console.log('6' - 2)
-// console.log(null == undefined)
-// console.log(null === null)
-// console.log(undefined === undefined)
-// console.log('2' + true)
+// console.log('6' / '2') // 3
+// console.log('6' * '2') // 12
+// console.log('6' + '2') // '62'
+// console.log('6' + 2) // '62'
+// console.log('6' - 2) // 4
+// console.log(null == undefined) // false
+// console.log(null === null) //  true
+// console.log(NaN === NaN) // false
+// console.log(typeof undefined) // str
+// console.log(typeof NaN) // Number
+// console.log(undefined === undefined) // true
+// console.log('2' + true) // '2true'
 
                                             // 6
 
-const a = {}
-const b = {}
+// const a = {}
+// const b = {}
+//
+// a[b] = 'b'
+// console.log(a)
 
-a[b] = 'b'
-console.log(a)
+                                            // 7
+
+// (()=>{
+//     let a = b = 42
+// })()
+//
+// console.log(typeof  a === 'undefined')
+// console.log(typeof  b === 'undefined')
+
+                                            // 8
+
+const a = {
+    name: 'a',
+    logName(){
+        console.log(this.name)
+    }
+}
+
+setTimeout(a.logName, 100)
+
+                                            // 9
+
+// const a = {
+//     isMale: true,
+//     age: 21,
+//
+//     getIsMale: () => {
+//         return this.isMale
+//     },
+//     getAge: function () {
+//         const age = 24
+//         return this.age
+//     }
+// }
+//
+// console.log(a.getIsMale())
+// console.log(a.getAge())
+
+                                            // 10
+
+// Object.prototype.getName = function () {
+//     return this.name
+// }
+//
+// const a = {name: 'a'}
+// const b = {name: 'b'}
+// const c = {name: 'c'}
+//
+// console.log(
+//     a.getName().bind(b).bind(c)()
+// )
+//
+// console.log(
+//     a.getName().bind(c).call(b)
+// )
