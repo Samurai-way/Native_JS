@@ -208,39 +208,39 @@
 //
 // const copy = {...obj1, items: obj1.items.map(el => ({...el, likeList: el.likeList.map(l => ({...l}))}))}
 
-// const nums = [1,2,3,4]
-// const names = ['Hanna', 'Alex']
-//
-//
-// Array.prototype.myMap = function (e) {
-//     let arr = []
-//     for (let i = 0; i < this.length; i++) {
-//         arr.push(e(this[i]))
-//     }
-//     return arr
-// }
-//
-// console.log(nums.myMap((n) => {
-//     return n + 1
-// }))
-//
-// console.log(names.myMap((n,i) => ({name: n, index: i})))
-
 const nums = [1,2,3,4]
 const names = ['Hanna', 'Alex']
 
-Array.prototype.myFilter = function (e) {
+
+Array.prototype.myMap = function (e) {
     let arr = []
     for (let i = 0; i < this.length; i++) {
-        if(e(this[i])){
-            arr.push((this[i]))
-        }
+        arr.push(e(this[i]))
     }
     return arr
 }
 
-console.log(nums.myFilter(n => n % 2 === 0))
-console.log(names.myFilter(n => n.indexOf('e') >= 0))
+console.log(nums.myMap((n) => {
+    return n + 1
+}))
+
+console.log(names.myMap((n,i) => ({name: n, index: i})))
+
+// const nums = [1,2,3,4]
+// const names = ['Hanna', 'Alex']
+//
+// Array.prototype.myFilter = function (e) {
+//     let arr = []
+//     for (let i = 0; i < this.length; i++) {
+//         if(e(this[i])){
+//             arr.push(this[i])
+//         }
+//     }
+//     return arr
+// }
+//
+// console.log(nums.myFilter(n => n % 2 === 0))
+// console.log(names.myFilter(n => n.indexOf('e') >= 0))
 
 
 
