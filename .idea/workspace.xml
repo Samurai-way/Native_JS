@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: [object Object">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: my map func">
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,14 +144,7 @@
       <workItem from="1670171883761" duration="4600000" />
       <workItem from="1670334834475" duration="4155000" />
       <workItem from="1670425282730" duration="4740000" />
-      <workItem from="1670441263753" duration="2396000" />
-    </task>
-    <task id="LOCAL-00080" summary="proto, prototype">
-      <created>1668154527302</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154527303</updated>
+      <workItem from="1670441263753" duration="2784000" />
     </task>
     <task id="LOCAL-00081" summary="Class">
       <created>1668155095785</created>
@@ -490,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670428941154</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="learn: Native JS: my map func">
+      <created>1670495212136</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1670495212136</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +507,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="learn: setInterval" />
     <MESSAGE value="learn: Promise" />
     <MESSAGE value="learn: this, call, apply" />
     <MESSAGE value="learn: Promise, __proto__, prototype, constructor" />
@@ -533,6 +531,7 @@
     <MESSAGE value="learn: Native JS: this" />
     <MESSAGE value="learn: Native JS: this, Function Constructor" />
     <MESSAGE value="learn: Native JS: [object Object" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: [object Object" />
+    <MESSAGE value="learn: Native JS: my map func" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: my map func" />
   </component>
 </project>

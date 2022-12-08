@@ -208,20 +208,38 @@
 //
 // const copy = {...obj1, items: obj1.items.map(el => ({...el, likeList: el.likeList.map(l => ({...l}))}))}
 
+// const nums = [1,2,3,4]
+//
+// const names = ['Hanna', 'Alex']
+//
+// Array.prototype.myMap = function (cb){
+//     let term = []
+//     for (let index = 0; index < this.length; index++) {
+//         term.push(cb[this[index]])
+//     }
+//     return term
+// }
+//
+// console.log(nums.myMap((n) => {
+//     return n + 1
+// }))
+//
+// console.log(names.myMap((n,i) => ({name: n, index: i})))
+
 const nums = [1,2,3,4]
 
 const names = ['Hanna', 'Alex']
 
-Array.prototype.myMap = function (cb){
-    let term = []
-    for (let index = 0; index < this.length; index++) {
-        term.push(cb[this[index]])
+Array.prototype.myFilter = function (cb) {
+    let arr = []
+    for (let i = 0; i < this.length; i++) {
+        if(cb){
+            arr.push(this[i])
+        }
     }
-    return term
+    return arr
 }
 
-console.log(nums.myMap((n) => {
-    return n + 1
-}))
+console.log(nums.myFilter(n => n % 2 === 0))
 
-console.log(names.myMap((n,i) => ({name: n, index: i})))
+console.log(names.myFilter(n => n.indexOf('e') >= 0))
