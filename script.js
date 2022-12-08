@@ -144,14 +144,14 @@
 
                                             // 8
 
-const a = {
-    name: 'a',
-    logName(){
-        console.log(this.name)
-    }
-}
-
-setTimeout(a.logName, 100)
+// const a = {
+//     name: 'a',
+//     logName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// setTimeout(a.logName, 100)
 
                                             // 9
 
@@ -182,9 +182,46 @@ setTimeout(a.logName, 100)
 // const c = {name: 'c'}
 //
 // console.log(
-//     a.getName().bind(b).bind(c)()
+//     a.getName.bind(b).bind(c)()
 // )
 //
 // console.log(
-//     a.getName().bind(c).call(b)
+//     a.getName.bind(c).call(b)
 // )
+// // b c
+
+// let obj1 = {
+//     title: "title",
+//     items: [
+//         {
+//             id: "id20029",
+//             likeList:
+//                 [
+//                     {
+//                         likeCount: '22',
+//                         dislikeCount: '23'
+//                     }
+//                 ]
+//         }
+//     ]
+// }
+//
+// const copy = {...obj1, items: obj1.items.map(el => ({...el, likeList: el.likeList.map(l => ({...l}))}))}
+
+const nums = [1,2,3,4]
+
+const names = ['Hanna', 'Alex']
+
+Array.prototype.myMap = function (cb){
+    let term = []
+    for (let index = 0; index < this.length; index++) {
+        term.push(cb[this[index]])
+    }
+    return term
+}
+
+console.log(nums.myMap((n) => {
+    return n + 1
+}))
+
+console.log(names.myMap((n,i) => ({name: n, index: i})))

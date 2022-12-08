@@ -144,14 +144,8 @@
       <workItem from="1670011122960" duration="793000" />
       <workItem from="1670171883761" duration="4600000" />
       <workItem from="1670334834475" duration="4155000" />
-      <workItem from="1670425282730" duration="3520000" />
-    </task>
-    <task id="LOCAL-00079" summary="нативка">
-      <created>1668115034727</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1668115034728</updated>
+      <workItem from="1670425282730" duration="4740000" />
+      <workItem from="1670441263753" duration="2396000" />
     </task>
     <task id="LOCAL-00080" summary="proto, prototype">
       <created>1668154527302</created>
@@ -489,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670337546782</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="learn: Native JS: [object Object">
+      <created>1670428941122</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1670428941154</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
