@@ -233,7 +233,7 @@ const names = ['Hanna', 'Alex']
 Array.prototype.myFilter = function (cb) {
     let arr = []
     for (let i = 0; i < this.length; i++) {
-        if(cb){
+        if(cb(this[i])){
             arr.push(this[i])
         }
     }
