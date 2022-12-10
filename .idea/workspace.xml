@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: my map func">
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+    <list default="true" id="a07b7845-ca83-48a3-9364-0e36209964ee" name="Changes" comment="learn: Native JS: my map">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,35 +144,7 @@
       <workItem from="1670171883761" duration="4600000" />
       <workItem from="1670334834475" duration="4155000" />
       <workItem from="1670425282730" duration="4740000" />
-      <workItem from="1670441263753" duration="2784000" />
-    </task>
-    <task id="LOCAL-00081" summary="Class">
-      <created>1668155095785</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1668155095785</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Native js">
-      <created>1668155253121</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1668155253121</updated>
-    </task>
-    <task id="LOCAL-00083" summary="proto, prototype">
-      <created>1668160312284</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1668160312285</updated>
-    </task>
-    <task id="LOCAL-00084" summary="prototype">
-      <created>1668174095299</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1668174095300</updated>
+      <workItem from="1670441263753" duration="5498000" />
     </task>
     <task id="LOCAL-00085" summary="docs: proto, prototype">
       <created>1668286370252</created>
@@ -489,7 +461,35 @@
       <option name="project" value="LOCAL" />
       <updated>1670495212136</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="learn: Native JS: my filter">
+      <created>1670495425558</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1670495425558</updated>
+    </task>
+    <task id="LOCAL-00131" summary="learn: Native JS: my filter">
+      <created>1670495500264</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1670495500264</updated>
+    </task>
+    <task id="LOCAL-00132" summary="learn: Native JS: my filter">
+      <created>1670517416693</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1670517416693</updated>
+    </task>
+    <task id="LOCAL-00133" summary="learn: Native JS: my map">
+      <created>1670528776822</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1670528776822</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,8 +507,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="learn: Promise" />
-    <MESSAGE value="learn: this, call, apply" />
     <MESSAGE value="learn: Promise, __proto__, prototype, constructor" />
     <MESSAGE value="learn: prototype, __proto__, constructor" />
     <MESSAGE value="learn: Class, Object.defineProperty" />
@@ -532,6 +530,8 @@
     <MESSAGE value="learn: Native JS: this, Function Constructor" />
     <MESSAGE value="learn: Native JS: [object Object" />
     <MESSAGE value="learn: Native JS: my map func" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: my map func" />
+    <MESSAGE value="learn: Native JS: my filter" />
+    <MESSAGE value="learn: Native JS: my map" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn: Native JS: my map" />
   </component>
 </project>
