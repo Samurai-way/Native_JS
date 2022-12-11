@@ -226,44 +226,167 @@
 //
 // console.log(names.myMap((n,i) => ({name: n, index: i})))
 
-const nums = [1,2,3,4]
-const names = ['Hanna', 'Alex']
+// const nums = [1,2,3,4]
+// const names = ['Hanna', 'Alex']
+//
+// Array.prototype.myFilter = function (e) {
+//     let arr = []
+//     for (let i = 0; i < this.length; i++) {
+//         if(e(this[i])){
+//             arr.push(this[i])
+//         }
+//     }
+//     return arr
+// }
+//
+// console.log(nums.myFilter(n => n % 2 === 0))
+// console.log(names.myFilter(n => n.indexOf('e') >= 0))
+//// Array.prototype.myMap = function (cb){
+//     let term = []
+//     for (let index = 0; index < this.length; index++) {
+//         term.push(cb[this[index]])
+//     }
+//     return term
+// }
+//
+//
+// Array.prototype.myFilter = function (cb) {
+//     let arr = []
+//     for (let i = 0; i < this.length; i++) {
+//         if(cb(this[i])){
+//             arr.push(this[i])
+//         }
+//     }
+//     return arr
+// }
 
-Array.prototype.myFilter = function (e) {
-    let arr = []
-    for (let i = 0; i < this.length; i++) {
-        if(e(this[i])){
-            arr.push(this[i])
-        }
-    }
-    return arr
+
+                                                    // 1
+
+// console.log('2' + 3) // '23'
+// console.log(6 + '2') // '62'
+// console.log(true + false) // 'truefalse'
+// console.log(true + false === (2 + false)) // false
+
+
+                                                    // 2
+
+// console.log(null == null) // true
+// console.log(null === null) // true
+// console.log(undefined == undefined) // true
+// console.log(undefined === undefined) // true
+
+
+                                                    // 3
+// 'use strict'
+// y = 5;
+// let y = 4;
+// console.log(y) // 4
+// console.log(window.y) // 5
+
+
+                                                    // 4
+
+// for (var i = 0; i < 10; i++) {
+//     setTimeout(()=>{
+//         console.log(i)
+//     },0)
+// }
+// 10 * 10
+
+                                                    // 5
+
+let i;
+for (i = 0; i < 10; i++){
+    setTimeout(()=>{
+        console.log(i)
+    },0)
 }
+//
+                                                    // 6
 
-console.log(nums.myFilter(n => n % 2 === 0))
-console.log(names.myFilter(n => n.indexOf('e') >= 0))
+// console.log(true & true)
+// console.log(false & false)
+// console.log(false & true)
+
+                                                // 7
+
+// console.log(true || false)
+// console.log(false && false)
+// console.log(NaN == typeof undefined)
+
+                                                // 8
+
+// if(NaN !== typeof NaN){
+//     console.log(false + typeof true)
+// }
+
+                                                // 9
+
+// console.log(true | true)
+// console.log(false | false)
+// console.log(false | true)
+
+                                            // 10
+
+// console.log(true ^ true)
+// console.log(false ^ false)
+// console.log(false ^ true)
+
+                                        // 11
+
+// foo()
+// bar()
+// function foo() {
+//     console.log('foo')
+// }
+//
+// const bar = function () {
+//     console.log('bar')
+// }
+
+                                    // 12
+
+// const man = {
+//     name: 'Dimas',
+//     weight: '90kg',
+//     getName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// const b = {
+//     name: 'b'
+// }
+//
+// const c = {
+//     name: 'c'
+// }
+//
+// man.getName()
+// const foo = man.getName.bind(b)
+// man.getName()
+// man.getName.call(c)
+// man.getName.apply(b)
+// foo.call(c)
+
+                                                    // 13
+
+// console.log('a')
+// console.log('b')
+// setTimeout(()=>{
+//     console.log('timer 10')
+// },10)
+// setTimeout(()=>{
+//     console.log('timer 20')
+// },20)
+// Promise.resolve(console.log('Promise 1'))
+// Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
+// Promise.resolve('Promise 3').then(console.log)
+// setTimeout(()=>{
+//     console.log('timer 0')
+// },0)
+// console.log('d')
 
 
 
-
-
-
-
-
-Array.prototype.myMap = function (cb){
-    let term = []
-    for (let index = 0; index < this.length; index++) {
-        term.push(cb[this[index]])
-    }
-    return term
-}
-
-
-Array.prototype.myFilter = function (cb) {
-    let arr = []
-    for (let i = 0; i < this.length; i++) {
-        if(cb(this[i])){
-            arr.push(this[i])
-        }
-    }
-    return arr
-}
