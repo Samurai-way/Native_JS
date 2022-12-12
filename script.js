@@ -296,24 +296,24 @@
 
                                                     // 5
 
-let i;
-for (i = 0; i < 10; i++){
-    setTimeout(()=>{
-        console.log(i)
-    },0)
-}
-//
+// let i;
+// for (i = 0; i < 10; i++){
+//     setTimeout(()=>{
+//         console.log(i)
+//     },0)
+// }
+// // 10 * 10
                                                     // 6
 
-// console.log(true & true)
-// console.log(false & false)
-// console.log(false & true)
+// console.log(true & true) // 1
+// console.log(false & false) // 0
+// console.log(false & true) // 0
 
                                                 // 7
 
-// console.log(true || false)
-// console.log(false && false)
-// console.log(NaN == typeof undefined)
+// console.log(true || false) // true
+// console.log(false && false) // false
+// console.log(NaN == typeof undefined) // false
 
                                                 // 8
 
@@ -321,17 +321,18 @@ for (i = 0; i < 10; i++){
 //     console.log(false + typeof true)
 // }
 
+
                                                 // 9
 
-// console.log(true | true)
-// console.log(false | false)
-// console.log(false | true)
+// console.log(true | true) // 1
+// console.log(false | false) // 0
+// console.log(false | true) // 1
 
                                             // 10
 
-// console.log(true ^ true)
-// console.log(false ^ false)
-// console.log(false ^ true)
+// console.log(true ^ true) // 1
+// console.log(false ^ false) // 0
+// console.log(false ^ true) // 1
 
                                         // 11
 
@@ -344,7 +345,7 @@ for (i = 0; i < 10; i++){
 // const bar = function () {
 //     console.log('bar')
 // }
-
+// // foo
                                     // 12
 
 // const man = {
@@ -361,32 +362,32 @@ for (i = 0; i < 10; i++){
 //
 // const c = {
 //     name: 'c'
+//     // age: 12
 // }
 //
-// man.getName()
-// const foo = man.getName.bind(b)
-// man.getName()
-// man.getName.call(c)
-// man.getName.apply(b)
-// foo.call(c)
+// man.getName() // Dimas
+// const foo = man.getName.bind(b) //
+// man.getName() // Dimas
+// man.getName.call(c) // c
+// man.getName.apply(b) // b
+// foo.call(c) // b
 
                                                     // 13
 
-// console.log('a')
-// console.log('b')
-// setTimeout(()=>{
-//     console.log('timer 10')
-// },10)
-// setTimeout(()=>{
-//     console.log('timer 20')
-// },20)
-// Promise.resolve(console.log('Promise 1'))
-// Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
-// Promise.resolve('Promise 3').then(console.log)
-// setTimeout(()=>{
-//     console.log('timer 0')
-// },0)
-// console.log('d')
-
+console.log('a')
+console.log('b')
+setTimeout(()=>{
+    console.log('timer 10')
+},10)
+setTimeout(()=>{
+    console.log('timer 20')
+},20)
+Promise.resolve(console.log('Promise 1'))
+Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
+Promise.resolve('Promise 3').then(console.log)
+setTimeout(()=>{
+    console.log('timer 0')
+},0)
+console.log('d')
 
 
