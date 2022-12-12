@@ -374,20 +374,45 @@
 
                                                     // 13
 
-console.log('a')
-console.log('b')
-setTimeout(()=>{
-    console.log('timer 10')
-},10)
-setTimeout(()=>{
-    console.log('timer 20')
-},20)
-Promise.resolve(console.log('Promise 1'))
-Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
-Promise.resolve('Promise 3').then(console.log)
-setTimeout(()=>{
-    console.log('timer 0')
-},0)
-console.log('d')
+// console.log('a')
+// console.log('b')
+// setTimeout(()=>{
+//     console.log('timer 10')
+// },10)
+// setTimeout(()=>{
+//     console.log('timer 20')
+// },20)
+// Promise.resolve(console.log('Promise 1'))
+// Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
+// Promise.resolve('Promise 3').then(console.log)
+// setTimeout(()=>{
+//     console.log('timer 0')
+// },0)
+// console.log('d')
 
+// const pr = new Promise((res,rej) => {
+//     const data = {id: 10, name: 'Dima'}
+//     res(data)
+// }).then(res => console.log(res)).catch(res => console.log(res)).then(res => console.log(res)).finally(res => console.log(res))
 
+let obj1 = {
+    title: "title",
+    items: [
+        {
+            id: "id20029",
+            likeList:
+                [
+                    {
+                        likeCount: '22',
+                        dislikeCount: '23'
+                    }
+                ]
+        }
+    ]
+}
+
+const copy = {
+    ...obj1,
+    items: obj1.items.map(el => ({...el, likeList: el.likeList.map(l => ({...l, name: 'Petya'}))}))
+}
+console.log(copy.items[0].likeList[0].name)
