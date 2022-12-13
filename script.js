@@ -348,52 +348,52 @@
 // // foo
                                     // 12
 
-// const man = {
-//     name: 'Dimas',
-//     weight: '90kg',
-//     getName(){
-//         console.log(this.name)
-//     }
-// }
-//
-// const b = {
-//     name: 'b'
-// }
-//
-// const c = {
-//     name: 'c'
-//     // age: 12
-// }
-//
-// man.getName() // Dimas
-// const foo = man.getName.bind(b) //
-// man.getName() // Dimas
-// man.getName.call(c) // c
-// man.getName.apply(b) // b
-// foo.call(c) // b
+const man = {
+    name: 'Dimas',
+    weight: '90kg',
+    getName(){
+        console.log(this.name)
+    }
+}
 
-                                                    // 13
+const b = {
+    name: 'b'
+}
 
-// console.log('a')
-// console.log('b')
-// setTimeout(()=>{
-//     console.log('timer 10')
-// },10)
-// setTimeout(()=>{
-//     console.log('timer 20')
-// },20)
-// Promise.resolve(console.log('Promise 1'))
-// Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
-// Promise.resolve('Promise 3').then(console.log)
-// setTimeout(()=>{
-//     console.log('timer 0')
-// },0)
-// console.log('d')
+const c = {
+    name: 'c'
+    // age: 12
+}
 
-// const pr = new Promise((res,rej) => {
-//     const data = {id: 10, name: 'Dima'}
-//     res(data)
-// }).then(res => console.log(res)).catch(res => console.log(res)).then(res => console.log(res)).finally(res => console.log(res))
+man.getName() // Dimas
+const foo = man.getName.bind(b) //
+man.getName() // Dimas
+man.getName.call(c) // c
+man.getName.apply(b) // b
+foo.call(c) // b
+
+                                                    13
+
+console.log('a')
+console.log('b')
+setTimeout(()=>{
+    console.log('timer 10')
+},10)
+setTimeout(()=>{
+    console.log('timer 20')
+},20)
+Promise.resolve(console.log('Promise 1'))
+Promise.resolve(setTimeout(console.log.bind(null, 'Promise 2')), 0)
+Promise.resolve('Promise 3').then(console.log)
+setTimeout(()=>{
+    console.log('timer 0')
+},0)
+console.log('d')
+
+const pr = new Promise((res,rej) => {
+    const data = {id: 10, name: 'Dima'}
+    res(data)
+}).then(res => console.log(res)).catch(res => console.log(res)).then(res => console.log(res)).finally(res => console.log(res))
 
 let obj1 = {
     title: "title",
