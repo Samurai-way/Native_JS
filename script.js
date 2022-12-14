@@ -330,22 +330,22 @@
 
                                             // 10
 
-// console.log(true ^ true) // 1
-// console.log(false ^ false) // 0
-// console.log(false ^ true) // 1
+console.log(true ^ true) // 1
+console.log(false ^ false) // 0
+console.log(false ^ true) // 1
 
                                         // 11
 
-// foo()
-// bar()
-// function foo() {
-//     console.log('foo')
-// }
-//
-// const bar = function () {
-//     console.log('bar')
-// }
-// // foo
+foo()
+bar()
+function foo() {
+    console.log('foo')
+}
+
+const bar = function () {
+    console.log('bar')
+}
+// foo
                                     // 12
 
 const man = {
