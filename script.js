@@ -147,19 +147,19 @@
 //
 // user.showAge.call(true)
 
-this.name = 'Global'
-
-const a = {
-    name: 'a',
-
-    showName() {
-        console.log(this.name)
-    }
-}
-
-const b = {
-    name: 'b',
-    showName: () => {
-        console.log(this.name)
-    }
-}
+// this.name = 'Global'
+//
+// const a = {
+//     name: 'a',
+//
+//     showName() {
+//         console.log(this.name)
+//     }
+// }
+//
+// const b = {
+//     name: 'b',
+//     showName: () => {
+//         console.log(this.name)
+//     }
+// }
