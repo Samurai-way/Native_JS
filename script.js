@@ -62,8 +62,24 @@
 // hanna.showName()//
 
                                   //  с помощью методов call, bind, apply
+//
+// function foo() {
+//     console.log(this)
+// }
+// foo.call({name: 'Dimas'})
 
-function foo() {
+const alex = {
+    name: 'Alex'
+}
+
+const hanna = {
+    name: 'hanna'
+}
+
+function foo(a,b) {
+    console.log(a, b)
     console.log(this)
 }
-foo.call({name: 'Dimas'})
+
+// foo(1,2)
+foo.call(hanna, 1,2)
