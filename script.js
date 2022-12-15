@@ -139,10 +139,27 @@
 // }
 // user.showAge({age: 20})
 // 'use strict'
-const user = {
-    showAge(){
+// const user = {
+//     showAge(){
+//         console.log(this.name)
+//     }
+// }
+//
+// user.showAge.call(true)
+
+this.name = 'Global'
+
+const a = {
+    name: 'a',
+
+    showName() {
         console.log(this.name)
     }
 }
 
-user.showAge.call(true)
+const b = {
+    name: 'b',
+    showName: () => {
+        console.log(this.name)
+    }
+}
