@@ -16,16 +16,54 @@
 
                                      //============= INSIDE FUNCTION =========
 
+// function foo() {
+//     console.log(this)
+// }
+// foo()
+//
+// const user = {
+//     showFoo: foo
+// }
+// user.showFoo() // 2
+//
+// foo.bind()()
+// foo.call()
+// foo.apply()
+//
+// new foo()
+
+                                    // вызывается от имени объекта
+
+// function foo() {
+//     console.log(this)
+// }
+//
+// const user = {
+//     foo: foo
+// }
+//
+// foo()
+// user.foo()
+
+// const alex = {
+//     name: 'Alex',
+//     showName(){
+//         console.log(this.name)
+//     }
+// }
+//
+// const hanna = {
+//     name: 'Hanna',
+//     showName(){
+//         alex.showName()
+//     }
+// }
+// alex.showName()//
+// hanna.showName()//
+
+                                  //  с помощью методов call, bind, apply
+
 function foo() {
     console.log(this)
 }
-foo()
-
-const user = {
-    showFoo: foo
-}
-user.showFoo() // 2
-
-foo.bind()()
-foo.call()
-foo.apply()
+foo.call({name: 'Dimas'})
