@@ -14,7 +14,7 @@
 // }
 // user.showName()
 
-                                     //============= INSIDE FUNCTION =========
+//============= INSIDE FUNCTION =========
 
 // function foo() {
 //     console.log(this)
@@ -32,7 +32,7 @@
 //
 // new foo()
 
-                                    // вызывается от имени объекта
+// вызывается от имени объекта
 
 // function foo() {
 //     console.log(this)
@@ -61,7 +61,7 @@
 // alex.showName()//
 // hanna.showName()//
 
-                                  //  с помощью методов call, bind, apply
+//  с помощью методов call, bind, apply
 //
 // function foo() {
 //     console.log(this)
@@ -76,10 +76,13 @@ const hanna = {
     name: 'hanna'
 }
 
-function foo(a,b) {
+function foo(a, b) {
     console.log(a, b)
     console.log(this)
 }
 
 // foo(1,2)
-foo.call(hanna, 1,2)
+// foo.call(hanna, 1, 2)
+// foo.apply(alex, [1, 2])
+const f = foo.bind(alex, 1,2,3)
+f()
