@@ -104,9 +104,20 @@
 //
 // new foo()
 
-function User(name) {
-    this.name = name
+// function User(name) {
+//     this.name = name
+// }
+//
+// const user = new User('Dima')
+// console.log(user)
+
+const user = {
+    name: 'Alex',
+    showName(){
+        console.log(this.name)
+    }
 }
 
-const user = new User('Dima')
-console.log(user)
+user.showName()
+user.showName.call({name: 'Dimas'})
+
