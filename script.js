@@ -111,13 +111,30 @@
 // const user = new User('Dima')
 // console.log(user)
 
+// const user = {
+//     name: 'Alex',
+//     showName(){
+//         console.log(this.name)
+//     }
+// }
+
+// user.showName()
+// user.showName.call({name: 'Dimas'})
+//
+//
+// function User() {
+//     console.log(this)
+// }
+//
+// new (User.bind({name: 'Alex'}))()
+
 const user = {
-    name: 'Alex',
-    showName(){
-        console.log(this.name)
+    age: 23,
+    showAge(){
+        const fpp = () => {
+            console.log(this)
+        }
+        fpp()
     }
 }
-
-user.showName()
-user.showName.call({name: 'Dimas'})
-
+user.showAge()
