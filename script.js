@@ -88,12 +88,25 @@
 // f()
 
 
-const alex = {
-    age: 23,
-    showAge(){
-        console.log(this.age)
-    }
+// const alex = {
+//     age: 23,
+//     showAge(){
+//         console.log(this.age)
+//     }
+// }
+//
+// setTimeout(alex.showAge, 1000)
+// setTimeout(()=>{alex.showAge()}, 1000)
+
+// function foo() {
+//     console.log(this)
+// }
+//
+// new foo()
+
+function User(name) {
+    this.name = name
 }
 
-setTimeout(alex.showAge, 1000)
-setTimeout(()=>{alex.showAge()}, 1000)
+const user = new User('Dima')
+console.log(user)
