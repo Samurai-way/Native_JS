@@ -128,13 +128,21 @@
 //
 // new (User.bind({name: 'Alex'}))()
 
+// const user = {
+//     age: 23,
+//     showAge(){
+//         const fpp = () => {
+//             console.log(this.age)
+//         }
+//         fpp.call({age: 18})
+//     }
+// }
+// user.showAge({age: 20})
+// 'use strict'
 const user = {
-    age: 23,
     showAge(){
-        const fpp = () => {
-            console.log(this)
-        }
-        fpp()
+        console.log(this.name)
     }
 }
-user.showAge()
+
+user.showAge.call(true)
