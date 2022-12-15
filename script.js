@@ -68,21 +68,32 @@
 // }
 // foo.call({name: 'Dimas'})
 
+// const alex = {
+//     name: 'Alex'
+// }
+//
+// const hanna = {
+//     name: 'hanna'
+// }
+//
+// function foo(a, b) {
+//     console.log(a, b)
+//     console.log(this)
+// }
+//
+// // foo(1,2)
+// // foo.call(hanna, 1, 2)
+// // foo.apply(alex, [1, 2])
+// const f = foo.bind(alex, 1,2,3)
+// f()
+
+
 const alex = {
-    name: 'Alex'
+    age: 23,
+    showAge(){
+        console.log(this.age)
+    }
 }
 
-const hanna = {
-    name: 'hanna'
-}
-
-function foo(a, b) {
-    console.log(a, b)
-    console.log(this)
-}
-
-// foo(1,2)
-// foo.call(hanna, 1, 2)
-// foo.apply(alex, [1, 2])
-const f = foo.bind(alex, 1,2,3)
-f()
+setTimeout(alex.showAge, 1000)
+setTimeout(()=>{alex.showAge()}, 1000)
