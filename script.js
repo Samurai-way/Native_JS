@@ -88,4 +88,5 @@ function f1() {
     console.log(this.name)
 }
 
+
 console.log(f1.bind(name))
